@@ -159,9 +159,7 @@ Gambar 6.3 Matriks korelasi PremiumPrice
 
 Berikut ada teknik yang digunakan dalam proses data preparation, yaitu:
 
-1. Proses One Hot Encoding pada fitur kategorikal adalah teknik yang digunakan untuk mengubah variabel kategorikal menjadi representasi numerik yang dapat digunakan dalam model machine learning.
-
-Hal ini diperlukan karena sebagian besar algoritma machine learning hanya dapat bekerja dengan input numerik.
+Proses One Hot Encoding pada fitur kategorikal adalah teknik yang digunakan untuk mengubah variabel kategorikal menjadi representasi numerik yang dapat digunakan dalam model machine learning. Hal ini diperlukan karena sebagian besar algoritma machine learning hanya dapat bekerja dengan input numerik.
 
 Pandas library menyediakan fungsi pd.get_dummies() yang memudahkan dalam melakukan One Hot Encoding. Fungsi ini akan menghasilkan kolom-kolom baru yang mewakili setiap nilai unik dari fitur kategorikal. Jika suatu baris memiliki nilai tersebut, kolom yang sesuai akan diatur menjadi 1, sedangkan kolom lainnya akan menjadi 0.
 
@@ -169,7 +167,7 @@ Misalnya, jika terdapat fitur "Warna" dengan nilai "Merah", "Biru", dan "Hijau",
 
 Jika suatu baris memiliki nilai "Merah" pada fitur "Warna", maka kolom "Warna_Merah" akan diatur menjadi 1, sedangkan kolom lainnya akan menjadi 0.
 
-2. Proses pembagian dataset menjadi data training dan data testing penting dalam pengembangan model machine learning. Ini dilakukan untuk mengevaluasi performa model pada data yang belum pernah dilihat sebelumnya dan untuk menghindari overfitting. 
+Proses pembagian dataset menjadi data training dan data testing penting dalam pengembangan model machine learning. Ini dilakukan untuk mengevaluasi performa model pada data yang belum pernah dilihat sebelumnya dan untuk menghindari overfitting. 
 
 Data training digunakan untuk melatih model, sedangkan data testing digunakan untuk menguji seberapa baik model yang dilatih dapat melakukan prediksi pada data yang belum pernah dilihat sebelumnya. 
 
