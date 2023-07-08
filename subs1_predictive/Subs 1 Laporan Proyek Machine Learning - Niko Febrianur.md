@@ -228,8 +228,9 @@ Tabel 9.1 Tabel hasil evaluasi model setelah menggunakan hyperparam
 | eval_train | 18104561.09466 | 18614533.696279 |
 | eval_test  | 24212812.866265 | 25605704.542962 |
 
-Berikut adalah hasil evaluasi model setelah dilakukan penerapan hyperparam.
+Berikut adalah grafik hasil evaluasi model setelah dilakukan penerapan hyperparam.
 ![model_eval_hyperparam](https://github.com/nikofebrianur/Machine-Learning-Terapan/blob/main/subs1_predictive/img/model_eval_hy_params.png)
+
 Gambar 9.1 Hasil evaluasi model setelah penerapan hyperparam
 
 ## 10. Kesimpulan 
