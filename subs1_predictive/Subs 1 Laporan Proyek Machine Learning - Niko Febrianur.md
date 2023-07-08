@@ -106,8 +106,6 @@ Proyek ini memiliki tujuan sebagai berikut:
 
 3. Mengurangi risiko keuangan: Salah satu tujuan proyek ini adalah membantu perusahaan asuransi mengurangi risiko keuangan yang terkait dengan penetapan premi yang tidak akurat. Dengan memperkirakan premi dengan lebih akurat berdasarkan faktor-faktor risiko yang relevan, perusahaan asuransi dapat mengoptimalkan pengelolaan risiko keuangan mereka, menghindari kerugian yang tidak diharapkan, dan menjaga stabilitas keuangan perusahaan.
 
-4. Meningkatkan keadilan premi: Proyek ini bertujuan untuk memberikan perkiraan premi yang lebih adil dan akurat bagi calon pemegang polis. Dengan mempertimbangkan faktor-faktor risiko yang relevan secara lebih holistik, tujuannya adalah mengurangi ketidaksetaraan dalam penetapan premi dan memberikan keadilan dalam penentuan premi asuransi kesehatan. Hal ini akan memberikan manfaat bagi calon pemegang polis dengan memastikan bahwa premi yang mereka bayar sejalan dengan risiko yang mereka tanggung.
-
 Metrik evaluasi yang digunakan untuk mengukur keberhasilan mencapai setiap tujuan dapat meliputi:
 
 - Akurasi prediksi: Metrik ini digunakan untuk mengukur sejauh mana model analisis prediktif dapat memperkirakan premi asuransi kesehatan dengan tepat. Nilai akurasi yang tinggi menunjukkan bahwa model memberikan perkiraan yang lebih akurat, sehingga membantu mencapai tujuan pertama.
@@ -115,8 +113,6 @@ Metrik evaluasi yang digunakan untuk mengukur keberhasilan mencapai setiap tujua
 - Tingkat transparansi: Metrik ini dapat diukur dengan melakukan survei atau penilaian terhadap calon pemegang polis untuk mengukur tingkat pemahaman mereka tentang alasan di balik besarnya premi yang mereka terima. Semakin tinggi tingkat pemahaman dan kepercayaan calon pemegang polis terhadap alasan penetapan premi, semakin tinggi pula tingkat transparansi yang dicapai.
 
 - Risiko keuangan: Metrik ini dapat diukur dengan membandingkan kinerja keuangan perusahaan asuransi sebelum dan setelah penerapan model analisis prediktif. Jika risiko keuangan berkurang setelah menggunakan model, hal ini menunjukkan bahwa tujuan ketiga tercapai.
-
-- Kesetaraan premi: Metrik ini dapat diukur dengan membandingkan perbedaan premi yang diberikan kepada kelompok pemegang polis yang memiliki risiko yang serupa. Jika perbedaan premi menjadi lebih kecil setelah penerapan model analisis prediktif, hal ini menunjukkan bahwa tujuan keempat tercapai.
 
 Selain itu, metrik lain yang dapat digunakan untuk mengukur keberhasilan proyek ini adalah ialah *Mean Squared Error* (*MSE*): Metrik ini dapat digunakan untuk mengukur seberapa dekat prediksi premi dengan nilai sebenarnya. Semakin rendah nilai *MSE*, semakin baik model analisis prediktif dalam memperkirakan premi.
 
@@ -256,15 +252,6 @@ Berikut adalah urutan tahapan yang dilakukan dalam proses modeling:
  - Setelah pengujian *hyperparameter*, *Huber Regressor* mendapatkan param terbaik yaitu: {'alpha': 0.01, 'epsilon': 2.0, 'max_iter': 100}
  - Setelah pengujian *hyperparameter*, *SVR* mendapatkan param terbaik yaitu: {'C': 1, 'epsilon': 0.1, 'kernel': 'linear'
 
-### Hasil running model
-Tabel 8.1 Tabel hasil running model pada data training dan testing menggunakan algoritma *Huber Regressor* dan *SVR*
-|           | Huber         | SVR            |
-|-----------|---------------|----------------|
-| train_MSE | 18480694.56826 | 40114366.684487 |
-| test_MSE  | 25177990.875244 | 42742505.675315 |
-| eval_train | NaN | NaN |
-| eval_test  | NaN | NaN |
-
  - Huber_*MSE*: Rata-rata dari kuadrat selisih antara nilai prediksi dan nilai aktual pada data training adalah sekitar 18,480,694.56826, sedangkan pada data testing sekitar 25,177,990.875244. Hasil ini menunjukkan bahwa model memiliki tingkat kesalahan yang sedikit lebih tinggi pada data testing dibandingkan dengan data training.
  - *SVR*_*MSE*: Rata-rata dari kuadrat selisih antara nilai prediksi dan nilai aktual pada data training adalah sekitar 40,114,366.684487, sedangkan pada data testing sekitar 42,742,505.675315. Hasil ini menunjukkan bahwa model testing memiliki tingkat kesalahan yang sedikit lebih tinggi pada data testing dibandingkan dengan data training.
 
@@ -307,7 +294,7 @@ Berikut adalah langkah-langkah untuk menghitung *MSE*:
 
 5. Setelah menghitung *MSE*, semakin kecil nilai *MSE*, semakin baik model dalam melakukan prediksi yang akurat. *MSE* memiliki satuan yang berbeda dengan variabel yang dievaluasi, karena hasilnya berupa kuadrat. Oleh karena itu, *MSE* seringkali diinterpretasikan dalam konteks yang lebih luas, atau perbandingannya dibandingkan dengan metrik evaluasi lainnya.
 
-Tabel 9.1 Tabel hasil evaluasi model setelah menggunakan *hyperparameter*
+Tabel 9.1 Tabel hasil running evaluasi model setelah menggunakan *hyperparameter*
 |           | Huber         | SVR            |
 |-----------|---------------|----------------|
 | train_MSE | 18480694.56826 | 40114366.684487 |
