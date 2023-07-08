@@ -158,8 +158,28 @@ Gambar 6.3 Matriks korelasi PremiumPrice
 ## 7. Data Preparation
 
 Berikut ada teknik yang digunakan dalam proses data preparation, yaitu:
- -  One Hot Encoding pada data Categorical dengan menggunakan pandas library pada fungsi pd.get_dummies(). Teknik ini dilakukan untuk mengubah variabel kategorikal menjadi representasi numerik yang nantinya dapat digunakan dalam model machine learning.
- -  Membagi dataset menjadi data training dan data testing menggunakan library sklearn dengan fungsi train_set_split() dengan perbandingan 80:20 yaitu data training sebesar 788 dan data testing sebesar 198. Teknik ini dilakukan agar nantinya model dapat dievaluasi dan untuk mendeteksi apakah terjadi overfitting dalam model. 
+
+1. Proses One Hot Encoding pada fitur kategorikal adalah teknik yang digunakan untuk mengubah variabel kategorikal menjadi representasi numerik yang dapat digunakan dalam model machine learning.
+
+Hal ini diperlukan karena sebagian besar algoritma machine learning hanya dapat bekerja dengan input numerik.
+
+Pandas library menyediakan fungsi pd.get_dummies() yang memudahkan dalam melakukan One Hot Encoding. Fungsi ini akan menghasilkan kolom-kolom baru yang mewakili setiap nilai unik dari fitur kategorikal. Jika suatu baris memiliki nilai tersebut, kolom yang sesuai akan diatur menjadi 1, sedangkan kolom lainnya akan menjadi 0.
+
+Misalnya, jika terdapat fitur "Warna" dengan nilai "Merah", "Biru", dan "Hijau", setelah One Hot Encoding akan terbentuk tiga kolom baru: "Warna_Merah", "Warna_Biru", dan "Warna_Hijau". 
+
+Jika suatu baris memiliki nilai "Merah" pada fitur "Warna", maka kolom "Warna_Merah" akan diatur menjadi 1, sedangkan kolom lainnya akan menjadi 0.
+
+2. Proses pembagian dataset menjadi data training dan data testing penting dalam pengembangan model machine learning. Ini dilakukan untuk mengevaluasi performa model pada data yang belum pernah dilihat sebelumnya dan untuk menghindari overfitting. 
+
+Data training digunakan untuk melatih model, sedangkan data testing digunakan untuk menguji seberapa baik model yang dilatih dapat melakukan prediksi pada data yang belum pernah dilihat sebelumnya. 
+
+Dengan memisahkan data training dan data testing, kita dapat mengukur sejauh mana model dapat mengeneralisasi dan memprediksi dengan akurat pada data baru.
+
+Rasio 80:20 sering digunakan sebagai perbandingan pembagian data training dan data testing. Data training sebesar 80% digunakan untuk melatih model, sementara data testing sebesar 20% digunakan untuk menguji performa model. 
+
+Rasio ini merupakan aturan praktis umum yang memberikan keseimbangan antara memiliki jumlah data yang cukup untuk melatih model dan menyediakan data yang cukup untuk menguji performa model. 
+
+Namun, rasio ini dapat bervariasi tergantung pada karakteristik dataset dan kebutuhan proyek tertentu.
 
 ## 8. Modeling
 Dalam proses modeling, proyek ini akan menggunakan algoritma SVR dan algoritma Huber Regressor berdasarkan hasil dari data library pycaret.
