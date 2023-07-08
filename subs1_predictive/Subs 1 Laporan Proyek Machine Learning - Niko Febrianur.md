@@ -238,6 +238,22 @@ Namun, rasio ini dapat bervariasi tergantung pada karakteristik dataset dan kebu
 ## 8. Modeling
 Dalam proses modeling, proyek ini akan menggunakan algoritma *SVR* dan algoritma *Huber Regressor* berdasarkan hasil dari data *library* pycaret.
 
+Algoritma *SVR* (Support Vector Regression) dan *Huber Regressor* adalah dua algoritma yang umum digunakan dalam masalah regresi. Kedua algoritma ini digunakan dalam proyek ini untuk memprediksi premi asuransi kesehatan berdasarkan faktor-faktor risiko yang relevan. Berikut adalah penjelasan mengenai konsep dan cara kerja keduanya:
+
+*Support Vector Regression* (SVR):
+   - Konsep: *SVR* adalah variasi *dari Support Vector Machines* (SVM) yang digunakan dalam masalah regresi. Tujuan utama SVR adalah untuk menemukan fungsi regresi yang paling baik yang meminimalkan kesalahan prediksi pada data training dengan tetap mempertahankan margin maksimum.
+   - Cara Kerja: *SVR* bekerja dengan mencari hyperplane (bidang) yang dapat memisahkan data training dengan margin maksimum. *Hyperplane* ini berfungsi sebagai fungsi regresi yang memprediksi nilai target berdasarkan fitur-fitur input. Dalam *SVR*, titik-titik data yang berada di luar margin maksimum tetap diperbolehkan, sehingga mengakomodasi adanya pencilan (outliers). *SVR* mengoptimalkan margin dengan menyeimbangkan kesalahan prediksi dan kompleksitas model.
+   - Kelebihan: *SVR* efektif dalam menangani masalah regresi dengan data yang memiliki noise atau pencilan (outliers). Algoritma ini juga memiliki fleksibilitas dalam memilih fungsi kernel yang sesuai untuk memodelkan hubungan non-linear antara fitur input dan target.
+
+*Huber Regressor*:
+   - Konsep: *Huber Regressor* adalah algoritma regresi yang robust terhadap *outliers*. Algoritma ini menggabungkan metode *Least Squares* (LS) dan *Least Absolute Deviations* (LAD) dengan menggunakan fungsi kerugian *Huber*.
+   - Cara Kerja: *Huber Regressor* menghitung residual atau selisih antara nilai prediksi dan nilai sebenarnya. Jika residual lebih kecil dari suatu ambang batas, *Huber Regressor* menggunakan fungsi kerugian Least Squares (LS) yang merupakan kuadrat dari residual. Namun, jika residual lebih besar dari ambang batas, fungsi kerugian yang digunakan adalah fungsi kerugian Least Absolute Deviations (LAD) yang merupakan nilai absolut dari residual. Dengan demikian, *Huber Regressor* memberikan penekanan yang lebih besar pada ketahanan terhadap pencilan dibandingkan dengan metode Least Squares.
+   - Kelebihan: *Huber Regressor* efektif dalam menangani data yang memiliki pencilan yang signifikan. Dibandingkan dengan metode Least Squares, *Huber Regressor* memiliki performa yang lebih baik ketika terdapat pencilan yang signifikan dalam data. Algoritma ini memungkinkan penyesuaian yang lebih baik terhadap karakteristik data yang berbeda.
+
+Dalam proyek ini, kedua algoritma tersebut digunakan untuk memodelkan hubungan antara faktor-faktor risiko yang relevan dengan premi asuransi kesehatan. 
+
+Dengan menggunakan konsep dan cara kerja yang telah dijelaskan, algoritma *SVR* dan *Huber Regressor* dapat menghasilkan prediksi premi yang lebih akurat dan tahan terhadap pencilan (outliers) dalam data.
+
 ### Tahapan yang dilakukan
 Berikut adalah urutan tahapan yang dilakukan dalam proses modeling:
  - Melatih model dengan data training dengan menggunakan algoritma *Huber Regressor* dan *SVR*
