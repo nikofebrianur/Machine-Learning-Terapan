@@ -170,12 +170,13 @@ Berikut adalah urutan tahapan yang dilakukan dalam proses modeling:
  - Setelah pengujian hyperparam, SVR mendapatkan param terbaik yaitu: {'C': 1, 'epsilon': 0.1, 'kernel': 'linear'
 
 ### Hasil running model
+Tabel 8.1 Tabel hasil running model pada data training dan testing menggunakan algoritma Huber Regressor dan SVR
 |           | Huber         | SVR            |
 |-----------|---------------|----------------|
 | train_mse | 18480694.56826 | 40114366.684487 |
 | test_mse  | 25177990.875244 | 42742505.675315 |
-| eval_train | 18104561.09466 | 18614533.696279 |
-| eval_test  | 24212812.866265 | 25605704.542962 |
+| eval_train | NaN | NaN |
+| eval_test  | NaN | NaN |
 
  - Huber_MSE: Rata-rata dari kuadrat selisih antara nilai prediksi dan nilai aktual pada data training adalah sekitar 18,480,694.56826, sedangkan pada data testing sekitar 25,177,990.875244. Hasil ini menunjukkan bahwa model memiliki tingkat kesalahan yang sedikit lebih tinggi pada data testing dibandingkan dengan data training.
  - SVR_MSE: Rata-rata dari kuadrat selisih antara nilai prediksi dan nilai aktual pada data training adalah sekitar 40,114,366.684487, sedangkan pada data testing sekitar 42,742,505.675315. Hasil ini menunjukkan bahwa model testing memiliki tingkat kesalahan yang sedikit lebih tinggi pada data testing dibandingkan dengan data training.
@@ -216,10 +217,20 @@ Berikut adalah langkah-langkah untuk menghitung MSE:
 
 5. Setelah menghitung MSE, semakin kecil nilai MSE, semakin baik model dalam melakukan prediksi yang akurat. MSE memiliki satuan yang berbeda dengan variabel yang dievaluasi, karena hasilnya berupa kuadrat. Oleh karena itu, MSE seringkali diinterpretasikan dalam konteks yang lebih luas, atau perbandingannya dibandingkan dengan metrik evaluasi lainnya.
 
+
 MSE merupakan metrik evaluasi yang umum digunakan dalam masalah regresi karena memperhitungkan perbedaan antara nilai prediksi dan nilai sebenarnya secara keseluruhan dan memberikan bobot yang lebih besar pada perbedaan yang besar. Namun, MSE juga memiliki kelemahan yaitu sensitif terhadap outlier, artinya nilai ekstrem yang sangat berbeda dapat mempengaruhi MSE secara signifikan. Oleh karena itu, terkadang metrik evaluasi alternatif seperti Mean Absolute Error (MAE) juga digunakan untuk memberikan gambaran yang lebih lengkap tentang kinerja model.
+
+Tabel 9.1 Tabel hasil evaluasi model setelah menggunakan hyperparam
+|           | Huber         | SVR            |
+|-----------|---------------|----------------|
+| train_mse | 18480694.56826 | 40114366.684487 |
+| test_mse  | 25177990.875244 | 42742505.675315 |
+| eval_train | 18104561.09466 | 18614533.696279 |
+| eval_test  | 24212812.866265 | 25605704.542962 |
 
 Berikut adalah hasil evaluasi model setelah dilakukan penerapan hyperparam.
 ![model_eval_hyperparam](https://github.com/nikofebrianur/Machine-Learning-Terapan/blob/main/subs1_predictive/img/model_eval_hy_params.png)
+Gambar 9.1 Hasil evaluasi model setelah penerapan hyperparam
 
 ## 10. Kesimpulan 
 Berdasarkan hasil paparan di atas, proyek ini menghasilkan rangkaian kesimpulan untuk kebutuhan bisnis sebagai berikut: 
