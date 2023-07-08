@@ -63,11 +63,17 @@ Dengan memanfaatkan model prediktif yang dikembangkan dalam proyek ini, perusaha
 
 ## 3. Problem Statements
 
-1. Kurangnya akurasi dalam menentukan premi asuransi kesehatan: Perusahaan asuransi menghadapi tantangan dalam menentukan premi yang akurat dan adil bagi calon pemegang polis. Hal ini disebabkan oleh keterbatasan dalam memahami faktor-faktor yang mempengaruhi besaran premi. Dalam proyek ini, kami akan mengatasi masalah ini dengan mengembangkan model analisis prediktif yang dapat memperkirakan premi asuransi kesehatan dengan tingkat akurasi yang lebih tinggi.
+- Apa langkah yang dapat diambil untuk meningkatkan akurasi dalam menentukan premi asuransi kesehatan?
 
-2. Kurangnya transparansi dalam penetapan premi: Calon pemegang polis seringkali merasa bahwa penetapan premi asuransi kesehatan dilakukan secara tidak adil atau tidak transparan. Mereka tidak memahami faktor-faktor apa yang menjadi dasar penentuan premi. Dalam proyek ini, kami akan mencoba meningkatkan transparansi dengan mengidentifikasi faktor-faktor yang paling signifikan dalam menentukan premi asuransi kesehatan, sehingga calon pemegang polis dapat memahami alasan di balik besaran premi yang mereka terima.
+Perusahaan asuransi menghadapi tantangan dalam menentukan premi yang akurat dan adil bagi calon pemegang polis. Hal ini disebabkan oleh keterbatasan dalam memahami faktor-faktor yang mempengaruhi besaran premi. Dalam proyek ini, kami akan mengatasi masalah ini dengan mengembangkan model analisis prediktif yang dapat memperkirakan premi asuransi kesehatan dengan tingkat akurasi yang lebih tinggi.
 
-3. Risiko keuangan bagi perusahaan asuransi: Penentuan premi yang tidak akurat dapat menyebabkan risiko keuangan bagi perusahaan asuransi. Jika premi yang ditetapkan terlalu rendah, perusahaan dapat menghadapi kerugian finansial jika terjadi klaim yang tinggi. Di sisi lain, premi yang terlalu tinggi dapat mengurangi daya tarik produk asuransi. Dalam proyek ini, kami akan membantu mengurangi risiko keuangan dengan memperkirakan premi yang lebih akurat berdasarkan faktor-faktor risiko yang relevan.
+- Bagaimana caranya untuk meningkatkan transparansi dalam penetapan premi asuransi kesehatan?
+
+Calon pemegang polis seringkali merasa bahwa penetapan premi asuransi kesehatan dilakukan secara tidak adil atau tidak transparan. Mereka tidak memahami faktor-faktor apa yang menjadi dasar penentuan premi. Dalam proyek ini, kami akan mencoba meningkatkan transparansi dengan mengidentifikasi faktor-faktor yang paling signifikan dalam menentukan premi asuransi kesehatan, sehingga calon pemegang polis dapat memahami alasan di balik besaran premi yang mereka terima.
+
+- Bagaimana risiko keuangan yang terkait dengan penentuan premi yang tidak akurat dapat dikurangi?
+  
+Penentuan premi yang tidak akurat dapat menyebabkan risiko keuangan bagi perusahaan asuransi. Jika premi yang ditetapkan terlalu rendah, perusahaan dapat menghadapi kerugian finansial jika terjadi klaim yang tinggi. Di sisi lain, premi yang terlalu tinggi dapat mengurangi daya tarik produk asuransi. Dalam proyek ini, kami akan membantu mengurangi risiko keuangan dengan memperkirakan premi yang lebih akurat berdasarkan faktor-faktor risiko yang relevan.
 
 Dalam konteks penentuan premi asuransi kesehatan, berikut adalah contoh konkret dari faktor-faktor spesifik yang seringkali menyebabkan masalah-masalah yang disebutkan sebelumnya:
 
