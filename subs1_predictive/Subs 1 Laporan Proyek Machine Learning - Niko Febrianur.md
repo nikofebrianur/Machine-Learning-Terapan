@@ -4,7 +4,7 @@
 
 Ini adalah proyek pertama analisis prediktif untuk memenuhi submission Dicoding Kelas Machine Learning Terapan. 
 
-Proyek ini membangun model machine learning yang dapat memprediksi biaya pertanggungan medis tahunan.
+Proyek ini membangun model *machine learning* yang dapat memprediksi biaya pertanggungan medis tahunan.
 
 ## 1. Domain Proyek
 
@@ -41,11 +41,11 @@ Referensi:
 
 Proyek ini dibangun untuk perusahaan asuransi kesehatan dengan karakteristik bisnis sebagai berikut:
 
-1. Perusahaan Asuransi Kesehatan yang Berorientasi pada Analisis Data: Perusahaan ini memiliki kepentingan dan komitmen dalam mengoptimalkan penggunaan data untuk meningkatkan keputusan bisnis. Mereka mengakui nilai analisis prediktif dan machine learning dalam menentukan premi asuransi kesehatan yang akurat dan berdasarkan risiko individual.
+1. Perusahaan Asuransi Kesehatan yang Berorientasi pada Analisis Data: Perusahaan ini memiliki kepentingan dan komitmen dalam mengoptimalkan penggunaan data untuk meningkatkan keputusan bisnis. Mereka mengakui nilai analisis prediktif dan *machine learning* dalam menentukan premi asuransi kesehatan yang akurat dan berdasarkan risiko individual.
 
 2. Perusahaan dengan Basis Data Pelanggan yang Kaya: Perusahaan ini memiliki akses dan kepemilikan data pelanggan yang lengkap dan kaya akan informasi. Data tersebut mencakup variabel seperti usia, riwayat medis, operasi sebelumnya, alergi, riwayat penyakit keluarga, serta data fisik seperti tinggi dan berat badan. Data pelanggan yang kaya ini akan menjadi sumber informasi yang berharga dalam mengembangkan model prediktif.
 
-3. Perusahaan yang Berfokus pada Keunggulan Kompetitif: Perusahaan ini mengutamakan keunggulan kompetitif di pasar asuransi kesehatan. Mereka ingin memanfaatkan teknik analisis prediktif dan machine learning untuk meningkatkan proses penetapan premi, memberikan perkiraan premi yang lebih akurat, serta menawarkan produk asuransi yang lebih menarik dan kompetitif bagi calon pemegang polis.
+3. Perusahaan yang Berfokus pada Keunggulan Kompetitif: Perusahaan ini mengutamakan keunggulan kompetitif di pasar asuransi kesehatan. Mereka ingin memanfaatkan teknik analisis prediktif dan *machine learning* untuk meningkatkan proses penetapan premi, memberikan perkiraan premi yang lebih akurat, serta menawarkan produk asuransi yang lebih menarik dan kompetitif bagi calon pemegang polis.
 
 Dengan memahami karakteristik bisnis perusahaan asuransi kesehatan ini, proyek ini dapat dirancang dan disesuaikan untuk memenuhi kebutuhan dan tujuan bisnis yang spesifik.
 
@@ -53,7 +53,7 @@ Oleh sebab itu, proyek "Medical Insurance Premium Prediction" ini dapat membantu
 
 1. Penentuan Premi yang Lebih Akurat: Dengan menggunakan model analisis prediktif yang dikembangkan dalam proyek ini, perusahaan dapat menentukan premi asuransi kesehatan yang lebih akurat berdasarkan faktor-faktor risiko yang relevan. Dengan mempertimbangkan variabel seperti usia, riwayat medis, operasi sebelumnya, riwayat penyakit keluarga, dan data fisik lainnya, model ini dapat memberikan estimasi premi yang lebih tepat dan konsisten. Hal ini membantu perusahaan mengambil keputusan yang lebih informasional dan meminimalkan risiko keuangan yang tidak terduga.
 
-2. Peningkatan Efisiensi dan Produktivitas: Dengan memanfaatkan teknologi analisis prediktif dan machine learning, perusahaan dapat meningkatkan efisiensi dan produktivitas dalam proses penetapan premi. Model prediktif dapat secara otomatis memproses data dan memberikan perkiraan premi yang lebih cepat, mengurangi waktu dan upaya yang dibutuhkan dalam proses manual yang lebih lambat dan rentan terhadap kesalahan. Ini memungkinkan perusahaan untuk lebih fokus pada kegiatan inti bisnis mereka dan meningkatkan produktivitas keseluruhan.
+2. Peningkatan Efisiensi dan Produktivitas: Dengan memanfaatkan teknologi analisis prediktif dan *machine learning*, perusahaan dapat meningkatkan efisiensi dan produktivitas dalam proses penetapan premi. Model prediktif dapat secara otomatis memproses data dan memberikan perkiraan premi yang lebih cepat, mengurangi waktu dan upaya yang dibutuhkan dalam proses manual yang lebih lambat dan rentan terhadap kesalahan. Ini memungkinkan perusahaan untuk lebih fokus pada kegiatan inti bisnis mereka dan meningkatkan produktivitas keseluruhan.
 
 3. Pengambilan Keputusan yang Lebih Informasional: Dengan menggunakan model analisis prediktif yang akurat, perusahaan dapat mengambil keputusan bisnis yang lebih informasional dan cerdas. Model ini memberikan wawasan yang lebih dalam tentang faktor-faktor risiko yang mempengaruhi premi asuransi kesehatan, membantu perusahaan memahami pelanggan mereka dengan lebih baik, dan mengidentifikasi pola atau tren yang relevan. Informasi ini memungkinkan perusahaan untuk mengoptimalkan strategi bisnis mereka, meningkatkan layanan kepada pelanggan, dan mengidentifikasi peluang baru di pasar asuransi kesehatan.
 
@@ -97,7 +97,7 @@ Dalam konteks penentuan premi asuransi kesehatan, berikut adalah contoh konkret 
 
 Dalam proyek "Medical Insurance Premium Prediction", faktor-faktor ini akan dianalisis secara komprehensif dan dimasukkan ke dalam model analisis prediktif. 
 
-Dengan memanfaatkan teknik machine learning, model ini akan menghasilkan perkiraan premi yang lebih akurat, mempertimbangkan faktor-faktor risiko yang relevan dengan tingkat keakuratan yang lebih tinggi.
+Dengan memanfaatkan teknik *machine learning*, model ini akan menghasilkan perkiraan premi yang lebih akurat, mempertimbangkan faktor-faktor risiko yang relevan dengan tingkat keakuratan yang lebih tinggi.
 
 Selain itu, dengan mengidentifikasi faktor-faktor yang paling signifikan dalam penetapan premi, perusahaan asuransi dapat memberikan penjelasan yang lebih baik kepada calon pemegang polis mengenai alasan di balik besaran premi yang mereka terima, meningkatkan transparansi dan kepercayaan.
 
@@ -105,7 +105,7 @@ Selain itu, dengan mengidentifikasi faktor-faktor yang paling signifikan dalam p
 
 Proyek ini memiliki tujuan sebagai berikut:
 
-1. Mengembangkan model analisis prediktif: Tujuan utama proyek ini adalah mengembangkan model analisis prediktif yang dapat memperkirakan premi asuransi kesehatan dengan tingkat akurasi yang lebih tinggi. Dengan melakukan analisis data yang komprehensif dan menggunakan teknik machine learning, tujuannya adalah menciptakan model yang dapat memberikan perkiraan premi yang lebih tepat berdasarkan faktor-faktor risiko yang relevan.
+1. Mengembangkan model analisis prediktif: Tujuan utama proyek ini adalah mengembangkan model analisis prediktif yang dapat memperkirakan premi asuransi kesehatan dengan tingkat akurasi yang lebih tinggi. Dengan melakukan analisis data yang komprehensif dan menggunakan teknik *machine learning*, tujuannya adalah menciptakan model yang dapat memberikan perkiraan premi yang lebih tepat berdasarkan faktor-faktor risiko yang relevan.
 
 2. Meningkatkan transparansi: Proyek ini bertujuan untuk meningkatkan transparansi dalam penetapan premi asuransi kesehatan. Dengan mengidentifikasi faktor-faktor yang paling signifikan dalam menentukan premi, tujuannya adalah memberikan pemahaman yang lebih baik kepada calon pemegang polis mengenai alasan di balik besaran premi yang mereka terima. Hal ini akan membantu membangun kepercayaan dan kepuasan calon pemegang polis terhadap perusahaan asuransi.
 
@@ -123,7 +123,7 @@ Metrik evaluasi yang digunakan untuk mengukur keberhasilan mencapai setiap tujua
 
 - Kesetaraan premi: Metrik ini dapat diukur dengan membandingkan perbedaan premi yang diberikan kepada kelompok pemegang polis yang memiliki risiko yang serupa. Jika perbedaan premi menjadi lebih kecil setelah penerapan model analisis prediktif, hal ini menunjukkan bahwa tujuan keempat tercapai.
 
-Selain itu, metrik lain yang dapat digunakan untuk mengukur keberhasilan proyek ini adalah ialah *Mean Squared Error* (MSE): Metrik ini dapat digunakan untuk mengukur seberapa dekat prediksi premi dengan nilai sebenarnya. Semakin rendah nilai MSE, semakin baik model analisis prediktif dalam memperkirakan premi.
+Selain itu, metrik lain yang dapat digunakan untuk mengukur keberhasilan proyek ini adalah ialah *Mean Squared Error* (*MSE*): Metrik ini dapat digunakan untuk mengukur seberapa dekat prediksi premi dengan nilai sebenarnya. Semakin rendah nilai *MSE*, semakin baik model analisis prediktif dalam memperkirakan premi.
 
 Penggunaan metrik evaluasi yang tepat dan relevan dengan tujuan proyek akan membantu dalam menilai keberhasilan dan dampak proyek terhadap perusahaan asuransi dan calon pemegang polis.
 
@@ -134,22 +134,22 @@ Solusi yang diberikan untuk proyek ini melibatkan beberapa tahapan dan algoritma
 1. Eksplorasi Data (Exploratory Data Analysis - EDA):
    - Sebelum melatih model, proses EDA akan dilakukan untuk memahami karakteristik data yang ada. EDA akan membantu dalam mengidentifikasi pola, melihat hubungan antar variabel, dan menemukan wawasan yang berguna dalam memprediksi premi asuransi kesehatan.
 
-2. Algoritma SVR (Support Vector Regression) dan Huber Regressor:
-   - Algoritma SVR dan Huber Regressor dipilih sebagai algoritma machine learning yang akan digunakan dalam proyek ini.
-   - SVR adalah algoritma yang digunakan untuk memodelkan dan memprediksi data regresi. Dalam proyek ini, SVR akan digunakan untuk memprediksi premi asuransi kesehatan berdasarkan faktor-faktor risiko yang relevan.
-   - Huber Regressor adalah algoritma regresi yang robust terhadap outliers. Ini adalah salah satu metode yang efektif dalam menangani data yang memiliki noise atau pencilan (outliers). Huber Regressor dapat memberikan hasil prediksi yang lebih stabil dan tahan terhadap gangguan dari data yang ekstrem.
+2. Algoritma *SVR* (Support Vector Regression) dan *Huber Regressor*:
+   - Algoritma *SVR* dan *Huber Regressor* dipilih sebagai algoritma *machine learning* yang akan digunakan dalam proyek ini.
+   - *SVR* adalah algoritma yang digunakan untuk memodelkan dan memprediksi data regresi. Dalam proyek ini, *SVR* akan digunakan untuk memprediksi premi asuransi kesehatan berdasarkan faktor-faktor risiko yang relevan.
+   - *Huber Regressor* adalah algoritma regresi yang robust terhadap outliers. Ini adalah salah satu metode yang efektif dalam menangani data yang memiliki noise atau pencilan (outliers). *Huber Regressor* dapat memberikan hasil prediksi yang lebih stabil dan tahan terhadap gangguan dari data yang ekstrem.
 
-3. Penggunaan Library PyCaret:
-   - Library PyCaret akan digunakan untuk menentukan algoritma machine learning yang optimal untuk proyek ini.
-   - PyCaret menyediakan berbagai algoritma machine learning yang siap pakai dan memfasilitasi proses pemilihan algoritma yang terbaik berdasarkan data dan tujuan proyek.
+3. Penggunaan *Library* PyCaret:
+   - *Library* PyCaret akan digunakan untuk menentukan algoritma *machine learning* yang optimal untuk proyek ini.
+   - PyCaret menyediakan berbagai algoritma *machine learning* yang siap pakai dan memfasilitasi proses pemilihan algoritma yang terbaik berdasarkan data dan tujuan proyek.
    - Dengan menggunakan PyCaret, proses pemilihan algoritma dapat dilakukan dengan lebih efisien dan cepat.
 
-4. Evaluasi dengan Metrik MSE (Mean Squared Error):
-   - Metrik MSE (Mean Squared Error) akan digunakan untuk melakukan evaluasi pembanding antara model-model yang dikembangkan.
-   - MSE adalah metrik yang umum digunakan dalam masalah regresi untuk mengukur sejauh mana selisih antara nilai prediksi dan nilai sebenarnya.
-   - Dengan menggunakan metrik MSE, kita dapat mengukur tingkat keakuratan model dalam memprediksi premi asuransi kesehatan.
+4. Evaluasi dengan Metrik *MSE* (Mean Squared Error):
+   - Metrik *MSE* (Mean Squared Error) akan digunakan untuk melakukan evaluasi pembanding antara model-model yang dikembangkan.
+   - *MSE* adalah metrik yang umum digunakan dalam masalah regresi untuk mengukur sejauh mana selisih antara nilai prediksi dan nilai sebenarnya.
+   - Dengan menggunakan metrik *MSE*, kita dapat mengukur tingkat keakuratan model dalam memprediksi premi asuransi kesehatan.
 
-Proses pemilihan algoritma lain dalam library PyCaret melibatkan eksperimen dan evaluasi berdasarkan kinerja model menggunakan metrik evaluasi yang relevan, seperti MSE. 
+Proses pemilihan algoritma lain dalam *library* PyCaret melibatkan eksperimen dan evaluasi berdasarkan kinerja model menggunakan metrik evaluasi yang relevan, seperti *MSE*. 
 
 PyCaret menyediakan fungsionalitas yang memungkinkan untuk membandingkan kinerja berbagai algoritma dengan cepat dan memilih algoritma yang memberikan hasil terbaik.
 
@@ -197,7 +197,7 @@ Berikut informasi pada dataset :
 - Melakukan tahapan EDA seperti mendeskripsikan variabel, mencari outliers, Univariate hingga Multi-variate analysis.
 - Untuk menganalisa outliers bisa menggunaka boxplot dengan memanggil fungsi .plot() pada pandas
 - Mengecek data missing value dan membersihkan data missing value dengan membuat simple logic program
-- Menggunakan histogram untuk melihat penyebaran data dengan library pandas fungsi .hist()
+- Menggunakan histogram untuk melihat penyebaran data dengan *library* pandas fungsi .hist()
 - Mencari Keterkaitan antar fitur numerik dan fitur kategori dengan correlation matrix menggunakan fungsi pandas dan visualisasi heatmap dengan seaborn
 
 ### Visualisasi proses Data Understanding
@@ -222,17 +222,17 @@ Gambar 6.3 Matriks korelasi PremiumPrice
 
 Berikut ada teknik yang digunakan dalam proses data preparation, yaitu:
 
-Proses *One Hot Encoding* pada fitur kategorikal adalah teknik yang digunakan untuk mengubah variabel kategorikal menjadi representasi numerik yang dapat digunakan dalam model machine learning. 
+Proses *One Hot Encoding* pada fitur kategorikal adalah teknik yang digunakan untuk mengubah variabel kategorikal menjadi representasi numerik yang dapat digunakan dalam model *machine learning*. 
 
-Hal ini diperlukan karena sebagian besar algoritma machine learning hanya dapat bekerja dengan input numerik.
+Hal ini diperlukan karena sebagian besar algoritma *machine learning* hanya dapat bekerja dengan input numerik.
 
-Pandas library menyediakan fungsi pd.get_dummies() yang memudahkan dalam melakukan *One Hot Encoding*. Fungsi ini akan menghasilkan kolom-kolom baru yang mewakili setiap nilai unik dari fitur kategorikal. Jika suatu baris memiliki nilai tersebut, kolom yang sesuai akan diatur menjadi 1, sedangkan kolom lainnya akan menjadi 0.
+Pandas *library* menyediakan fungsi pd.get_dummies() yang memudahkan dalam melakukan *One Hot Encoding*. Fungsi ini akan menghasilkan kolom-kolom baru yang mewakili setiap nilai unik dari fitur kategorikal. Jika suatu baris memiliki nilai tersebut, kolom yang sesuai akan diatur menjadi 1, sedangkan kolom lainnya akan menjadi 0.
 
 Misalnya, jika terdapat fitur "Warna" dengan nilai "Merah", "Biru", dan "Hijau", setelah One Hot Encoding akan terbentuk tiga kolom baru: "Warna_Merah", "Warna_Biru", dan "Warna_Hijau". 
 
 Jika suatu baris memiliki nilai "Merah" pada fitur "Warna", maka kolom "Warna_Merah" akan diatur menjadi 1, sedangkan kolom lainnya akan menjadi 0.
 
-Proses pembagian dataset menjadi data training dan data testing penting dalam pengembangan model machine learning. Ini dilakukan untuk mengevaluasi performa model pada data yang belum pernah dilihat sebelumnya dan untuk menghindari *overfitting*. 
+Proses pembagian dataset menjadi data training dan data testing penting dalam pengembangan model *machine learning*. Ini dilakukan untuk mengevaluasi performa model pada data yang belum pernah dilihat sebelumnya dan untuk menghindari *overfitting*. 
 
 Data training digunakan untuk melatih model, sedangkan data testing digunakan untuk menguji seberapa baik model yang dilatih dapat melakukan prediksi pada data yang belum pernah dilihat sebelumnya. 
 
@@ -245,64 +245,64 @@ Rasio ini merupakan aturan praktis umum yang memberikan keseimbangan antara memi
 Namun, rasio ini dapat bervariasi tergantung pada karakteristik dataset dan kebutuhan proyek tertentu.
 
 ## 8. Modeling
-Dalam proses modeling, proyek ini akan menggunakan algoritma SVR dan algoritma Huber Regressor berdasarkan hasil dari data library pycaret.
+Dalam proses modeling, proyek ini akan menggunakan algoritma *SVR* dan algoritma *Huber Regressor* berdasarkan hasil dari data *library* pycaret.
 
 ### Tahapan yang dilakukan
 Berikut adalah urutan tahapan yang dilakukan dalam proses modeling:
- - Melatih model dengan data training dengan menggunakan algoritma Huber Regressor dan SVR
- - Dalam tahap training, pengujian model dilakukan dengan menggunakan parameter default bawaan library
+ - Melatih model dengan data training dengan menggunakan algoritma *Huber Regressor* dan *SVR*
+ - Dalam tahap training, pengujian model dilakukan dengan menggunakan parameter default bawaan *library*
  - Melakukan pengujian dengan data training
  - Melakukan pengujian dengan data testing
- - Pengukuran menggunakan metriks MSE,MAE,RMSE dan R2 dengan menggunakan lirbary sklearn. 
+ - Pengukuran menggunakan metriks *MSE*,MAE,R*MSE* dan R2 dengan menggunakan lirbary sklearn. 
  - Melihat hasil performa model antara hasil data training dan data testing
  - Meningkatkan performa model dengan menerapkan grid search atau hyperparametereter pada model
- - Menggunakan hyperparameter pada Huber Regressor yaitu param_grid = { 'epsilon': [1.0, 1.5, 2.0],'alpha': [0.0001, 0.001, 0.01], 'max_iter': [100, 200, 300]}
- - Menggunakan hyperparameter pada SVR yaitu param_grid = {'kernel': ['linear', 'rbf'],'C': [0.1, 1, 10],'epsilon': [0.1, 0.2, 0.3]}
- - Setelah pengujian hyperparameter, Huber Regressor mendapatkan param terbaik yaitu: {'alpha': 0.01, 'epsilon': 2.0, 'max_iter': 100}
- - Setelah pengujian hyperparameter, SVR mendapatkan param terbaik yaitu: {'C': 1, 'epsilon': 0.1, 'kernel': 'linear'
+ - Menggunakan hyperparameter pada *Huber Regressor* yaitu param_grid = { 'epsilon': [1.0, 1.5, 2.0],'alpha': [0.0001, 0.001, 0.01], 'max_iter': [100, 200, 300]}
+ - Menggunakan hyperparameter pada *SVR* yaitu param_grid = {'kernel': ['linear', 'rbf'],'C': [0.1, 1, 10],'epsilon': [0.1, 0.2, 0.3]}
+ - Setelah pengujian hyperparameter, *Huber Regressor* mendapatkan param terbaik yaitu: {'alpha': 0.01, 'epsilon': 2.0, 'max_iter': 100}
+ - Setelah pengujian hyperparameter, *SVR* mendapatkan param terbaik yaitu: {'C': 1, 'epsilon': 0.1, 'kernel': 'linear'
 
 ### Hasil running model
-Tabel 8.1 Tabel hasil running model pada data training dan testing menggunakan algoritma Huber Regressor dan SVR
-|           | Huber         | SVR            |
+Tabel 8.1 Tabel hasil running model pada data training dan testing menggunakan algoritma *Huber Regressor* dan *SVR*
+|           | Huber         | *SVR*            |
 |-----------|---------------|----------------|
-| train_mse | 18480694.56826 | 40114366.684487 |
-| test_mse  | 25177990.875244 | 42742505.675315 |
+| train_*MSE* | 18480694.56826 | 40114366.684487 |
+| test_*MSE*  | 25177990.875244 | 42742505.675315 |
 | eval_train | NaN | NaN |
 | eval_test  | NaN | NaN |
 
- - Huber_MSE: Rata-rata dari kuadrat selisih antara nilai prediksi dan nilai aktual pada data training adalah sekitar 18,480,694.56826, sedangkan pada data testing sekitar 25,177,990.875244. Hasil ini menunjukkan bahwa model memiliki tingkat kesalahan yang sedikit lebih tinggi pada data testing dibandingkan dengan data training.
- - SVR_MSE: Rata-rata dari kuadrat selisih antara nilai prediksi dan nilai aktual pada data training adalah sekitar 40,114,366.684487, sedangkan pada data testing sekitar 42,742,505.675315. Hasil ini menunjukkan bahwa model testing memiliki tingkat kesalahan yang sedikit lebih tinggi pada data testing dibandingkan dengan data training.
+ - Huber_*MSE*: Rata-rata dari kuadrat selisih antara nilai prediksi dan nilai aktual pada data training adalah sekitar 18,480,694.56826, sedangkan pada data testing sekitar 25,177,990.875244. Hasil ini menunjukkan bahwa model memiliki tingkat kesalahan yang sedikit lebih tinggi pada data testing dibandingkan dengan data training.
+ - *SVR*_*MSE*: Rata-rata dari kuadrat selisih antara nilai prediksi dan nilai aktual pada data training adalah sekitar 40,114,366.684487, sedangkan pada data testing sekitar 42,742,505.675315. Hasil ini menunjukkan bahwa model testing memiliki tingkat kesalahan yang sedikit lebih tinggi pada data testing dibandingkan dengan data training.
 
 Kesimpulan yang dapat diambil dari paparan di atas ialah adanya overfitting pada data training karena model cenderung memiliki tingkat kesalahan yang lebih tinggi pada data testing. 
 
 ### Kelebihan dan Kekurangan
- - Algoritma Huber Regressor memiliki keunggulan lebih tahan terhadap adanya outlier dan oleh karena itu dapat memberikan hasil yang lebih konsisten dan stabil dibandingkan dengan regresi linier biasa
- - Algoritma Huber Regressor memiliki kekurangan dalam pemilihan nilai yang tepat untuk delta dapat mempengaruhi kinerja algoritma, dan penyesuaian parameter ini sering kali memerlukan pengujian dan penyesuaian manual. 
- - Algoritma SVR memiliki keunggulan dapat menggunakan fungsi kernel yang berbeda untuk mengubah data input menjadi ruang fitur yang lebih tinggi, memungkinkan pemodelan yang lebih fleksibel dan penanganan kasus-kasus di mana hubungan antara fitur dan target bersifat non-linear.
- - Algoritma SVR memiliki kekurangan sangat sensitif terhadap skala data input. Oleh karena itu, penting untuk melakukan normalisasi atau penskalaan data sebelum menggunakan SVR untuk menghindari bias yang tidak diinginkan dalam model.
+ - Algoritma *Huber Regressor* memiliki keunggulan lebih tahan terhadap adanya outlier dan oleh karena itu dapat memberikan hasil yang lebih konsisten dan stabil dibandingkan dengan regresi linier biasa
+ - Algoritma *Huber Regressor* memiliki kekurangan dalam pemilihan nilai yang tepat untuk delta dapat mempengaruhi kinerja algoritma, dan penyesuaian parameter ini sering kali memerlukan pengujian dan penyesuaian manual. 
+ - Algoritma *SVR* memiliki keunggulan dapat menggunakan fungsi kernel yang berbeda untuk mengubah data input menjadi ruang fitur yang lebih tinggi, memungkinkan pemodelan yang lebih fleksibel dan penanganan kasus-kasus di mana hubungan antara fitur dan target bersifat non-linear.
+ - Algoritma *SVR* memiliki kekurangan sangat sensitif terhadap skala data input. Oleh karena itu, penting untuk melakukan normalisasi atau penskalaan data sebelum menggunakan *SVR* untuk menghindari bias yang tidak diinginkan dalam model.
 
-Berdasarkan pertimbangan kelebihan dan kekurangan di atas, maka algoritma Huber Regressor dinilai lebih unggul dari SVR dan setelahnya perlu menerapkan hyperparameter saat model masuk ke evaluasi.
+Berdasarkan pertimbangan kelebihan dan kekurangan di atas, maka algoritma *Huber Regressor* dinilai lebih unggul dari *SVR* dan setelahnya perlu menerapkan hyperparameter saat model masuk ke evaluasi.
 
 ## 9. Evaluation
 
 Metrik evaluasi yang digunakan dalam proyek ini ialah sebagai berikut:
 
-### MSE
-Mean Square Error (MSE) adalah salah satu metrik evaluasi yang digunakan untuk mengukur sejauh mana perbedaan antara nilai prediksi dan nilai sebenarnya dalam masalah regresi. 
+### *MSE*
+Mean Square Error (*MSE*) adalah salah satu metrik evaluasi yang digunakan untuk mengukur sejauh mana perbedaan antara nilai prediksi dan nilai sebenarnya dalam masalah regresi. 
 
-Model evaluasi MSE menghitung rata-rata dari kuadrat selisih antara nilai prediksi dan nilai sebenarnya. Semakin kecil MSE, semakin baik model tersebut dalam melakukan prediksi yang akurat.
+Model evaluasi *MSE* menghitung rata-rata dari kuadrat selisih antara nilai prediksi dan nilai sebenarnya. Semakin kecil *MSE*, semakin baik model tersebut dalam melakukan prediksi yang akurat.
 
-Berikut adalah langkah-langkah untuk menghitung MSE:
+Berikut adalah langkah-langkah untuk menghitung *MSE*:
 
 1. Mulai dengan memiliki kumpulan data yang terdiri dari pasangan nilai sebenarnya (y) dan nilai prediksi (ŷ) untuk sejumlah contoh atau sampel.
 
 2. Hitung selisih antara nilai sebenarnya dan nilai prediksi untuk setiap contoh. Selisih ini merupakan error atau kesalahan prediksi untuk masing-masing contoh.
 
-3. Kuadratkan setiap selisih. Ini dilakukan untuk memastikan bahwa setiap error memiliki kontribusi positif terhadap nilai MSE, tanpa mempertimbangkan apakah prediksi lebih rendah atau lebih tinggi dari nilai sebenarnya.
+3. Kuadratkan setiap selisih. Ini dilakukan untuk memastikan bahwa setiap error memiliki kontribusi positif terhadap nilai *MSE*, tanpa mempertimbangkan apakah prediksi lebih rendah atau lebih tinggi dari nilai sebenarnya.
 
 4. Hitung rata-rata dari kuadrat selisih. Caranya adalah dengan menjumlahkan semua kuadrat selisih dan membaginya dengan jumlah contoh.
 
-   MSE = (Σ (y - ŷ)²) / n
+   *MSE* = (Σ (y - ŷ)²) / n
    
    di mana:
    - Σ menunjukkan penjumlahan
@@ -310,13 +310,13 @@ Berikut adalah langkah-langkah untuk menghitung MSE:
    - ŷ adalah nilai prediksi
    - n adalah jumlah contoh atau sampel dalam dataset.
 
-5. Setelah menghitung MSE, semakin kecil nilai MSE, semakin baik model dalam melakukan prediksi yang akurat. MSE memiliki satuan yang berbeda dengan variabel yang dievaluasi, karena hasilnya berupa kuadrat. Oleh karena itu, MSE seringkali diinterpretasikan dalam konteks yang lebih luas, atau perbandingannya dibandingkan dengan metrik evaluasi lainnya.
+5. Setelah menghitung *MSE*, semakin kecil nilai *MSE*, semakin baik model dalam melakukan prediksi yang akurat. *MSE* memiliki satuan yang berbeda dengan variabel yang dievaluasi, karena hasilnya berupa kuadrat. Oleh karena itu, *MSE* seringkali diinterpretasikan dalam konteks yang lebih luas, atau perbandingannya dibandingkan dengan metrik evaluasi lainnya.
 
 Tabel 9.1 Tabel hasil evaluasi model setelah menggunakan hyperparameter
-|           | Huber         | SVR            |
+|           | Huber         | *SVR*            |
 |-----------|---------------|----------------|
-| train_mse | 18480694.56826 | 40114366.684487 |
-| test_mse  | 25177990.875244 | 42742505.675315 |
+| train_*MSE* | 18480694.56826 | 40114366.684487 |
+| test_*MSE*  | 25177990.875244 | 42742505.675315 |
 | eval_train | 18104561.09466 | 18614533.696279 |
 | eval_test  | 24212812.866265 | 25605704.542962 |
 
@@ -326,43 +326,43 @@ Berikut adalah grafik hasil evaluasi model setelah dilakukan penerapan hyperpara
 
 Gambar 9.1 Hasil evaluasi model setelah penerapan hyperparametereter
 
-MSE merupakan metrik evaluasi yang umum digunakan dalam masalah regresi karena memperhitungkan perbedaan antara nilai prediksi dan nilai sebenarnya secara keseluruhan dan memberikan bobot yang lebih besar pada perbedaan yang besar. 
+*MSE* merupakan metrik evaluasi yang umum digunakan dalam masalah regresi karena memperhitungkan perbedaan antara nilai prediksi dan nilai sebenarnya secara keseluruhan dan memberikan bobot yang lebih besar pada perbedaan yang besar. 
 
-Namun, MSE juga memiliki kelemahan yaitu sensitif terhadap outlier, artinya nilai ekstrem yang sangat berbeda dapat mempengaruhi MSE secara signifikan. 
+Namun, *MSE* juga memiliki kelemahan yaitu sensitif terhadap outlier, artinya nilai ekstrem yang sangat berbeda dapat mempengaruhi *MSE* secara signifikan. 
 
 Oleh karena itu, terkadang metrik evaluasi alternatif seperti Mean Absolute Error (MAE) juga digunakan untuk memberikan gambaran yang lebih lengkap tentang kinerja model.
 
 Berdasarkan hasil evaluasi model setelah menggunakan hyperparametereter, kita dapat mengambil beberapa kesimpulan:
 
-1. *Mean Squared Error* (MSE) - Train Set:
-   - Model Huber memiliki MSE train set sebesar 18,480,694.56826.
-   - Model SVR memiliki MSE train set sebesar 40,114,366.684487.
-   - Model Huber memiliki nilai MSE yang lebih rendah dibandingkan dengan model SVR pada data train set. Artinya, model Huber mampu melakukan prediksi yang lebih akurat daripada model SVR.
+1. *Mean Squared Error* (*MSE*) - Train Set:
+   - Model Huber memiliki *MSE* train set sebesar 18,480,694.56826.
+   - Model *SVR* memiliki *MSE* train set sebesar 40,114,366.684487.
+   - Model Huber memiliki nilai *MSE* yang lebih rendah dibandingkan dengan model *SVR* pada data train set. Artinya, model Huber mampu melakukan prediksi yang lebih akurat daripada model *SVR*.
 
-2. *Mean Squared Error* (MSE) - Test Set:
-   - Model Huber memiliki MSE test set sebesar 25,177,990.875244.
-   - Model SVR memiliki MSE test set sebesar 42,742,505.675315.
-   - Model Huber juga memiliki nilai MSE yang lebih rendah dibandingkan dengan model SVR pada data test set. Hal ini menunjukkan bahwa model Huber lebih baik dalam melakukan prediksi pada data yang belum pernah dilihat sebelumnya.
+2. *Mean Squared Error* (*MSE*) - Test Set:
+   - Model Huber memiliki *MSE* test set sebesar 25,177,990.875244.
+   - Model *SVR* memiliki *MSE* test set sebesar 42,742,505.675315.
+   - Model Huber juga memiliki nilai *MSE* yang lebih rendah dibandingkan dengan model *SVR* pada data test set. Hal ini menunjukkan bahwa model Huber lebih baik dalam melakukan prediksi pada data yang belum pernah dilihat sebelumnya.
 
 3. Evaluation Score (eval) - Train Set:
    - Model Huber memiliki evaluasi score train set sebesar 18,104,561.09466.
-   - Model SVR memiliki evaluasi score train set sebesar 18,614,533.696279.
-   - Meskipun model Huber memiliki MSE yang lebih rendah pada data train set, evaluasi score keduanya memiliki perbedaan yang cukup kecil. Kedua model memberikan performa yang serupa pada data train set.
+   - Model *SVR* memiliki evaluasi score train set sebesar 18,614,533.696279.
+   - Meskipun model Huber memiliki *MSE* yang lebih rendah pada data train set, evaluasi score keduanya memiliki perbedaan yang cukup kecil. Kedua model memberikan performa yang serupa pada data train set.
 
 4. Evaluation Score (eval) - Test Set:
    - Model Huber memiliki evaluasi score test set sebesar 24,212,812.866265.
-   - Model SVR memiliki evaluasi score test set sebesar 25,605,704.542962.
-   - Model Huber juga memberikan evaluasi score yang lebih rendah dibandingkan dengan model SVR pada data test set. Hal ini menunjukkan bahwa model Huber lebih baik dalam melakukan prediksi yang lebih akurat pada data yang belum pernah dilihat sebelumnya.
+   - Model *SVR* memiliki evaluasi score test set sebesar 25,605,704.542962.
+   - Model Huber juga memberikan evaluasi score yang lebih rendah dibandingkan dengan model *SVR* pada data test set. Hal ini menunjukkan bahwa model Huber lebih baik dalam melakukan prediksi yang lebih akurat pada data yang belum pernah dilihat sebelumnya.
 
-Berdasarkan kesimpulan di atas, model Huber memiliki performa yang lebih baik daripada model SVR dalam memprediksi premi asuransi kesehatan. Model Huber memiliki MSE yang lebih rendah baik pada data train set maupun test set, serta memberikan evaluasi score yang lebih baik pada data test set. 
+Berdasarkan kesimpulan di atas, model Huber memiliki performa yang lebih baik daripada model *SVR* dalam memprediksi premi asuransi kesehatan. Model Huber memiliki *MSE* yang lebih rendah baik pada data train set maupun test set, serta memberikan evaluasi score yang lebih baik pada data test set. 
 
 Oleh karena itu, model Huber dapat dianggap lebih optimal dalam proyek ini untuk memperkirakan premi asuransi kesehatan dengan tingkat akurasi yang lebih tinggi.
 
 ## 10. Kesimpulan 
 
-Proyek ini berhasil mengembangkan model analisis prediktif menggunakan model Huber yang mampu memperkirakan premi asuransi kesehatan dengan tingkat akurasi yang lebih tinggi dibandingkan dengan model SVR. 
+Proyek ini berhasil mengembangkan model analisis prediktif menggunakan model Huber yang mampu memperkirakan premi asuransi kesehatan dengan tingkat akurasi yang lebih tinggi dibandingkan dengan model *SVR*. 
 
-Hasil evaluasi menunjukkan bahwa model Huber memberikan MSE yang lebih rendah pada data train set dan test set, serta evaluasi score yang lebih baik pada data test set. 
+Hasil evaluasi menunjukkan bahwa model Huber memberikan *MSE* yang lebih rendah pada data train set dan test set, serta evaluasi score yang lebih baik pada data test set. 
 
 Hal ini menunjukkan bahwa model Huber dapat memberikan prediksi premi yang lebih akurat dan bermanfaat bagi perusahaan asuransi dan calon pemegang polis.
 
