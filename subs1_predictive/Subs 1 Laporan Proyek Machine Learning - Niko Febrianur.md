@@ -140,12 +140,18 @@ Berikut informasi pada dataset :
 Melihat sebaran dataset menggunakan histogram
 ![Sebaran_dataset_histogram](https://github.com/nikofebrianur/Machine-Learning-Terapan/blob/main/subs1_predictive/img/histogram.png)
 
+Gambar 6.1 Sebaran dataset
+
 Melihat korelasi PremiumPrice dengan fitur lain
 ![pairplot](https://github.com/nikofebrianur/Machine-Learning-Terapan/blob/main/subs1_predictive/img/pairplot.png)
 
-Berdasar gambar matriks dibawah, fitur numerik terlihat memiliki korelasi dengan PremiumPrice. 
+Gambar 6.2 Korelasi PremiumPrice dengan fitur lainnya
+
+Berdasarkan gambar matriks dibawah, fitur numerik terlihat memiliki korelasi dengan PremiumPrice. 
 
 ![correlation_matrix](https://github.com/nikofebrianur/Machine-Learning-Terapan/blob/main/subs1_predictive/img/correlation_matrix.png)
+
+Gambar 6.3 Matriks korelasi PremiumPrice 
 
 ## 7. Data Preparation
 Berikut ada teknik yang digunakan dalam proses data preparation, yaitu:
@@ -195,7 +201,9 @@ Berdasarkan pertimbangan kelebihan dan kekurangan di atas, maka algoritma Huber 
 Metrik evaluasi yang digunakan dalam proyek ini ialah sebagai berikut:
 
 ### MSE
-Mean Square Error (MSE) adalah salah satu metrik evaluasi yang digunakan untuk mengukur sejauh mana perbedaan antara nilai prediksi dan nilai sebenarnya dalam masalah regresi. Model evaluasi MSE menghitung rata-rata dari kuadrat selisih antara nilai prediksi dan nilai sebenarnya. Semakin kecil MSE, semakin baik model tersebut dalam melakukan prediksi yang akurat.
+Mean Square Error (MSE) adalah salah satu metrik evaluasi yang digunakan untuk mengukur sejauh mana perbedaan antara nilai prediksi dan nilai sebenarnya dalam masalah regresi. 
+
+Model evaluasi MSE menghitung rata-rata dari kuadrat selisih antara nilai prediksi dan nilai sebenarnya. Semakin kecil MSE, semakin baik model tersebut dalam melakukan prediksi yang akurat.
 
 Berikut adalah langkah-langkah untuk menghitung MSE:
 
@@ -217,9 +225,6 @@ Berikut adalah langkah-langkah untuk menghitung MSE:
 
 5. Setelah menghitung MSE, semakin kecil nilai MSE, semakin baik model dalam melakukan prediksi yang akurat. MSE memiliki satuan yang berbeda dengan variabel yang dievaluasi, karena hasilnya berupa kuadrat. Oleh karena itu, MSE seringkali diinterpretasikan dalam konteks yang lebih luas, atau perbandingannya dibandingkan dengan metrik evaluasi lainnya.
 
-
-MSE merupakan metrik evaluasi yang umum digunakan dalam masalah regresi karena memperhitungkan perbedaan antara nilai prediksi dan nilai sebenarnya secara keseluruhan dan memberikan bobot yang lebih besar pada perbedaan yang besar. Namun, MSE juga memiliki kelemahan yaitu sensitif terhadap outlier, artinya nilai ekstrem yang sangat berbeda dapat mempengaruhi MSE secara signifikan. Oleh karena itu, terkadang metrik evaluasi alternatif seperti Mean Absolute Error (MAE) juga digunakan untuk memberikan gambaran yang lebih lengkap tentang kinerja model.
-
 Tabel 9.1 Tabel hasil evaluasi model setelah menggunakan hyperparam
 |           | Huber         | SVR            |
 |-----------|---------------|----------------|
@@ -229,9 +234,17 @@ Tabel 9.1 Tabel hasil evaluasi model setelah menggunakan hyperparam
 | eval_test  | 24212812.866265 | 25605704.542962 |
 
 Berikut adalah grafik hasil evaluasi model setelah dilakukan penerapan hyperparam.
+
 ![model_eval_hyperparam](https://github.com/nikofebrianur/Machine-Learning-Terapan/blob/main/subs1_predictive/img/model_eval_hy_params.png)
 
 Gambar 9.1 Hasil evaluasi model setelah penerapan hyperparam
+
+
+MSE merupakan metrik evaluasi yang umum digunakan dalam masalah regresi karena memperhitungkan perbedaan antara nilai prediksi dan nilai sebenarnya secara keseluruhan dan memberikan bobot yang lebih besar pada perbedaan yang besar. 
+
+Namun, MSE juga memiliki kelemahan yaitu sensitif terhadap outlier, artinya nilai ekstrem yang sangat berbeda dapat mempengaruhi MSE secara signifikan. 
+
+Oleh karena itu, terkadang metrik evaluasi alternatif seperti Mean Absolute Error (MAE) juga digunakan untuk memberikan gambaran yang lebih lengkap tentang kinerja model.
 
 ## 10. Kesimpulan 
 Berdasarkan hasil paparan di atas, proyek ini menghasilkan rangkaian kesimpulan untuk kebutuhan bisnis sebagai berikut: 
