@@ -2,7 +2,7 @@
 
 ###### Disusun oleh : Niko Febrianur
 
-Ini adalah proyek pertama predictive analytics untuk memenuhi submission Dicoding Kelas Machine Learning Terapan. 
+Ini adalah proyek pertama analisis prediktif untuk memenuhi submission Dicoding Kelas Machine Learning Terapan. 
 
 Proyek ini membangun model machine learning yang dapat memprediksi biaya pertanggungan medis tahunan.
 
