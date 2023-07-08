@@ -189,7 +189,7 @@ Berikut informasi pada dataset :
 - Untuk menganalisa *outlier*s bisa menggunaka boxplot dengan memanggil fungsi .plot() pada pandas
 - Mengecek data missing value dan membersihkan data missing value dengan membuat simple logic program
 - Menggunakan histogram untuk melihat penyebaran data dengan *library* pandas fungsi .hist()
-- Mencari Keterkaitan antar fitur numerik dan fitur kategori dengan correlation matrix menggunakan fungsi pandas dan visualisasi heatmap dengan seaborn
+- Mencari keterkaitan antar fitur numerik dan fitur kategori dengan correlation matrix menggunakan fungsi pandas dan visualisasi heatmap dengan seaborn
 
 ### Visualisasi proses Data Understanding
 
@@ -215,10 +215,34 @@ Visualisasi Boxplot:
 
 Gambar 6.1 Visualisasi outliers menggunakan boxplot
 
-
 Dengan menggunakan metode IQR dan visualisasi boxplot, kita dapat mengidentifikasi dan mengatasi outlier dalam data. Outlier dapat menjadi nilai yang ekstrem dan tidak biasa yang dapat mempengaruhi hasil analisis statistik dan model prediksi. 
 
 Dengan memperhatikan IQR dan melihat visualisasi boxplot, kita dapat menentukan batas atas dan batas bawah untuk outlier, serta mengambil tindakan yang tepat, seperti menghapus atau mengelola outlier tersebut, agar tidak mempengaruhi hasil analisis secara signifikan.
+
+Kemudian untuk menganalisa sebaran dataset, kita dapat menggunakan histogram. Histogram adalah visualisasi grafis yang digunakan untuk menampilkan distribusi frekuensi dari suatu variabel dalam bentuk interval atau bin.
+
+Berikut adalah langkah-langkah untuk menganalisa sebaran dataset menggunakan histogram:
+
+1. Membagi Data Menjadi Interval atau Bin:
+   - Pertama, kita perlu membagi data ke dalam interval atau bin. Jumlah dan lebar interval dapat bervariasi tergantung pada dataset dan tujuan analisis.
+   - Untuk mendapatkan jumlah interval yang tepat, kita bisa menggunakan aturan umum seperti aturan Sturges atau Scott's normal reference rule.
+
+2. Menghitung Frekuensi:
+   - Selanjutnya, kita menghitung frekuensi munculnya data di setiap interval. Frekuensi dapat dihitung sebagai jumlah observasi yang jatuh di dalam setiap interval.
+
+3. Visualisasi dengan Histogram:
+   - Dengan menggunakan data frekuensi yang telah dihitung, kita dapat membuat histogram.
+   - Pada sumbu horizontal, kita menempatkan interval atau bin, sedangkan pada sumbu vertikal, kita menampilkan frekuensi munculnya data dalam interval tersebut.
+   - Untuk menggambarkan histogram, kita dapat menggunakan bar-chart dengan lebar bar yang mencerminkan lebar interval.
+
+4. Interpretasi:
+   - Dengan melihat histogram, kita dapat menganalisa sebaran dataset secara visual.
+   - Kita dapat melihat apakah data memiliki distribusi normal, simetris, asimetris (ke kiri atau ke kanan), atau memiliki pola tertentu seperti bimodal (dua puncak).
+   - Kita juga dapat melihat kisaran nilai yang paling sering muncul dan sebaran nilai di dalam dataset.
+
+Histogram membantu kita memahami pola dan sebaran data dengan cepat. Analisis sebaran dataset menggunakan histogram memungkinkan kita mengidentifikasi tipe distribusi data, menentukan apakah terdapat outlier, dan memperoleh gambaran umum tentang data tersebut. 
+
+Hal ini dapat menjadi langkah awal dalam eksplorasi data sebelum melakukan analisis lebih lanjut atau membangun model prediksi.
 
 ![histogram](https://github.com/nikofebrianur/Machine-Learning-Terapan/assets/42314371/88d5ec99-beca-4d6f-a34d-a95921c4fe79)
 
@@ -228,9 +252,19 @@ Gambar 6.2 Sebaran dataset
 
 Gambar 6.2 Korelasi PremiumPrice dengan fitur lainnya
 
+Terakhir, untuk menganalisa keterkaitan antara fitur numerik dan fitur kategori, kita dapat menggunakan correlation matrix dengan fungsi pandas dan visualisasi heatmap menggunakan library seaborn. 
+
+Heatmap menunjukkan tingkat korelasi antara setiap pasangan fitur numerik dan fitur kategori. Warna dalam heatmap mencerminkan tingkat korelasi, di mana warna lebih terang menunjukkan korelasi yang lebih kuat, sedangkan warna lebih gelap menunjukkan korelasi yang lebih lemah atau tidak ada korelasi.
+
+Kita dapat melihat hubungan positif atau negatif antara fitur numerik dan fitur kategori berdasarkan nilai korelasi. Analisis ini membantu dalam memahami keterkaitan antar fitur-fitur dalam dataset dan dapat memberikan wawasan yang berguna untuk pemilihan fitur, pemodelan, atau analisis lebih lanjut.
+
+Dengan menggunakan correlation matrix dan visualisasi heatmap, kita dapat dengan mudah menganalisa keterkaitan antara fitur numerik dan fitur kategori dalam dataset secara visual dan kuantitatif.
+
 ![correlation_matrix](https://github.com/nikofebrianur/Machine-Learning-Terapan/assets/42314371/9b8346a0-2cab-4184-be8a-789a447e7f6d)
 
 Gambar 6.3 Matriks korelasi PremiumPrice 
+
+Dapat dilihat dari gambar matriks di atas bahwa variabel *AnyTransplants*, *AnyChronicDiseases*, dan *NumberOfMajorSurgeries* memiliki warna heatmap yang terang dan ini menunjukkan bahwa ketiga variabel tersebut memiliki korelasi dengan variabel *PremiumPrice*     
 
 ## 7. Data Preparation
 
