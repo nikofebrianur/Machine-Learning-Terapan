@@ -87,10 +87,31 @@ Penggunaan metrik evaluasi yang tepat dan relevan dengan tujuan proyek akan memb
 
 ## 5. Solution statements
 
-Berdasarkan goals di atas maka solusi yang diberikan ialah:
-- Mencari pengetahuan yang ada pada data dengan menerapkan proses EDA
-- Model machine learning akan menggunakan algoritma SVR yang ada pada referensi dan menggunakan library pycaret untuk menentukan algoritma yang lain.
-- Evaluasi pembanding model akan menggunakan MSE atau *Mean Squared Error*.
+Solusi yang diberikan untuk proyek ini melibatkan beberapa tahapan dan algoritma yang digunakan. Berikut adalah penjelasan yang lebih rinci mengenai solusi yang diberikan:
+
+1. Eksplorasi Data (Exploratory Data Analysis - EDA):
+   - Sebelum melatih model, proses EDA akan dilakukan untuk memahami karakteristik data yang ada. EDA akan membantu dalam mengidentifikasi pola, melihat hubungan antar variabel, dan menemukan wawasan yang berguna dalam memprediksi premi asuransi kesehatan.
+
+2. Algoritma SVR (Support Vector Regression) dan Huber Regressor:
+   - Algoritma SVR dan Huber Regressor dipilih sebagai algoritma machine learning yang akan digunakan dalam proyek ini.
+   - SVR adalah algoritma yang digunakan untuk memodelkan dan memprediksi data regresi. Dalam proyek ini, SVR akan digunakan untuk memprediksi premi asuransi kesehatan berdasarkan faktor-faktor risiko yang relevan.
+   - Huber Regressor adalah algoritma regresi yang robust terhadap outliers. Ini adalah salah satu metode yang efektif dalam menangani data yang memiliki noise atau pencilan (outliers). Huber Regressor dapat memberikan hasil prediksi yang lebih stabil dan tahan terhadap gangguan dari data yang ekstrem.
+
+3. Penggunaan Library PyCaret:
+   - Library PyCaret akan digunakan untuk menentukan algoritma machine learning yang optimal untuk proyek ini.
+   - PyCaret menyediakan berbagai algoritma machine learning yang siap pakai dan memfasilitasi proses pemilihan algoritma yang terbaik berdasarkan data dan tujuan proyek.
+   - Dengan menggunakan PyCaret, proses pemilihan algoritma dapat dilakukan dengan lebih efisien dan cepat.
+
+4. Evaluasi dengan Metrik MSE (Mean Squared Error):
+   - Metrik MSE (Mean Squared Error) akan digunakan untuk melakukan evaluasi pembanding antara model-model yang dikembangkan.
+   - MSE adalah metrik yang umum digunakan dalam masalah regresi untuk mengukur sejauh mana selisih antara nilai prediksi dan nilai sebenarnya.
+   - Dengan menggunakan metrik MSE, kita dapat mengukur tingkat keakuratan model dalam memprediksi premi asuransi kesehatan.
+
+Proses pemilihan algoritma lain dalam library PyCaret melibatkan eksperimen dan evaluasi berdasarkan kinerja model menggunakan metrik evaluasi yang relevan, seperti MSE. 
+
+PyCaret menyediakan fungsionalitas yang memungkinkan untuk membandingkan kinerja berbagai algoritma dengan cepat dan memilih algoritma yang memberikan hasil terbaik.
+
+Melalui pendekatan ini, diharapkan solusi yang diberikan dapat memenuhi tujuan proyek dalam mengembangkan model analisis prediktif yang akurat dan efektif untuk memprediksi premi asuransi kesehatan.
 
 ## 6. Data Understanding
 
