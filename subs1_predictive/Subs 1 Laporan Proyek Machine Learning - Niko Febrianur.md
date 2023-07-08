@@ -101,6 +101,8 @@ Berikut informasi pada dataset :
 - Menggunakan histogram untuk melihat penyebaran data dengan library pandas fungsi .hist()
 - Mencari Keterkaitan antar fitur numerik dan fitur kategori dengan correlation matrix menggunakan fungsi pandas dan visualisasi heatmap dengan seaborn
 
+[correlation_matrix](https://github.com/nikofebrianur/Machine-Learning-Terapan/blob/main/subs1_predictive/img/correlation_matrix.png)
+
 ## Data Preparation
 Berikut ada teknik yang digunakan dalam proses data preparation, yaitu:
  -  One Hot Encoding pada data Categorical dengan menggunakan pandas library pada fungsi pd.get_dummies(). Teknik ini dilakukan untuk mengubah variabel kategorikal menjadi representasi numerik yang nantinya dapat digunakan dalam model machine learning.
