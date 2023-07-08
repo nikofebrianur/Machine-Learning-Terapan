@@ -49,6 +49,18 @@ Proyek ini dibangun untuk perusahaan asuransi kesehatan dengan karakteristik bis
 
 Dengan memahami karakteristik bisnis perusahaan asuransi kesehatan ini, proyek ini dapat dirancang dan disesuaikan untuk memenuhi kebutuhan dan tujuan bisnis yang spesifik.
 
+Oleh sebab itu, proyek "Medical Insurance Premium Prediction" ini dapat membantu perusahaan asuransi kesehatan dengan karakteristik bisnis di atas dalam meningkatkan keputusan bisnis dan mencapai keunggulan kompetitif sebagai berikut:
+
+1. Penentuan Premi yang Lebih Akurat: Dengan menggunakan model analisis prediktif yang dikembangkan dalam proyek ini, perusahaan dapat menentukan premi asuransi kesehatan yang lebih akurat berdasarkan faktor-faktor risiko yang relevan. Dengan mempertimbangkan variabel seperti usia, riwayat medis, operasi sebelumnya, riwayat penyakit keluarga, dan data fisik lainnya, model ini dapat memberikan estimasi premi yang lebih tepat dan konsisten. Hal ini membantu perusahaan mengambil keputusan yang lebih informasional dan meminimalkan risiko keuangan yang tidak terduga.
+
+2. Peningkatan Efisiensi dan Produktivitas: Dengan memanfaatkan teknologi analisis prediktif dan machine learning, perusahaan dapat meningkatkan efisiensi dan produktivitas dalam proses penetapan premi. Model prediktif dapat secara otomatis memproses data dan memberikan perkiraan premi yang lebih cepat, mengurangi waktu dan upaya yang dibutuhkan dalam proses manual yang lebih lambat dan rentan terhadap kesalahan. Ini memungkinkan perusahaan untuk lebih fokus pada kegiatan inti bisnis mereka dan meningkatkan produktivitas keseluruhan.
+
+3. Pengambilan Keputusan yang Lebih Informasional: Dengan menggunakan model analisis prediktif yang akurat, perusahaan dapat mengambil keputusan bisnis yang lebih informasional dan cerdas. Model ini memberikan wawasan yang lebih dalam tentang faktor-faktor risiko yang mempengaruhi premi asuransi kesehatan, membantu perusahaan memahami pelanggan mereka dengan lebih baik, dan mengidentifikasi pola atau tren yang relevan. Informasi ini memungkinkan perusahaan untuk mengoptimalkan strategi bisnis mereka, meningkatkan layanan kepada pelanggan, dan mengidentifikasi peluang baru di pasar asuransi kesehatan.
+
+4. Keunggulan Kompetitif dalam Pasar: Dengan menggunakan model analisis prediktif yang lebih canggih dan akurat, perusahaan asuransi kesehatan dapat mencapai keunggulan kompetitif di pasar. Dengan memperkirakan premi dengan lebih tepat dan memberikan estimasi yang lebih adil, perusahaan dapat menarik calon pemegang polis dengan produk asuransi yang lebih menarik dan kompetitif. Hal ini membantu perusahaan membedakan diri dari pesaing, memperluas pangsa pasar, dan membangun hubungan jangka panjang dengan pelanggan.
+
+Dengan memanfaatkan model prediktif yang dikembangkan dalam proyek ini, perusahaan asuransi kesehatan dapat mengambil keputusan bisnis yang lebih baik, meningkatkan efisiensi operasional, mencapai keunggulan kompetitif, dan memberikan layanan yang lebih baik kepada calon pemegang polis.
+
 ## 3. Problem Statements
 
 1. Kurangnya akurasi dalam menentukan premi asuransi kesehatan: Perusahaan asuransi menghadapi tantangan dalam menentukan premi yang akurat dan adil bagi calon pemegang polis. Hal ini disebabkan oleh keterbatasan dalam memahami faktor-faktor yang mempengaruhi besaran premi. Dalam proyek ini, kami akan mengatasi masalah ini dengan mengembangkan model analisis prediktif yang dapat memperkirakan premi asuransi kesehatan dengan tingkat akurasi yang lebih tinggi.
