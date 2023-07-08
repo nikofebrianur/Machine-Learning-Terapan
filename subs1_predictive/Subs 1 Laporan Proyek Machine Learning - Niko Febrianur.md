@@ -174,6 +174,9 @@ Berikut adalah langkah-langkah untuk menghitung MSE:
 
 MSE merupakan metrik evaluasi yang umum digunakan dalam masalah regresi karena memperhitungkan perbedaan antara nilai prediksi dan nilai sebenarnya secara keseluruhan dan memberikan bobot yang lebih besar pada perbedaan yang besar. Namun, MSE juga memiliki kelemahan yaitu sensitif terhadap outlier, artinya nilai ekstrem yang sangat berbeda dapat mempengaruhi MSE secara signifikan. Oleh karena itu, terkadang metrik evaluasi alternatif seperti Mean Absolute Error (MAE) juga digunakan untuk memberikan gambaran yang lebih lengkap tentang kinerja model.
 
+Berikut adalah hasil evaluasi model setelah dilakukan penerapan hyperparam
+![model_eval_hyperparam](https://github.com/nikofebrianur/Machine-Learning-Terapan/blob/main/subs1_predictive/img/model_eval_hy_params.png)
+
 ## Kesimpulan 
 Berdasarkan hasil paparan di atas, proyek ini menghasilkan rangkaian kesimpulan untuk kebutuhan bisnis sebagai berikut: 
  - Pasien yang mempunyai riwayat pernah melakukan transplantasi, melakukan operasi besar, dan mempunyai penyakit kronis lebih tertarik untuk membayar premi asuransi karena sesuai dengan resiko yang mereka tanggung. 
