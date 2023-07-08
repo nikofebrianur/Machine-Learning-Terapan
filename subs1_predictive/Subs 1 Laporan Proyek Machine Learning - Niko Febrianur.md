@@ -81,7 +81,7 @@ Metrik evaluasi yang digunakan untuk mengukur keberhasilan mencapai setiap tujua
 
 - Kesetaraan premi: Metrik ini dapat diukur dengan membandingkan perbedaan premi yang diberikan kepada kelompok pemegang polis yang memiliki risiko yang serupa. Jika perbedaan premi menjadi lebih kecil setelah penerapan model analisis prediktif, hal ini menunjukkan bahwa tujuan keempat tercapai.
 
-Selain itu, metrik lain yang dapat digunakan untuk mengukur keberhasilan proyek ini adalah ialah Mean Squared Error (MSE): Metrik ini dapat digunakan untuk mengukur seberapa dekat prediksi premi dengan nilai sebenarnya. Semakin rendah nilai MSE, semakin baik model analisis prediktif dalam memperkirakan premi.
+Selain itu, metrik lain yang dapat digunakan untuk mengukur keberhasilan proyek ini adalah ialah *Mean Squared Error* (MSE): Metrik ini dapat digunakan untuk mengukur seberapa dekat prediksi premi dengan nilai sebenarnya. Semakin rendah nilai MSE, semakin baik model analisis prediktif dalam memperkirakan premi.
 
 Penggunaan metrik evaluasi yang tepat dan relevan dengan tujuan proyek akan membantu dalam menilai keberhasilan dan dampak proyek terhadap perusahaan asuransi dan calon pemegang polis.
 
@@ -90,7 +90,7 @@ Penggunaan metrik evaluasi yang tepat dan relevan dengan tujuan proyek akan memb
 Berdasarkan goals di atas maka solusi yang diberikan ialah:
 - Mencari pengetahuan yang ada pada data dengan menerapkan proses EDA
 - Model machine learning akan menggunakan algoritma SVR yang ada pada referensi dan menggunakan library pycaret untuk menentukan algoritma yang lain.
-- Evaluasi pembanding model akan menggunakan MSE atau Mean Squared Error.
+- Evaluasi pembanding model akan menggunakan MSE atau *Mean Squared Error*.
 
 ## 6. Data Understanding
 
@@ -159,15 +159,17 @@ Gambar 6.3 Matriks korelasi PremiumPrice
 
 Berikut ada teknik yang digunakan dalam proses data preparation, yaitu:
 
-Proses One Hot Encoding pada fitur kategorikal adalah teknik yang digunakan untuk mengubah variabel kategorikal menjadi representasi numerik yang dapat digunakan dalam model machine learning. Hal ini diperlukan karena sebagian besar algoritma machine learning hanya dapat bekerja dengan input numerik.
+Proses *One Hot Encoding* pada fitur kategorikal adalah teknik yang digunakan untuk mengubah variabel kategorikal menjadi representasi numerik yang dapat digunakan dalam model machine learning. 
 
-Pandas library menyediakan fungsi pd.get_dummies() yang memudahkan dalam melakukan One Hot Encoding. Fungsi ini akan menghasilkan kolom-kolom baru yang mewakili setiap nilai unik dari fitur kategorikal. Jika suatu baris memiliki nilai tersebut, kolom yang sesuai akan diatur menjadi 1, sedangkan kolom lainnya akan menjadi 0.
+Hal ini diperlukan karena sebagian besar algoritma machine learning hanya dapat bekerja dengan input numerik.
+
+Pandas library menyediakan fungsi pd.get_dummies() yang memudahkan dalam melakukan *One Hot Encoding*. Fungsi ini akan menghasilkan kolom-kolom baru yang mewakili setiap nilai unik dari fitur kategorikal. Jika suatu baris memiliki nilai tersebut, kolom yang sesuai akan diatur menjadi 1, sedangkan kolom lainnya akan menjadi 0.
 
 Misalnya, jika terdapat fitur "Warna" dengan nilai "Merah", "Biru", dan "Hijau", setelah One Hot Encoding akan terbentuk tiga kolom baru: "Warna_Merah", "Warna_Biru", dan "Warna_Hijau". 
 
 Jika suatu baris memiliki nilai "Merah" pada fitur "Warna", maka kolom "Warna_Merah" akan diatur menjadi 1, sedangkan kolom lainnya akan menjadi 0.
 
-Proses pembagian dataset menjadi data training dan data testing penting dalam pengembangan model machine learning. Ini dilakukan untuk mengevaluasi performa model pada data yang belum pernah dilihat sebelumnya dan untuk menghindari overfitting. 
+Proses pembagian dataset menjadi data training dan data testing penting dalam pengembangan model machine learning. Ini dilakukan untuk mengevaluasi performa model pada data yang belum pernah dilihat sebelumnya dan untuk menghindari *overfitting*. 
 
 Data training digunakan untuk melatih model, sedangkan data testing digunakan untuk menguji seberapa baik model yang dilatih dapat melakukan prediksi pada data yang belum pernah dilihat sebelumnya. 
 
@@ -190,9 +192,9 @@ Berikut adalah urutan tahapan yang dilakukan dalam proses modeling:
  - Melakukan pengujian dengan data testing
  - Pengukuran menggunakan metriks MSE,MAE,RMSE dan R2 dengan menggunakan lirbary sklearn. 
  - Melihat hasil performa model antara hasil data training dan data testing
- - Meningkatkan performa model dengan menerapkan grid search atau hyper parameter pada model
- - Menggunakan hyper param pada Huber Regressor yaitu param_grid = { 'epsilon': [1.0, 1.5, 2.0],'alpha': [0.0001, 0.001, 0.01], 'max_iter': [100, 200, 300]}
- - Menggunakan hyper param pada SVR yaitu param_grid = {'kernel': ['linear', 'rbf'],'C': [0.1, 1, 10],'epsilon': [0.1, 0.2, 0.3]}
+ - Meningkatkan performa model dengan menerapkan grid search atau hyperparametereter pada model
+ - Menggunakan hyperparameter pada Huber Regressor yaitu param_grid = { 'epsilon': [1.0, 1.5, 2.0],'alpha': [0.0001, 0.001, 0.01], 'max_iter': [100, 200, 300]}
+ - Menggunakan hyperparameter pada SVR yaitu param_grid = {'kernel': ['linear', 'rbf'],'C': [0.1, 1, 10],'epsilon': [0.1, 0.2, 0.3]}
  - Setelah pengujian hyperparameter, Huber Regressor mendapatkan param terbaik yaitu: {'alpha': 0.01, 'epsilon': 2.0, 'max_iter': 100}
  - Setelah pengujian hyperparameter, SVR mendapatkan param terbaik yaitu: {'C': 1, 'epsilon': 0.1, 'kernel': 'linear'
 
@@ -269,12 +271,12 @@ Oleh karena itu, terkadang metrik evaluasi alternatif seperti Mean Absolute Erro
 
 Berdasarkan hasil evaluasi model setelah menggunakan hyperparametereter, kita dapat mengambil beberapa kesimpulan:
 
-1. Mean Squared Error (MSE) - Train Set:
+1. *Mean Squared Error* (MSE) - Train Set:
    - Model Huber memiliki MSE train set sebesar 18,480,694.56826.
    - Model SVR memiliki MSE train set sebesar 40,114,366.684487.
    - Model Huber memiliki nilai MSE yang lebih rendah dibandingkan dengan model SVR pada data train set. Artinya, model Huber mampu melakukan prediksi yang lebih akurat daripada model SVR.
 
-2. Mean Squared Error (MSE) - Test Set:
+2. *Mean Squared Error* (MSE) - Test Set:
    - Model Huber memiliki MSE test set sebesar 25,177,990.875244.
    - Model SVR memiliki MSE test set sebesar 42,742,505.675315.
    - Model Huber juga memiliki nilai MSE yang lebih rendah dibandingkan dengan model SVR pada data test set. Hal ini menunjukkan bahwa model Huber lebih baik dalam melakukan prediksi pada data yang belum pernah dilihat sebelumnya.
