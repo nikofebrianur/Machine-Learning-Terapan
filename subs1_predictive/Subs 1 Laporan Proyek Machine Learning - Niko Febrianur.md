@@ -43,6 +43,8 @@ Dengan mengatasi masalah-masalah ini, proyek "Medical Insurance Premium Predicti
 
 ### Goals
 
+Proyek ini memiliki tujuan sebagai berikut:
+
 1. Mengembangkan model analisis prediktif: Tujuan utama proyek ini adalah mengembangkan model analisis prediktif yang dapat memperkirakan premi asuransi kesehatan dengan tingkat akurasi yang lebih tinggi. Dengan melakukan analisis data yang komprehensif dan menggunakan teknik machine learning, tujuannya adalah menciptakan model yang dapat memberikan perkiraan premi yang lebih tepat berdasarkan faktor-faktor risiko yang relevan.
 
 2. Meningkatkan transparansi: Proyek ini bertujuan untuk meningkatkan transparansi dalam penetapan premi asuransi kesehatan. Dengan mengidentifikasi faktor-faktor yang paling signifikan dalam menentukan premi, tujuannya adalah memberikan pemahaman yang lebih baik kepada calon pemegang polis mengenai alasan di balik besaran premi yang mereka terima. Hal ini akan membantu membangun kepercayaan dan kepuasan calon pemegang polis terhadap perusahaan asuransi.
@@ -50,6 +52,20 @@ Dengan mengatasi masalah-masalah ini, proyek "Medical Insurance Premium Predicti
 3. Mengurangi risiko keuangan: Salah satu tujuan proyek ini adalah membantu perusahaan asuransi mengurangi risiko keuangan yang terkait dengan penetapan premi yang tidak akurat. Dengan memperkirakan premi dengan lebih akurat berdasarkan faktor-faktor risiko yang relevan, perusahaan asuransi dapat mengoptimalkan pengelolaan risiko keuangan mereka, menghindari kerugian yang tidak diharapkan, dan menjaga stabilitas keuangan perusahaan.
 
 4. Meningkatkan keadilan premi: Proyek ini bertujuan untuk memberikan perkiraan premi yang lebih adil dan akurat bagi calon pemegang polis. Dengan mempertimbangkan faktor-faktor risiko yang relevan secara lebih holistik, tujuannya adalah mengurangi ketidaksetaraan dalam penetapan premi dan memberikan keadilan dalam penentuan premi asuransi kesehatan. Hal ini akan memberikan manfaat bagi calon pemegang polis dengan memastikan bahwa premi yang mereka bayar sejalan dengan risiko yang mereka tanggung.
+
+Metrik evaluasi yang digunakan untuk mengukur keberhasilan mencapai setiap tujuan dapat meliputi:
+
+- Akurasi prediksi: Metrik ini digunakan untuk mengukur sejauh mana model analisis prediktif dapat memperkirakan premi asuransi kesehatan dengan tepat. Nilai akurasi yang tinggi menunjukkan bahwa model memberikan perkiraan yang lebih akurat, sehingga membantu mencapai tujuan pertama.
+
+- Tingkat transparansi: Metrik ini dapat diukur dengan melakukan survei atau penilaian terhadap calon pemegang polis untuk mengukur tingkat pemahaman mereka tentang alasan di balik besarnya premi yang mereka terima. Semakin tinggi tingkat pemahaman dan kepercayaan calon pemegang polis terhadap alasan penetapan premi, semakin tinggi pula tingkat transparansi yang dicapai.
+
+- Risiko keuangan: Metrik ini dapat diukur dengan membandingkan kinerja keuangan perusahaan asuransi sebelum dan setelah penerapan model analisis prediktif. Jika risiko keuangan berkurang setelah menggunakan model, hal ini menunjukkan bahwa tujuan ketiga tercapai.
+
+- Kesetaraan premi: Metrik ini dapat diukur dengan membandingkan perbedaan premi yang diberikan kepada kelompok pemegang polis yang memiliki risiko yang serupa. Jika perbedaan premi menjadi lebih kecil setelah penerapan model analisis prediktif, hal ini menunjukkan bahwa tujuan keempat tercapai.
+
+Selain itu, metrik lain yang dapat digunakan untuk mengukur keberhasilan proyek ini adalah ialah Mean Squared Error (MSE): Metrik ini dapat digunakan untuk mengukur seberapa dekat prediksi premi dengan nilai sebenarnya. Semakin rendah nilai MSE, semakin baik model analisis prediktif dalam memperkirakan premi.
+
+Penggunaan metrik evaluasi yang tepat dan relevan dengan tujuan proyek akan membantu dalam menilai keberhasilan dan dampak proyek terhadap perusahaan asuransi dan calon pemegang polis.
 
 ## Solution statements
 Berdasarkan goals di atas maka solusi yang diberikan ialah:
