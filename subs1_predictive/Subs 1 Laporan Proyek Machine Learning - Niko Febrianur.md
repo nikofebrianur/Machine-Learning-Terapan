@@ -337,24 +337,24 @@ Berdasarkan hasil evaluasi model setelah menggunakan *hyperparameter*, kita dapa
 1. *Mean Squared Error* (*MSE*) - Train Set:
    - Model *Huber* memiliki *MSE* train set sebesar 18,480,694.56826.
    - Model *SVR* memiliki *MSE* train set sebesar 40,114,366.684487.
-   - Model *Huber* memiliki nilai *MSE* yang lebih rendah dibandingkan dengan model *SVR* pada data train set. Artinya, model Huber mampu melakukan prediksi yang lebih akurat daripada model *SVR*.
+   - Model *Huber* memiliki nilai *MSE* yang lebih rendah dibandingkan dengan model *SVR* pada data training. Artinya, model Huber mampu melakukan prediksi yang lebih akurat daripada model *SVR*.
 
 2. *Mean Squared Error* (*MSE*) - Test Set:
    - Model *Huber* memiliki *MSE* test set sebesar 25,177,990.875244.
    - Model *SVR* memiliki *MSE* test set sebesar 42,742,505.675315.
-   - Model *Huber* juga memiliki nilai *MSE* yang lebih rendah dibandingkan dengan model *SVR* pada data test set. Hal ini menunjukkan bahwa model *Huber* lebih baik dalam melakukan prediksi pada data yang belum pernah dilihat sebelumnya.
+   - Model *Huber* juga memiliki nilai *MSE* yang lebih rendah dibandingkan dengan model *SVR* pada data testing. Hal ini menunjukkan bahwa model *Huber* lebih baik dalam melakukan prediksi pada data yang belum pernah dilihat sebelumnya.
 
 3. Evaluation Score (eval) - Train Set:
    - Model *Huber* memiliki evaluasi score train set sebesar 18,104,561.09466.
    - Model *SVR* memiliki evaluasi score train set sebesar 18,614,533.696279.
-   - Meskipun model *Huber* memiliki *MSE* yang lebih rendah pada data train set, evaluasi score keduanya memiliki perbedaan yang cukup kecil. Kedua model memberikan performa yang serupa pada data train set.
+   - Meskipun model *Huber* memiliki *MSE* yang lebih rendah pada data training, evaluasi score keduanya memiliki perbedaan yang cukup kecil. Kedua model memberikan performa yang serupa pada data training.
 
 4. Evaluation Score (eval) - Test Set:
    - Model *Huber* memiliki evaluasi score test set sebesar 24,212,812.866265.
    - Model *SVR* memiliki evaluasi score test set sebesar 25,605,704.542962.
-   - Model *Huber* juga memberikan evaluasi score yang lebih rendah dibandingkan dengan model *SVR* pada data test set. Hal ini menunjukkan bahwa model *Huber* lebih baik dalam melakukan prediksi yang lebih akurat pada data yang belum pernah dilihat sebelumnya.
+   - Model *Huber* juga memberikan evaluasi score yang lebih rendah dibandingkan dengan model *SVR* pada data testing. Hal ini menunjukkan bahwa model *Huber* lebih baik dalam melakukan prediksi yang lebih akurat pada data yang belum pernah dilihat sebelumnya.
 
-Berdasarkan kesimpulan di atas, model *Huber* memiliki performa yang lebih baik daripada model *SVR* dalam memprediksi premi asuransi kesehatan. Model *Huber* memiliki *MSE* yang lebih rendah baik pada data train set maupun test set, serta memberikan evaluasi score yang lebih baik pada data test set. 
+Berdasarkan kesimpulan di atas, model *Huber* memiliki performa yang lebih baik daripada model *SVR* dalam memprediksi premi asuransi kesehatan. Model *Huber* memiliki *MSE* yang lebih rendah baik pada data training maupun test set, serta memberikan evaluasi score yang lebih baik pada data testing. 
 
 Oleh karena itu, model *Huber* dapat dianggap lebih optimal dalam proyek ini untuk memperkirakan premi asuransi kesehatan dengan tingkat akurasi yang lebih tinggi.
 
@@ -362,7 +362,7 @@ Oleh karena itu, model *Huber* dapat dianggap lebih optimal dalam proyek ini unt
 
 Proyek ini berhasil mengembangkan model analisis prediktif menggunakan model *Huber* yang mampu memperkirakan premi asuransi kesehatan dengan tingkat akurasi yang lebih tinggi dibandingkan dengan model *SVR*. 
 
-Hasil evaluasi menunjukkan bahwa model *Huber* memberikan *MSE* yang lebih rendah pada data train set dan test set, serta evaluasi score yang lebih baik pada data test set. 
+Hasil evaluasi menunjukkan bahwa model *Huber* memberikan *MSE* yang lebih rendah pada data training dan test set, serta evaluasi score yang lebih baik pada data testing. 
 
 Hal ini menunjukkan bahwa model *Huber* dapat memberikan prediksi premi yang lebih akurat dan bermanfaat bagi perusahaan asuransi dan calon pemegang polis.
 
