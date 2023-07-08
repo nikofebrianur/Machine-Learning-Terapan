@@ -101,6 +101,10 @@ Berikut informasi pada dataset :
 - Menggunakan histogram untuk melihat penyebaran data dengan library pandas fungsi .hist()
 - Mencari Keterkaitan antar fitur numerik dan fitur kategori dengan correlation matrix menggunakan fungsi pandas dan visualisasi heatmap dengan seaborn
 
+![pairplot](https://github.com/nikofebrianur/Machine-Learning-Terapan/blob/main/subs1_predictive/img/pairplot.png)
+
+Berdasar gambar matriks dibawah, fitur numerik terlihat memiliki korelasi dengan PremiumPrice. 
+
 ![correlation_matrix](https://github.com/nikofebrianur/Machine-Learning-Terapan/blob/main/subs1_predictive/img/correlation_matrix.png)
 
 ## Data Preparation
@@ -174,7 +178,7 @@ Berikut adalah langkah-langkah untuk menghitung MSE:
 
 MSE merupakan metrik evaluasi yang umum digunakan dalam masalah regresi karena memperhitungkan perbedaan antara nilai prediksi dan nilai sebenarnya secara keseluruhan dan memberikan bobot yang lebih besar pada perbedaan yang besar. Namun, MSE juga memiliki kelemahan yaitu sensitif terhadap outlier, artinya nilai ekstrem yang sangat berbeda dapat mempengaruhi MSE secara signifikan. Oleh karena itu, terkadang metrik evaluasi alternatif seperti Mean Absolute Error (MAE) juga digunakan untuk memberikan gambaran yang lebih lengkap tentang kinerja model.
 
-Berikut adalah hasil evaluasi model setelah dilakukan penerapan hyperparam
+Berikut adalah hasil evaluasi model setelah dilakukan penerapan hyperparam.
 ![model_eval_hyperparam](https://github.com/nikofebrianur/Machine-Learning-Terapan/blob/main/subs1_predictive/img/model_eval_hy_params.png)
 
 ## Kesimpulan 
