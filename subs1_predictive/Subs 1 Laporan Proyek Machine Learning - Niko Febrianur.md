@@ -382,8 +382,10 @@ Dengan mengambil langkah-langkah tindak lanjut ini, perusahaan asuransi dapat me
 
 ## Referensi: 
 Chauluka M, Uzochukwu B, and Chinkhumba J, "Factors Associated With Coverage of Health Insurance Among Women in Malawi," *Frontiers in Health Services*, 2022.
+
 Michael Chernew, David M Cutler, and Patricia Seliger Keenan, "Increasing Health Insurance Costs and the Decline in Insurance Coverage,
-" *Health Services Research*, vol.40, no.10.1111. 2005.
+" *Health Services Research*, vol.40, no.10.1111. 2005. 
+
 Samantha Artiga, Petry Ubri, and Julia Zur, "The Effects of Premiums and Cost Sharing on Low-Income Populations: Updated Review of Research Findings The Effects of Premiums and Cost Sharing on Low-Income Populations 2," *Issue Brief*, 2017
 
 
