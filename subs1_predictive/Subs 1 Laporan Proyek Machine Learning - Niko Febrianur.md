@@ -101,6 +101,12 @@ Berikut informasi pada dataset :
 - Menggunakan histogram untuk melihat penyebaran data dengan library pandas fungsi .hist()
 - Mencari Keterkaitan antar fitur numerik dan fitur kategori dengan correlation matrix menggunakan fungsi pandas dan visualisasi heatmap dengan seaborn
 
+### Visualisasi proses Data Understanding
+
+Melihat sebaran dataset menggunakan histogram
+![Sebaran_dataset_histogram](https://github.com/nikofebrianur/Machine-Learning-Terapan/blob/main/subs1_predictive/img/histogram.png)
+
+Melihat korelasi PremiumPrice dengan fitur lain
 ![pairplot](https://github.com/nikofebrianur/Machine-Learning-Terapan/blob/main/subs1_predictive/img/pairplot.png)
 
 Berdasar gambar matriks dibawah, fitur numerik terlihat memiliki korelasi dengan PremiumPrice. 
