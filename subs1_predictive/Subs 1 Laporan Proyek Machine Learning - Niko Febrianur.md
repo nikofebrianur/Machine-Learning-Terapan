@@ -6,7 +6,7 @@ Ini adalah proyek pertama predictive analytics untuk memenuhi submission Dicodin
 
 Proyek ini membangun model machine learning yang dapat memprediksi biaya pertanggungan medis tahunan.
 
-## Domain Proyek
+## 1. Domain Proyek
 
 ### Latar Belakang
 
@@ -19,7 +19,7 @@ Tujuannya adalah membantu perusahaan asuransi menentukan premi yang akurat dan b
   - [The Effects of Premiums and Cost Sharing on Low-Income Populations: Updated Review of Research Findings](https://www.kff.org/medicaid/issue-brief/the-effects-of-premiums-and-cost-sharing-on-low-income-populations-updated-review-of-research-findings/)
   - [Factors Associated With Coverage of Health Insurance Among Women in Malawi](https://www.frontiersin.org/articles/10.3389/frhs.2022.780550/full)
 
-## Business Understanding
+## 2. Business Understanding
 
 Proyek ini dibangun untuk perusahaan asuransi kesehatan dengan karakteristik bisnis sebagai berikut:
 
@@ -31,7 +31,7 @@ Proyek ini dibangun untuk perusahaan asuransi kesehatan dengan karakteristik bis
 
 Dengan memahami karakteristik bisnis perusahaan asuransi kesehatan ini, proyek ini dapat dirancang dan disesuaikan untuk memenuhi kebutuhan dan tujuan bisnis yang spesifik.
 
-### Problem Statements
+## 3. Problem Statements
 
 1. Kurangnya akurasi dalam menentukan premi asuransi kesehatan: Perusahaan asuransi menghadapi tantangan dalam menentukan premi yang akurat dan adil bagi calon pemegang polis. Hal ini disebabkan oleh keterbatasan dalam memahami faktor-faktor yang mempengaruhi besaran premi. Dalam proyek ini, kami akan mengatasi masalah ini dengan mengembangkan model analisis prediktif yang dapat memperkirakan premi asuransi kesehatan dengan tingkat akurasi yang lebih tinggi.
 
@@ -59,7 +59,7 @@ Dengan memanfaatkan teknik machine learning, model ini akan menghasilkan perkira
 
 Selain itu, dengan mengidentifikasi faktor-faktor yang paling signifikan dalam penetapan premi, perusahaan asuransi dapat memberikan penjelasan yang lebih baik kepada calon pemegang polis mengenai alasan di balik besaran premi yang mereka terima, meningkatkan transparansi dan kepercayaan.
 
-### Goals
+## 4. Goals
 
 Proyek ini memiliki tujuan sebagai berikut:
 
@@ -85,13 +85,13 @@ Selain itu, metrik lain yang dapat digunakan untuk mengukur keberhasilan proyek 
 
 Penggunaan metrik evaluasi yang tepat dan relevan dengan tujuan proyek akan membantu dalam menilai keberhasilan dan dampak proyek terhadap perusahaan asuransi dan calon pemegang polis.
 
-## Solution statements
+## 5. Solution statements
 Berdasarkan goals di atas maka solusi yang diberikan ialah:
 - Mencari pengetahuan yang ada pada data dengan menerapkan proses EDA
 - Model machine learning akan menggunakan algoritma SVR yang ada pada referensi dan menggunakan library pycaret untuk menentukan algoritma yang lain.
 - Evaluasi pembanding model akan menggunakan MSE atau Mean Squared Error.
 
-## Data Understanding
+## 6. Data Understanding
 Dataset yang digunakan dalam proyek ini merupakan data parameter terkait kesehatan yang diberikan hampir oleh 1000 konsumen secara sukarela.
 
 Dataset dapat diunduh di: [Medical Insurance Premium Prediction](https://www.kaggle.com/datasets/tejashvi14/medical-insurance-premium-prediction).
@@ -147,12 +147,12 @@ Berdasar gambar matriks dibawah, fitur numerik terlihat memiliki korelasi dengan
 
 ![correlation_matrix](https://github.com/nikofebrianur/Machine-Learning-Terapan/blob/main/subs1_predictive/img/correlation_matrix.png)
 
-## Data Preparation
+## 7. Data Preparation
 Berikut ada teknik yang digunakan dalam proses data preparation, yaitu:
  -  One Hot Encoding pada data Categorical dengan menggunakan pandas library pada fungsi pd.get_dummies(). Teknik ini dilakukan untuk mengubah variabel kategorikal menjadi representasi numerik yang nantinya dapat digunakan dalam model machine learning.
  -  Membagi dataset menjadi data training dan data testing menggunakan library sklearn dengan fungsi train_set_split() dengan perbandingan 80:20 yaitu data training sebesar 788 dan data testing sebesar 198. Teknik ini dilakukan agar nantinya model dapat dievaluasi dan untuk mendeteksi apakah terjadi overfitting dalam model. 
 
-## Modeling
+## 8. Modeling
 Dalam proses modeling, proyek ini akan menggunakan algoritma SVR dan algoritma Huber Regressor berdasarkan hasil dari data library pycaret.
 
 ### Tahapan yang dilakukan
@@ -190,7 +190,7 @@ Kesimpulan yang dapat diambil dari paparan di atas ialah adanya overfitting pada
 
 Berdasarkan pertimbangan kelebihan dan kekurangan di atas, maka algoritma Huber Regressor dinilai lebih unggul dari SVR dan setelahnya perlu menerapkan hyperparam saat model masuk ke evaluasi.
 
-## Evaluation
+## 9. Evaluation
 Metrik evaluasi yang digunakan dalam proyek ini ialah sebagai berikut:
 
 ### MSE
@@ -221,7 +221,7 @@ MSE merupakan metrik evaluasi yang umum digunakan dalam masalah regresi karena m
 Berikut adalah hasil evaluasi model setelah dilakukan penerapan hyperparam.
 ![model_eval_hyperparam](https://github.com/nikofebrianur/Machine-Learning-Terapan/blob/main/subs1_predictive/img/model_eval_hy_params.png)
 
-## Kesimpulan 
+## 10. Kesimpulan 
 Berdasarkan hasil paparan di atas, proyek ini menghasilkan rangkaian kesimpulan untuk kebutuhan bisnis sebagai berikut: 
  - Pasien yang mempunyai riwayat pernah melakukan transplantasi, melakukan operasi besar, dan mempunyai penyakit kronis lebih tertarik untuk membayar premi asuransi karena sesuai dengan resiko yang mereka tanggung. 
  - Pasien yang memiliki diabetes, riwayat kanker di keluarga, alergi, dan permasalahan tekanan darah tidak terlalu tertarik membayar premi asuransi.
