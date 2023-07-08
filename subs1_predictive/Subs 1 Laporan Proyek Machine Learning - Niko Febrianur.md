@@ -126,11 +126,12 @@ Berikut adalah urutan tahapan yang dilakukan dalam proses modeling:
  - Setelah pengujian hyperparam, SVR mendapatkan param terbaik yaitu: {'C': 1, 'epsilon': 0.1, 'kernel': 'linear'
 
 ### Hasil running model
-	Huber	SVR
-train_mse	18480694.56826	40114366.684487
-test_mse	25177990.875244	42742505.675315
-eval_train	18104561.09466	18614533.696279
-eval_test	24212812.866265	25605704.542962
+|           | Huber         | SVR            |
+|-----------|---------------|----------------|
+| train_mse | 18480694.56826 | 40114366.684487 |
+| test_mse  | 25177990.875244 | 42742505.675315 |
+| eval_train | 18104561.09466 | 18614533.696279 |
+| eval_test  | 24212812.866265 | 25605704.542962 |
 
  - Huber_MSE: Rata-rata dari kuadrat selisih antara nilai prediksi dan nilai aktual pada data training adalah sekitar 18,480,694.56826, sedangkan pada data testing sekitar 25,177,990.875244. Hasil ini menunjukkan bahwa model memiliki tingkat kesalahan yang sedikit lebih tinggi pada data testing dibandingkan dengan data training.
  - SVR_MSE: Rata-rata dari kuadrat selisih antara nilai prediksi dan nilai aktual pada data training adalah sekitar 40,114,366.684487, sedangkan pada data testing sekitar 42,742,505.675315. Hasil ini menunjukkan bahwa model testing memiliki tingkat kesalahan yang sedikit lebih tinggi pada data testing dibandingkan dengan data training.
