@@ -193,19 +193,42 @@ Berikut informasi pada dataset :
 
 ### Visualisasi proses Data Understanding
 
-Melihat sebaran dataset menggunakan histogram
-![Sebaran_dataset_histogram](https://github.com/nikofebrianur/Machine-Learning-Terapan/blob/main/subs1_predictive/img/histogram.png)
+Untuk mengatasi outlier, salah satu metode yang umum digunakan adalah metode IQR (Interquartile Range) dengan visualisasi menggunakan boxplot. Berikut penjelasan mengenai metode IQR dan visualisasi boxplot:
 
-Gambar 6.1 Sebaran dataset
+Metode IQR:
+1. Konsep: IQR merupakan ukuran statistik yang menggambarkan rentang atau sebaran data pada bagian tengah distribusi data. IQR dihitung dengan mengurangi nilai kuartil ketiga (Q3) dengan nilai kuartil pertama (Q1). Outlier dianggap sebagai nilai yang terletak di luar rentang IQR yang ditentukan.
+2. Cara Kerja:
+   - Hitung Q1 (kuartil pertama) dan Q3 (kuartil ketiga) dari data.
+   - Hitung IQR dengan mengurangi Q1 dari Q3.
+   - Tentukan batas atas dan batas bawah untuk outlier dengan menggunakan rumus: batas atas = Q3 + (1.5 * IQR), batas bawah = Q1 - (1.5 * IQR).
+   - Data yang berada di luar batas atas dan batas bawah tersebut dianggap sebagai outlier.
 
-Melihat korelasi PremiumPrice dengan fitur lain
-![pairplot](https://github.com/nikofebrianur/Machine-Learning-Terapan/blob/main/subs1_predictive/img/pairplot.png)
+Visualisasi Boxplot:
+1. Konsep: Boxplot adalah visualisasi grafis yang digunakan untuk menganalisis distribusi data dan mengidentifikasi adanya outlier. Boxplot menampilkan beberapa ukuran statistik, termasuk Q1, Q3, median, serta batas atas dan batas bawah untuk outlier.
+2. Cara Kerja:
+   - Boxplot terdiri dari sebuah kotak (box) yang menunjukkan rentang IQR (dari Q1 hingga Q3).
+   - Garis di dalam kotak menunjukkan posisi median.
+   - Whisker atau garis lurus yang terhubung dengan kotak menunjukkan rentang data yang dianggap tidak sebagai outlier.
+   - Titik-titik di luar whisker menunjukkan adanya outlier.
+  
+![outliers_boxplot](https://github.com/nikofebrianur/Machine-Learning-Terapan/assets/42314371/994b7ef1-fe6d-4bc4-94a5-5800322fe11f)
+
+Gambar 6.1 Visualisasi outliers menggunakan boxplot
+
+
+Dengan menggunakan metode IQR dan visualisasi boxplot, kita dapat mengidentifikasi dan mengatasi outlier dalam data. Outlier dapat menjadi nilai yang ekstrem dan tidak biasa yang dapat mempengaruhi hasil analisis statistik dan model prediksi. 
+
+Dengan memperhatikan IQR dan melihat visualisasi boxplot, kita dapat menentukan batas atas dan batas bawah untuk outlier, serta mengambil tindakan yang tepat, seperti menghapus atau mengelola outlier tersebut, agar tidak mempengaruhi hasil analisis secara signifikan.
+
+![histogram](https://github.com/nikofebrianur/Machine-Learning-Terapan/assets/42314371/88d5ec99-beca-4d6f-a34d-a95921c4fe79)
+
+Gambar 6.2 Sebaran dataset
+
+![pairplot](https://github.com/nikofebrianur/Machine-Learning-Terapan/assets/42314371/ab84ebd0-4fe9-4436-9439-359c83ee7eb3)
 
 Gambar 6.2 Korelasi PremiumPrice dengan fitur lainnya
 
-Berdasarkan gambar matriks dibawah, fitur numerik terlihat memiliki korelasi dengan PremiumPrice. 
-
-![correlation_matrix](https://github.com/nikofebrianur/Machine-Learning-Terapan/blob/main/subs1_predictive/img/correlation_matrix.png)
+![correlation_matrix](https://github.com/nikofebrianur/Machine-Learning-Terapan/assets/42314371/9b8346a0-2cab-4184-be8a-789a447e7f6d)
 
 Gambar 6.3 Matriks korelasi PremiumPrice 
 
@@ -320,7 +343,7 @@ Tabel 9.1 Tabel hasil running evaluasi model setelah menggunakan *hyperparameter
 
 Berikut adalah grafik hasil evaluasi model setelah dilakukan penerapan *hyperparameter*.
 
-![model_eval_*hyperparameter*](https://github.com/nikofebrianur/Machine-Learning-Terapan/blob/main/subs1_predictive/img/model_eval_hy_params.png)
+![model_eval_hy_params](https://github.com/nikofebrianur/Machine-Learning-Terapan/assets/42314371/d374d1d7-fcc2-4afb-9745-a221cacb2453)
 
 Gambar 9.1 Hasil evaluasi model setelah penerapan *hyperparameter*
 
