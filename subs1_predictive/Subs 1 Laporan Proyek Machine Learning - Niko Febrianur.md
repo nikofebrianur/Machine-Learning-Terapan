@@ -212,8 +212,7 @@ Visualisasi Boxplot:
    - Titik-titik di luar whisker menunjukkan adanya outlier.
   
 ![outliers_boxplot](https://github.com/nikofebrianur/Machine-Learning-Terapan/assets/42314371/994b7ef1-fe6d-4bc4-94a5-5800322fe11f)
-
-Gambar 6.1 Visualisasi outliers menggunakan boxplot
+###### Gambar 6.1 Visualisasi outliers menggunakan boxplot
 
 Dengan menggunakan metode IQR dan visualisasi boxplot, kita dapat mengidentifikasi dan mengatasi outlier dalam data. Outlier dapat menjadi nilai yang ekstrem dan tidak biasa yang dapat mempengaruhi hasil analisis statistik dan model prediksi. 
 
@@ -245,12 +244,10 @@ Histogram membantu kita memahami pola dan sebaran data dengan cepat. Analisis se
 Hal ini dapat menjadi langkah awal dalam eksplorasi data sebelum melakukan analisis lebih lanjut atau membangun model prediksi.
 
 ![histogram](https://github.com/nikofebrianur/Machine-Learning-Terapan/assets/42314371/88d5ec99-beca-4d6f-a34d-a95921c4fe79)
-
-Gambar 6.2 Sebaran dataset
+###### Gambar 6.2 Sebaran dataset
 
 ![pairplot](https://github.com/nikofebrianur/Machine-Learning-Terapan/assets/42314371/ab84ebd0-4fe9-4436-9439-359c83ee7eb3)
-
-Gambar 6.2 Korelasi PremiumPrice dengan fitur lainnya
+###### Gambar 6.2 Korelasi PremiumPrice dengan fitur lainnya
 
 Terakhir, untuk menganalisa keterkaitan antara fitur numerik dan fitur kategori, kita dapat menggunakan correlation matrix dengan fungsi pandas dan visualisasi heatmap menggunakan library seaborn. 
 
@@ -261,8 +258,7 @@ Kita dapat melihat hubungan positif atau negatif antara fitur numerik dan fitur 
 Dengan menggunakan correlation matrix dan visualisasi heatmap, kita dapat dengan mudah menganalisa keterkaitan antara fitur numerik dan fitur kategori dalam dataset secara visual dan kuantitatif.
 
 ![correlation_matrix](https://github.com/nikofebrianur/Machine-Learning-Terapan/assets/42314371/9b8346a0-2cab-4184-be8a-789a447e7f6d)
-
-Gambar 6.3 Matriks korelasi PremiumPrice 
+###### Gambar 6.3 Matriks korelasi PremiumPrice 
 
 Dapat dilihat dari gambar matriks di atas bahwa variabel *AnyTransplants*, *AnyChronicDiseases*, dan *NumberOfMajorSurgeries* memiliki warna heatmap yang terang dan ini menunjukkan bahwa ketiga variabel tersebut memiliki korelasi dengan variabel *PremiumPrice*     
 
@@ -378,8 +374,7 @@ Tabel 9.1 Tabel hasil running evaluasi model setelah menggunakan *hyperparameter
 Berikut adalah grafik hasil evaluasi model setelah dilakukan penerapan *hyperparameter*.
 
 ![model_eval_hy_params](https://github.com/nikofebrianur/Machine-Learning-Terapan/assets/42314371/d374d1d7-fcc2-4afb-9745-a221cacb2453)
-
-Gambar 9.1 Hasil evaluasi model setelah penerapan *hyperparameter*
+###### Gambar 9.1 Hasil evaluasi model setelah penerapan *hyperparameter*
 
 *MSE* merupakan metrik evaluasi yang umum digunakan dalam masalah regresi karena memperhitungkan perbedaan antara nilai prediksi dan nilai sebenarnya secara keseluruhan dan memberikan bobot yang lebih besar pada perbedaan yang besar. 
 
