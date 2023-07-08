@@ -10,11 +10,29 @@ Proyek ini membangun model machine learning yang dapat memprediksi biaya pertang
 
 ### Latar Belakang
 
-Proyek "Medical Insurance Premium Prediction" bertujuan untuk mengembangkan model analisis prediktif yang memperkirakan premi asuransi kesehatan berdasarkan faktor-faktor seperti usia, riwayat penyakit kronis, riwayat keluarga terkait kanker, operasi besar yang pernah dijalani, serta informasi fisik seperti tinggi dan berat badan, serta parameter lainnya. 
+Domain proyek "Medical Insurance Premium Prediction" adalah industri asuransi kesehatan. Asuransi kesehatan adalah sektor yang penting dalam industri asuransi, yang melibatkan perlindungan finansial terhadap risiko kesehatan bagi individu dan keluarga mereka. 
 
-Tujuannya adalah membantu perusahaan asuransi menentukan premi yang akurat dan berdasarkan risiko individual, serta memberikan perkiraan premi yang lebih adil dan akurat bagi calon pemegang polis.
+Dalam domain ini, perusahaan asuransi menyediakan layanan perlindungan kesehatan dengan mengenakan premi kepada pemegang polis.
 
-  Referensi: 
+Relevansi proyek ini dengan industri asuransi kesehatan adalah sebagai berikut:
+
+1. Penentuan Premi yang Akurat: Model prediktif yang dikembangkan dalam proyek ini bertujuan untuk membantu perusahaan asuransi menentukan premi asuransi kesehatan yang akurat. Dengan mempertimbangkan faktor-faktor risiko yang relevan, seperti usia, riwayat penyakit kronis, riwayat keluarga terkait kanker, operasi besar yang pernah dijalani, serta informasi fisik seperti tinggi dan berat badan, model ini dapat memberikan estimasi premi yang lebih tepat berdasarkan risiko individual yang dihadapi oleh calon pemegang polis.
+
+2. Keadilan dalam Penentuan Premi: Model prediktif ini juga bertujuan untuk memberikan perkiraan premi yang lebih adil dan akurat bagi calon pemegang polis. Dengan mempertimbangkan faktor-faktor risiko yang relevan secara komprehensif, model ini dapat mengurangi ketidaksetaraan dalam penetapan premi. Ini berarti bahwa premi yang dibayarkan oleh calon pemegang polis akan lebih sesuai dengan risiko kesehatan yang mereka tanggung, memberikan keadilan dalam penentuan premi asuransi kesehatan.
+
+Manfaat bagi Perusahaan Asuransi:
+- Penentuan Premi yang Akurat: Dengan menggunakan model prediktif ini, perusahaan asuransi dapat menentukan premi asuransi kesehatan yang lebih akurat berdasarkan risiko individual calon pemegang polis. Hal ini dapat membantu perusahaan mengelola risiko keuangan dan mencegah kerugian yang tidak diharapkan.
+- Peningkatan Efisiensi: Dengan memanfaatkan teknologi dan analisis data dalam menentukan premi, perusahaan asuransi dapat meningkatkan efisiensi dalam proses penentuan premi, menghemat waktu dan sumber daya yang dibutuhkan.
+
+Manfaat bagi Calon Pemegang Polis:
+- Premi yang Adil: Dengan menggunakan model prediktif yang mempertimbangkan faktor-faktor risiko secara komprehensif, calon pemegang polis akan menerima perkiraan premi yang lebih adil, yang sejalan dengan risiko kesehatan yang mereka tanggung. Hal ini dapat membantu mereka memahami dan menerima besaran premi yang mereka bayar.
+- Perlindungan Finansial yang Optimal: Dengan premi yang didasarkan pada risiko individual, calon pemegang polis akan mendapatkan perlindungan finansial yang sesuai dengan kebutuhan dan risiko kesehatan mereka. Ini memberikan mereka kepastian dan keamanan dalam menghadapi risiko kesehatan yang mungkin mereka alami.
+
+Secara keseluruhan, model analisis prediktif dalam proyek "Medical Insurance Premium Prediction" dapat memberikan manfaat yang signifikan bagi perusahaan asuransi dan calon pemegang polis. 
+
+Dengan menggunakan model ini, perusahaan asuransi dapat mengoptimalkan penentuan premi dan mengelola risiko keuangan mereka, sementara calon pemegang polis akan mendapatkan perkiraan premi yang lebih adil dan akurat sesuai dengan risiko kesehatan mereka.
+
+Referensi: 
   - [Increasing Health Insurance Costs and the Decline in Insurance Coverage](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1361195/) 
   - [The Effects of Premiums and Cost Sharing on Low-Income Populations: Updated Review of Research Findings](https://www.kff.org/medicaid/issue-brief/the-effects-of-premiums-and-cost-sharing-on-low-income-populations-updated-review-of-research-findings/)
   - [Factors Associated With Coverage of Health Insurance Among Women in Malawi](https://www.frontiersin.org/articles/10.3389/frhs.2022.780550/full)
