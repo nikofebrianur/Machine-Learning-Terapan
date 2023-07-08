@@ -39,7 +39,21 @@ Dengan memahami karakteristik bisnis perusahaan asuransi kesehatan ini, proyek i
 
 3. Risiko keuangan bagi perusahaan asuransi: Penentuan premi yang tidak akurat dapat menyebabkan risiko keuangan bagi perusahaan asuransi. Jika premi yang ditetapkan terlalu rendah, perusahaan dapat menghadapi kerugian finansial jika terjadi klaim yang tinggi. Di sisi lain, premi yang terlalu tinggi dapat mengurangi daya tarik produk asuransi. Dalam proyek ini, kami akan membantu mengurangi risiko keuangan dengan memperkirakan premi yang lebih akurat berdasarkan faktor-faktor risiko yang relevan.
 
-Dengan mengatasi masalah-masalah ini, proyek "Medical Insurance Premium Prediction" bertujuan untuk meningkatkan akurasi, transparansi, dan efisiensi dalam penetapan premi asuransi kesehatan, memberikan manfaat bagi perusahaan asuransi dan calon pemegang polis.
+Dalam konteks penentuan premi asuransi kesehatan, berikut adalah contoh konkret dari faktor-faktor spesifik yang seringkali menyebabkan masalah-masalah yang disebutkan sebelumnya:
+
+1. Kurangnya akurasi dalam menentukan premi asuransi kesehatan:
+   - Masalah: Kurangnya pemahaman tentang faktor-faktor risiko yang berkontribusi pada biaya asuransi kesehatan, seperti riwayat medis, usia, jenis kelamin, gaya hidup, atau kondisi kesehatan tertentu.
+   - Contoh: Seorang calon pemegang polis yang memiliki riwayat keluarga dengan penyakit jantung mungkin dikenakan premi yang tidak akurat karena tidak adanya pemahaman yang cukup tentang hubungan antara faktor ini dengan risiko kesehatan seseorang.
+
+2. Kurangnya transparansi dalam penetapan premi:
+   - Masalah: Ketidaktahuan calon pemegang polis mengenai faktor-faktor yang digunakan oleh perusahaan asuransi dalam menentukan premi asuransi kesehatan.
+   - Contoh: Seorang calon pemegang polis mungkin tidak mengetahui bahwa faktor seperti indeks massa tubuh (BMI), kebiasaan merokok, atau sejarah perawatan medis sebelumnya berdampak signifikan pada besaran premi yang diberikan.
+
+3. Risiko keuangan bagi perusahaan asuransi:
+   - Masalah: Penentuan premi yang tidak akurat dapat menyebabkan ketidakseimbangan antara risiko yang ditanggung oleh perusahaan dan premi yang diterima.
+   - Contoh: Jika perusahaan asuransi menetapkan premi yang terlalu rendah untuk kelompok tertentu yang memiliki risiko tinggi, mereka dapat menghadapi klaim yang melebihi pendapatan premi, mengakibatkan kerugian finansial.
+
+Dalam proyek "Medical Insurance Premium Prediction", faktor-faktor ini akan dianalisis secara komprehensif dan dimasukkan ke dalam model analisis prediktif. Dengan memanfaatkan teknik machine learning, model ini akan menghasilkan perkiraan premi yang lebih akurat, mempertimbangkan faktor-faktor risiko yang relevan dengan tingkat keakuratan yang lebih tinggi. Selain itu, dengan mengidentifikasi faktor-faktor yang paling signifikan dalam penetapan premi, perusahaan asuransi dapat memberikan penjelasan yang lebih baik kepada calon pemegang polis mengenai alasan di balik besaran premi yang mereka terima, meningkatkan transparansi dan kepercayaan.
 
 ### Goals
 
