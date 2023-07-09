@@ -30,6 +30,26 @@ Dengan membangun model machine learning untuk sistem rekomendasi kursus Coursera
 
 ## 2. Business Understanding
 
+Business Understanding:
+
+Dalam konteks proyek ini, pemahaman bisnis adalah memahami tujuan dan manfaat yang ingin dicapai oleh pengembangan sistem rekomendasi kursus Coursera. 
+
+Berikut adalah beberapa poin penting dalam pemahaman bisnis proyek ini:
+
+1. Meningkatkan Pengalaman Pengguna: Sistem rekomendasi kursus Coursera bertujuan untuk meningkatkan pengalaman pengguna dengan menyediakan rekomendasi yang personal dan relevan. Dengan menggunakan model machine learning, pengguna akan mendapatkan rekomendasi kursus yang sesuai dengan minat, tujuan belajar, dan tingkat keahlian mereka. Hal ini dapat membantu pengguna dalam menemukan kursus yang menarik dan sesuai dengan kebutuhan mereka.
+
+2. Meningkatkan Retensi Pengguna: Dengan menyediakan rekomendasi yang akurat dan bermutu, sistem ini diharapkan dapat membantu Coursera dalam mempertahankan anggota. Pengguna yang mendapatkan rekomendasi yang relevan dan memberikan nilai tambah dalam perjalanan pembelajaran mereka cenderung tetap aktif dan terlibat dalam platform. Meningkatkan retensi pengguna adalah tujuan bisnis yang penting untuk menghasilkan pertumbuhan jangka panjang.
+
+3. Penyediaan Kursus yang Relevan: Sistem rekomendasi ini juga memberikan manfaat kepada Coursera dalam hal penyediaan kursus yang relevan. Dengan menganalisis preferensi pengguna, keterampilan yang dibutuhkan dalam pasar, dan tren industri, Coursera dapat menggunakan hasil rekomendasi untuk memperbaiki kurikulum dan menawarkan kursus yang sesuai dengan permintaan pengguna.
+
+4. Meningkatkan Konversi dan Pendapatan: Sistem rekomendasi yang efektif dapat meningkatkan konversi, yaitu mengubah pengguna yang hanya menjelajahi platform menjadi peserta kursus yang berlangganan. Dengan memberikan rekomendasi yang menarik dan relevan, pengguna akan cenderung mendaftar dan membayar untuk kursus yang direkomendasikan. Hal ini dapat meningkatkan pendapatan Coursera dan mengoptimalkan model bisnis mereka.
+
+5. Analisis Data dan Pemahaman Pengguna: Dalam pengembangan sistem rekomendasi, analisis data pengguna menjadi komponen kunci. Dengan memahami pola perilaku pengguna, preferensi, dan riwayat kursus, Coursera dapat mendapatkan wawasan berharga tentang minat dan kebutuhan pengguna mereka. Analisis data juga membantu dalam mengukur efektivitas rekomendasi yang diberikan dan melakukan perbaikan yang diperlukan.
+
+Dengan pemahaman bisnis yang kuat, pengembangan sistem rekomendasi kursus Coursera dapat fokus pada tujuan dan manfaat yang ingin dicapai. 
+
+Dalam hal ini, meningkatkan pengalaman pengguna, retensi pengguna, penyediaan kursus yang relevan, meningkatkan konversi dan pendapatan, serta analisis data pengguna menjadi fokus utama dalam pengembangan dan evaluasi sistem rekomendasi ini.
+
 ## 3. Problem Statements
 
 ## 4. Goals
