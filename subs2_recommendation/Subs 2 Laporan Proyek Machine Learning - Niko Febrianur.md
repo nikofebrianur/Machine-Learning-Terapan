@@ -134,4 +134,7 @@ Dataset dapat diunduh di: [Coursera courses dataset 2021](https://www.Kaggle.Com
 
 ## 10. Kesimpulan 
 
-## Referensi: 
+## Referensi
+Chen M, Wang X, Wang J, et al., "Factors Affecting College Students’ Continuous Intention to Use Online Course Platform," *SN Computer Science*, 2021.
+S. Inder, "Factors Influencing Student Engagement for Online Courses: A Confirmatory Factor Analysis," *Contemporary Educational Technology*, 2022.
+P. Bawa, "Retention in Online Courses: Exploring Issues and Solutions—A Literature Review," *SAGE Open*, 2016.
