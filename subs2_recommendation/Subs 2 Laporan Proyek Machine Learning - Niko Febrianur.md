@@ -135,8 +135,13 @@ Dataset dapat diunduh di: [Coursera courses dataset 2021](https://www.Kaggle.Com
 ## 10. Kesimpulan 
 
 ## References
+
 Chen M, Wang X, Wang J, et al., "Factors Affecting College Students’ Continuous Intention to Use Online Course Platform," *SN Computer Science*, 2021.
+
 S. Inder, "Factors Influencing Student Engagement for Online Courses: A Confirmatory Factor Analysis," *Contemporary Educational Technology*, 2022.
+
 P. Bawa, "Retention in Online Courses: Exploring Issues and Solutions—A Literature Review," *SAGE Open*, 2016.
+
 M. G. Gómez-Zermeño, "Massive open online courses as a digital learning strategy of education for sustainable development," *Journal of Sustainable Development of Energy, Water and Environment Systems*, 8, 577–589, 2020.
+
 T. Soffer, A. Cohen, "Students’ engagement characteristics predict success and completion of online courses," *Journal of Computer Assisted Learning*, 35, 378–389, 2019.
