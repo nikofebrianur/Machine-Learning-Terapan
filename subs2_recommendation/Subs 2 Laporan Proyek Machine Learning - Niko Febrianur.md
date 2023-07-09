@@ -30,8 +30,6 @@ Dengan membangun model machine learning untuk sistem rekomendasi kursus Coursera
 
 ## 2. Business Understanding
 
-Business Understanding:
-
 Dalam konteks proyek ini, pemahaman bisnis adalah memahami tujuan dan manfaat yang ingin dicapai oleh pengembangan sistem rekomendasi kursus Coursera. 
 
 Berikut adalah beberapa poin penting dalam pemahaman bisnis proyek ini:
@@ -51,6 +49,20 @@ Dengan pemahaman bisnis yang kuat, pengembangan sistem rekomendasi kursus Course
 Dalam hal ini, meningkatkan pengalaman pengguna, retensi pengguna, penyediaan kursus yang relevan, meningkatkan konversi dan pendapatan, serta analisis data pengguna menjadi fokus utama dalam pengembangan dan evaluasi sistem rekomendasi ini.
 
 ## 3. Problem Statements
+
+Berdasarkan Business Understanding di atas, proyek ini akan berusaha menjawab pertanyaan pada masalah-masalah sebagai berikut:
+
+1. Bagaimana mengembangkan sistem rekomendasi yang dapat memberikan pengalaman pengguna yang lebih baik dalam mencari dan memilih kursus di Coursera?
+
+2. Bagaimana meningkatkan retensi pengguna dengan menyediakan rekomendasi kursus yang relevan dan menarik bagi pengguna Coursera?
+
+3. Bagaimana mengoptimalkan penyediaan kursus yang relevan dengan mengidentifikasi preferensi pengguna, keterampilan yang dibutuhkan dalam pasar, dan tren industri?
+
+4. Bagaimana meningkatkan konversi pengguna menjadi peserta kursus berbayar dengan menyediakan rekomendasi yang menarik dan memberikan nilai tambah?
+
+5. Bagaimana menganalisis data pengguna dengan efektif untuk memahami perilaku, preferensi, dan kebutuhan pengguna dalam konteks rekomendasi kursus?
+
+Dengan memfokuskan diri pada pertanyaan-pertanyaan di atas, tujuan proyek ini akan menjadi lebih jelas dan memungkinkan pengembangan solusi yang efektif untuk memecahkan masalah yang ingin diselesaikan, yaitu meningkatkan pengalaman pengguna, retensi pengguna, penyediaan kursus yang relevan, konversi pengguna, dan analisis data pengguna.
 
 ## 4. Goals
 
