@@ -1,4 +1,4 @@
-# MLT Proyek Pertama | Medical Insurance Premium Prediction
+# MLT Proyek Kedua | Coursera Courses Recommendation System
 
 ###### Disusun oleh : Niko Febrianur
 
