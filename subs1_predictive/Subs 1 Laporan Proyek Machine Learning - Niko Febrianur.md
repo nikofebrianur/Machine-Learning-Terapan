@@ -6,7 +6,7 @@ Ini adalah proyek pertama analisis prediktif untuk memenuhi submission Dicoding 
 
 Proyek ini membangun model *machine learning* yang dapat memprediksi biaya pertanggungan medis tahunan.
 
-## 1. Domain Proyek
+## 1. Project Domain
 
 ### Latar Belakang
 
@@ -435,7 +435,7 @@ Langkah Tindak Lanjut:
 
 Dengan mengambil langkah-langkah tindak lanjut ini, perusahaan asuransi dapat memanfaatkan model analisis prediktif ini untuk meningkatkan ketepatan penetapan premi, meningkatkan transparansi, dan memberikan manfaat yang lebih baik bagi calon pemegang polis dalam pengalaman asuransi kesehatan mereka.
 
-## Referensi: 
+## References: 
 Chauluka M, Uzochukwu B, and Chinkhumba J, "Factors Associated With Coverage of Health Insurance Among Women in Malawi," *Frontiers in Health Services*, vol.2, 2022.
 
 Michael Chernew, David M Cutler, and Patricia Seliger Keenan, "Increasing Health Insurance Costs and the Decline in Insurance Coverage,
