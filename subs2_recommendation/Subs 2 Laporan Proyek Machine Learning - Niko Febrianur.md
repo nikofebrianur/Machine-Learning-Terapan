@@ -2,7 +2,7 @@
 
 ###### Disusun oleh : Niko Febrianur
 
-Ini adalah proyek kedua untuk membuat sistem rekomendasi untuk memenuhi submission Dicoding Kelas Machine Learning Terapan. 
+Ini adalah proyek kedua, membuat sistem rekomendasi untuk memenuhi submission Dicoding Kelas Machine Learning Terapan. 
 
 Proyek ini membangun model *machine learning* yang dapat memberikan rekomendasi kursus Coursera kepada pengguna.
 
