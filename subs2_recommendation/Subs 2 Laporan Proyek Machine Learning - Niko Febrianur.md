@@ -66,6 +66,40 @@ Dengan memfokuskan diri pada pertanyaan-pertanyaan di atas, tujuan proyek ini ak
 
 ## 4. Goals
 
+Dalam proyek ini, kami memiliki beberapa tujuan yang ingin dicapai dalam pengembangan sistem rekomendasi kursus Coursera yakni sebagai berikut:
+
+1. Meningkatkan Pengalaman Pengguna: Tujuan utama adalah meningkatkan pengalaman pengguna dengan menyediakan rekomendasi kursus yang personal dan relevan. Hal ini akan membantu pengguna dalam menemukan kursus yang sesuai dengan minat, tujuan belajar, dan tingkat keahlian mereka. Pencapaian tujuan ini akan memberikan manfaat berupa kepuasan pengguna yang lebih tinggi, peningkatan keterlibatan, dan kemungkinan lebih tinggi bagi pengguna untuk menyelesaikan kursus yang mereka ikuti.
+
+- Metrik Evaluasi: 
+  - Tingkat Kepuasan Pengguna: Dilakukan survei atau pengukuran berdasarkan umpan balik pengguna terkait pengalaman mereka dalam menggunakan sistem rekomendasi. 
+  - Tingkat Keterlibatan Pengguna: Meliputi jumlah klik pada rekomendasi, waktu yang dihabiskan di halaman kursus yang direkomendasikan, dan tingkat interaksi dengan materi kursus.
+
+2. Meningkatkan Retensi Pengguna: Tujuan ini bertujuan untuk meningkatkan retensi pengguna dengan memberikan rekomendasi kursus yang relevan dan menarik. Dengan rekomendasi yang akurat, pengguna cenderung tetap aktif dan terlibat dalam platform Coursera.
+
+- Metrik Evaluasi: 
+  - Tingkat Retensi Pengguna: Persentase pengguna yang tetap aktif dalam platform setelah menerima rekomendasi. 
+  - Tingkat Keterlibatan Berkelanjutan: Meliputi frekuensi log masuk, partisipasi dalam forum diskusi, dan kemajuan dalam menyelesaikan kursus.
+
+3. Penyediaan Kursus yang Relevan: Tujuan ini melibatkan meningkatkan penyediaan kursus yang relevan dengan mengidentifikasi preferensi pengguna, keterampilan yang dibutuhkan dalam pasar, dan tren industri. Hal ini akan membantu Coursera dalam menyusun kurikulum yang sesuai dengan permintaan pengguna.
+
+- Metrik Evaluasi: 
+  - Tingkat Keberhasilan Rekomendasi: Persentase kesesuaian antara kursus yang direkomendasikan dengan preferensi pengguna.
+  - Tingkat Penerimaan dan Partisipasi dalam Kursus: Meliputi jumlah pendaftaran dan partisipasi dalam kursus yang direkomendasikan.
+
+4. Meningkatkan Konversi dan Pendapatan: Tujuan ini berfokus pada meningkatkan konversi pengguna menjadi peserta kursus berbayar dengan memberikan rekomendasi yang menarik dan memberikan nilai tambah.
+
+- Metrik Evaluasi: 
+  - Tingkat Konversi Pengguna: Persentase pengguna yang mendaftar untuk kursus berbayar setelah menerima rekomendasi.
+  - Pendapatan: Meningkatnya pendapatan dari penjualan kursus berbayar yang dihasilkan melalui rekomendasi.
+
+5. Analisis Data dan Pemahaman Pengguna: Tujuan ini melibatkan analisis data pengguna untuk memahami perilaku, preferensi, dan kebutuhan pengguna dalam konteks rekomendasi kursus.
+
+- Metrik Evaluasi: 
+  - Akurasi Rekomendasi: Persentase kesesuaian antara rekomendasi yang diberikan dengan preferensi dan minat pengguna yang terungkap melalui analisis data.
+  - Tingkat Pemahaman Pengguna: Menggunakan survei atau pengukuran lainnya untuk mengukur pemahaman pengguna terkait relevansi dan kegunaan rekomendasi yang diberikan.
+
+Dengan menggunakan metrik evaluasi yang tepat, kesuksesan dalam mencapai setiap tujuan dapat diukur dan dinilai secara objektif. Hal ini akan membantu dalam mengidentifikasi kekuatan dan kelemahan sistem rekomendasi, serta memberikan wawasan yang berguna dalam pengembangan dan peningkatan selanjutnya.
+
 ## 5. Solution statements
 
 ## 6. Data Understanding
