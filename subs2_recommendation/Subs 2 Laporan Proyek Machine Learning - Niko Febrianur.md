@@ -107,23 +107,23 @@ Hal ini akan membantu dalam mengidentifikasi kekuatan dan kelemahan sistem rekom
 Tahapan untuk menyelesaikan tujuan dari proyek ini adalah sebagai berikut:
 
 1. Tahap EDA (Exploratory Data Analysis):
-   a. Mengumpulkan data: Mengumpulkan data kursus Coursera, termasuk informasi kursus seperti judul, deskripsi, topik, ulasan pengguna, dan riwayat kursus pengguna.
-   b. Melakukan pembersihan data: Membersihkan dan memformat data agar sesuai dengan kebutuhan analisis.
-   c. Analisis data: Melakukan analisis eksploratori untuk memahami distribusi data, tren, dan pola yang ada. Ini meliputi pemahaman tentang preferensi kursus yang diambil pengguna, rating kursus, dan atribut skill yang relevan.
+- Mengumpulkan data: Mengumpulkan data kursus Coursera, termasuk informasi kursus seperti judul, deskripsi, topik, ulasan pengguna, dan riwayat kursus pengguna.
+- Melakukan pembersihan data: Membersihkan dan memformat data agar sesuai dengan kebutuhan analisis.
+- Analisis data: Melakukan analisis eksploratori untuk memahami distribusi data, tren, dan pola yang ada. Ini meliputi pemahaman tentang preferensi kursus yang diambil pengguna, rating kursus, dan atribut skill yang relevan.
 
 2. Pendekatan Content-Based Filtering:
-   a. Pembangunan fitur: Menggunakan teknik pengolahan bahasa alami (NLP) untuk menganalisis deskripsi kursus dan menghasilkan vektor fitur yang merepresentasikan konten kursus.
-   b. Membangun model: Menggunakan algoritma seperti TF-IDF atau Word Embeddings untuk membangun model yang dapat mengukur kesamaan antara kursus berdasarkan fitur-fitur kontennya.
-   c. Rekomendasi kursus: Menghitung kesamaan antara kursus yang ada dengan kursus yang diminati oleh pengguna berdasarkan kursus yang telah diambil dan atribut skill.
+- Pembangunan fitur: Menggunakan teknik pengolahan bahasa alami (NLP) untuk menganalisis deskripsi kursus dan menghasilkan vektor fitur yang merepresentasikan konten kursus.
+- Membangun model: Menggunakan algoritma seperti TF-IDF atau Word Embeddings untuk membangun model yang dapat mengukur kesamaan antara kursus berdasarkan fitur-fitur kontennya.
+- Rekomendasi kursus: Menghitung kesamaan antara kursus yang ada dengan kursus yang diminati oleh pengguna berdasarkan kursus yang telah diambil dan atribut skill.
 
 3. Pendekatan Collaborative Filtering:
-   a. Matriks User-Item: Membangun matriks user-item yang merepresentasikan preferensi pengguna terhadap kursus-kursus yang ada.
-   b. Membangun model: Menggunakan algoritma seperti Singular Value Decomposition (SVD) atau Matrix Factorization untuk membangun model yang dapat menemukan pola kolaboratif di antara kursus dan skill.
-   c. Rekomendasi kursus: Membuat rekomendasi kursus berdasarkan peringkat prediksi yang diberikan oleh model.
+- Matriks User-Item: Membangun matriks user-item yang merepresentasikan preferensi pengguna terhadap kursus-kursus yang ada.
+- Membangun model: Menggunakan algoritma seperti Singular Value Decomposition (SVD) atau Matrix Factorization untuk membangun model yang dapat menemukan pola kolaboratif di antara kursus dan skill.
+- Rekomendasi kursus: Membuat rekomendasi kursus berdasarkan peringkat prediksi yang diberikan oleh model.
 
 4. Evaluasi Model:
-   a. Evaluasi Content-Based Filtering: Menggunakan metrik Precission untuk mengukur sejauh mana rekomendasi kursus yang diberikan relevan dengan preferensi pengguna.
-   b. Evaluasi Collaborative Filtering: Menggunakan metrik Root Mean Square Error (RMSE) untuk mengukur sejauh mana peringkat prediksi model mendekati peringkat yang sebenarnya.
+- Evaluasi Content-Based Filtering: Menggunakan metrik Precission untuk mengukur sejauh mana rekomendasi kursus yang diberikan relevan dengan preferensi pengguna.
+- Evaluasi Collaborative Filtering: Menggunakan metrik Root Mean Square Error (RMSE) untuk mengukur sejauh mana peringkat prediksi model mendekati peringkat yang sebenarnya.
 
 5. Perbaikan dan Penyesuaian Model: Menganalisis hasil evaluasi model dan melakukan perbaikan atau penyesuaian yang diperlukan untuk meningkatkan performa dan akurasi rekomendasi.
 
