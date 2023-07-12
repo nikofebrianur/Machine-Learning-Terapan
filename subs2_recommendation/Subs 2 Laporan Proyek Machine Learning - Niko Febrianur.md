@@ -312,9 +312,26 @@ Pendekatan *Collaborative Filtering* memanfaatkan informasi dari pengguna-penggu
 
 Dalam praktiknya, seringkali pendekatan ini dikombinasikan dengan *Content Based Filtering* untuk meningkatkan performa dan relevansi rekomendasi yang dihasilkan.
 
+### Training Model
 
+Pada tahapan training model, proses yang dilakukan adalah sebagai berikut: 
 
-### Kelebihan dan kekurangan
+1. Splitting Data: Bagi data menjadi set pelatihan (train set) dan set pengujian (test set). Set pelatihan akan digunakan untuk melatih model, sedangkan set pengujian akan digunakan untuk menguji performa model secara independen. Perbandingan umum adalah sekitar 80% data untuk set pelatihan dan 20% untuk set pengujian.
+
+2. Model Architecture: Tentukan arsitektur model RecommenderNet yang akan digunakan. RecommenderNet adalah model yang dirancang khusus untuk tugas rekomendasi dan memanfaatkan teknik deep learning untuk menghasilkan rekomendasi yang personal dan akurat. Arsitektur model RecommenderNet harus disesuaikan dengan masalah spesifik dan karakteristik data.
+
+3. Data Preparation for Training: Lakukan pra-pemrosesan pada data pelatihan. Ini melibatkan konversi variabel kategori menjadi representasi numerik yang sesuai, normalisasi data jika diperlukan, dan pembuatan data dalam bentuk yang cocok untuk pelatihan model RecommenderNet.
+
+4. Training Model: Latih model RecommenderNet menggunakan set pelatihan. Selama proses pelatihan, model akan mempelajari pola-pola dan relasi antara pengguna dan kursus untuk menghasilkan rekomendasi yang tepat. Proses ini melibatkan optimisasi parameter melalui iterasi berulang untuk mengurangi kesalahan dan meningkatkan kinerja model.
+
+![grafik model metrik](https://github.com/nikofebrianur/Machine-Learning-Terapan/assets/42314371/409c78b1-822a-487e-be01-ff6f8a1fa3b0)
+####### Gambar 8.1 Grafik Visualisasi Metrik Model Training 
+
+5. Evaluasi Model: Evaluasi performa model menggunakan set pengujian yang telah dipisahkan sebelumnya. Hitung metrik evaluasi yang sesuai, seperti akurasi, presisi, atau recall, untuk mengukur sejauh mana model mampu memberikan rekomendasi yang relevan dan sesuai dengan preferensi pengguna.
+
+Dalam tahapan ini, data dipisahkan menjadi set pelatihan dan set pengujian untuk memastikan evaluasi yang objektif terhadap performa model. 
+
+Set pelatihan digunakan untuk melatih model, sedangkan set pengujian digunakan untuk menguji performa model secara independen dan mengukur sejauh mana model dapat menggeneralisasi dengan baik ke data yang belum pernah dilihat sebelumnya.
  
 ## 9. Evaluation
 
