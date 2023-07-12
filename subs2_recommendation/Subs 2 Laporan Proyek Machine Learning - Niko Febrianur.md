@@ -109,16 +109,16 @@ Tahapan untuk menyelesaikan tujuan dari proyek ini adalah sebagai berikut:
 1. Tahap EDA (Exploratory Data Analysis):
    - Mengumpulkan data: Mengumpulkan data kursus Coursera, termasuk informasi kursus seperti judul, deskripsi, topik, ulasan pengguna, dan riwayat kursus pengguna.
    - Melakukan pembersihan data: Membersihkan dan memformat data agar sesuai dengan kebutuhan analisis.
-   - Analisis data: Melakukan analisis eksploratori untuk memahami distribusi data, tren, dan pola yang ada. Ini meliputi pemahaman tentang preferensi kursus yang diambil pengguna, rating kursus, dan atribut skill yang relevan.
+   - Analisis data: Melakukan analisis eksploratori untuk memahami distribusi data, tren, dan pola yang ada. Ini meliputi pemahaman tentang preferensi kursus yang diambil pengguna, rating kursus, dan atribut keahlian yang relevan.
 
 2. Pendekatan Content-Based Filtering:
    - Pembangunan fitur: Menggunakan teknik pengolahan bahasa alami (NLP) untuk menganalisis deskripsi kursus dan menghasilkan vektor fitur yang merepresentasikan konten kursus.
    - Membangun model: Menggunakan algoritma seperti TF-IDF atau Word Embeddings untuk membangun model yang dapat mengukur kesamaan antara kursus berdasarkan fitur-fitur kontennya.
-   - Rekomendasi kursus: Menghitung kesamaan antara kursus yang ada dengan kursus yang diminati oleh pengguna berdasarkan kursus yang telah diambil dan atribut skill.
+   - Rekomendasi kursus: Menghitung kesamaan antara kursus yang ada dengan kursus yang diminati oleh pengguna berdasarkan kursus yang telah diambil dan atribut keahlian.
 
 3. Pendekatan Collaborative Filtering:
    - Matriks User-Item: Membangun matriks user-item yang merepresentasikan preferensi pengguna terhadap kursus-kursus yang ada.
-   - Membangun model: Menggunakan algoritma seperti Singular Value Decomposition (SVD) atau Matrix Factorization untuk membangun model yang dapat menemukan pola kolaboratif di antara kursus dan skill.
+   - Membangun model: Menggunakan algoritma seperti Singular Value Decomposition (SVD) atau Matrix Factorization untuk membangun model yang dapat menemukan pola kolaboratif di antara kursus dan keahlian.
    - Rekomendasi kursus: Membuat rekomendasi kursus berdasarkan peringkat prediksi yang diberikan oleh model.
 
 4. Evaluasi Model:
@@ -185,6 +185,16 @@ dtypes: object(7)
 
 
 ## 7. Data Preparation
+
+Berikut adalah tahapan-tahapan yang dilakukan:
+
+1. Drop outliers menggunakan IQR: Mengidentifikasi dan menghapus *outlier* pada dataset menggunakan metode IQR (Interquartile Range).
+2. Mengatasi missing value: Melakukan penanganan terhadap nilai yang hilang pada dataset, seperti menghapus baris atau mengisi nilai yang hilang dengan metode tertentu, seperti mean atau median.
+3. Mengambil kolom yang diperlukan dan merubah nama kolom: Memilih kolom-kolom yang relevan untuk analisis dan memberikan nama baru jika diperlukan.
+4. Exclude rating yang ingin dihapus dari dataset: Menghapus data dengan rating tertentu yang ingin dikecualikan dari analisis.
+5. Reset index dataframe untuk menghindari error: Mereset indeks dataframe setelah melakukan operasi penghapusan atau pemrosesan data agar indeks kembali terurut secara berurutan.
+6. Convert "rating" column to int64 data type: Mengubah tipe data kolom "rating" menjadi tipe data int64 untuk mempermudah analisis numerik.
+7. Mendapatkan list unik kolom kursus dan keahlian: Mengidentifikasi dan mendapatkan daftar unik kolom "courseName" dan "skills" dalam dataset.
 
 ## 8. Modeling
 
