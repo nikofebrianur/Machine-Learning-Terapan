@@ -155,6 +155,28 @@ Dataset dapat diunduh di: [Coursera courses dataset 2021](https://www.Kaggle.Com
 
 ### Variabel-variabel pada dataset Coursera Courses 2021 adalah sebagai berikut:
 
+- Course Name: Nama kursus.
+- University: Universitas yang menyelenggarakan kursus.
+- Difficulty Level: Tingkat kesulitan kursus (Beginner, Intermediate, Advanced).
+- Course Rating: Nilai atau peringkat kursus oleh pengguna.
+- Course URL: Tautan URL kursus di Coursera.
+- Course Description: Deskripsi singkat tentang kursus.
+- Skills: Keterampilan atau topik yang terkait dengan kursus tersebut.
+
+  <class 'pandas.core.frame.DataFrame'>
+RangeIndex: 3522 entries, 0 to 3521
+Data columns (total 7 columns):
+ #   Column              Non-Null Count  Dtype 
+---  ------              --------------  ----- 
+ 0   Course Name         3522 non-null   object
+ 1   University          3522 non-null   object
+ 2   Difficulty Level    3522 non-null   object
+ 3   Course Rating       3522 non-null   object
+ 4   Course URL          3522 non-null   object
+ 5   Course Description  3522 non-null   object
+ 6   Skills              3522 non-null   object
+dtypes: object(7)
+memory usage: 192.7+ KB
 
 ### Pendalaman Data Understanding
 
