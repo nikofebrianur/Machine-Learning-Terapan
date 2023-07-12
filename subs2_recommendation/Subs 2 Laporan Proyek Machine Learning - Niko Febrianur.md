@@ -140,6 +140,7 @@ Dataset dapat diunduh di: [Coursera courses dataset 2021](https://www.Kaggle.Com
 
 ### Sample data
 
+Tabel 6.1 Contoh Data pada Dataset
 | Course Name                                               | University                               | Difficulty Level | Course Rating | Course URL                                          | Course Description                                 | Skills                                           |
 |-----------------------------------------------------------|------------------------------------------|------------------|---------------|-----------------------------------------------------|----------------------------------------------------|--------------------------------------------------|
 | Write A Feature Length Screenplay For Film Or ...          | Michigan State University                | Beginner         | 4.8           | [Course URL](https://www.coursera.org/learn/write-a-feature...)              | Write a Full Length Feature Film Script In th...   | Drama Comedy peering screenwriting film D...     |
@@ -163,6 +164,7 @@ Dataset dapat diunduh di: [Coursera courses dataset 2021](https://www.Kaggle.Com
 - Course Description: Deskripsi singkat tentang kursus.
 - Skills: Keterampilan atau topik yang terkait dengan kursus tersebut.
 
+Tabel 6.2 Tipe Data Tiap Kolom pada Dataset
 ```sh
 RangeIndex: 3522 entries, 0 to 3521
 Data columns (total 7 columns):
@@ -228,13 +230,31 @@ Selama pendekatan ini, proses modeling dilakukan berdasar urutan sebagai berikut
 
 2. *Cosine Similarity*: Setelah mendapatkan vektor fitur menggunakan *TF-IDF Vectorizer*, tahap selanjutnya adalah menghitung kesamaan antara kursus menggunakan metode *Cosine Similarity*. *Cosine Similarity* mengukur kesamaan arah antara dua vektor dalam ruang vektor. Pada konteks Content Based Filtering, *Cosine Similarity* digunakan untuk mengukur kesamaan antara vektor fitur kursus berdasarkan deskripsi, topik, atau keterampilan yang terkait. Semakin tinggi nilai *Cosine Similarity*, semakin mirip kedua kursus dalam hal fitur-fitur yang diamati.
 
+Tabel 8.1 Hasil Perhitungan Cosine Similarity pada Matrix TF-IDF
+
+```sh
+array([[1.        , 0.        , 0.15356638, ..., 0.        , 0.        ,
+        0.        ],
+       [0.        , 1.        , 0.        , ..., 0.15163383, 0.        ,
+        0.0421248 ],
+       [0.15356638, 0.        , 1.        , ..., 0.        , 0.        ,
+        0.        ],
+       ...,
+       [0.        , 0.15163383, 0.        , ..., 1.        , 0.        ,
+        0.        ],
+       [0.        , 0.        , 0.        , ..., 0.        , 1.        ,
+        0.        ],
+       [0.        , 0.0421248 , 0.        , ..., 0.        , 0.        ,
+        1.        ]])
+```
+
 3. *Euclidean Distance*: Selain *Cosine Similarity*, tahap Content Based Filtering juga dapat menggunakan *Euclidean Distance* untuk mengukur jarak antara vektor fitur kursus. *Euclidean Distance* menghitung jarak antara dua titik dalam ruang Euclidean. Dalam konteks *Content Based Filtering*, *Euclidean Distance* digunakan untuk mengukur jarak antara vektor fitur kursus. Semakin kecil nilai *Euclidean Distance*, semakin mirip kedua kursus dalam hal fitur-fitur yang diamati.
 
 Tahapan-tahapan di atas merupakan bagian dari proses *Content Based Filtering* yang bertujuan untuk menganalisis dan membandingkan konten kursus berdasarkan vektor fitur yang dihasilkan menggunakan *TF-IDF Vectorizer*. 
 
 Penggunaan metode *Cosine Similarity* dan *Euclidean Distance* memungkinkan untuk mengukur kesamaan atau perbedaan antara kursus-kursus dalam hal konten yang diamati.
 
-*Cosine Similarity* mengukur kesamaan arah antara vektor fitur, sedangkan **Euclidean Distance** mengukur jarak antara vektor fitur. 
+*Cosine Similarity* mengukur kesamaan arah antara vektor fitur, sedangkan *Euclidean Distance* mengukur jarak antara vektor fitur. 
 
 Pilihan antara kedua metode ini tergantung pada konteks dan tujuan aplikasi yang lebih spesifik.
 
