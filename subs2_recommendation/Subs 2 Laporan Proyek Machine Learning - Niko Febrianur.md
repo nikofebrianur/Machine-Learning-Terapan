@@ -116,19 +116,19 @@ Tahapan untuk menyelesaikan tujuan dari proyek ini adalah sebagai berikut:
    - Membangun model: Menggunakan algoritma seperti TF-IDF atau Word Embeddings untuk membangun model yang dapat mengukur kesamaan antara kursus berdasarkan fitur-fitur kontennya.
    - Rekomendasi kursus: Menghitung kesamaan antara kursus yang ada dengan kursus yang diminati oleh pengguna berdasarkan kursus yang telah diambil dan atribut keahlian.
 
-3. Pendekatan Collaborative Filtering:
+3. Pendekatan *Collaborative Filtering*:
    - Matriks User-Item: Membangun matriks user-item yang merepresentasikan preferensi pengguna terhadap kursus-kursus yang ada.
    - Membangun model: Menggunakan algoritma seperti Singular Value Decomposition (SVD) atau Matrix Factorization untuk membangun model yang dapat menemukan pola kolaboratif di antara kursus dan keahlian.
    - Rekomendasi kursus: Membuat rekomendasi kursus berdasarkan peringkat prediksi yang diberikan oleh model.
 
 4. Evaluasi Model:
    - Evaluasi Content-Based Filtering: Menggunakan metrik Precission untuk mengukur sejauh mana rekomendasi kursus yang diberikan relevan dengan preferensi pengguna.
-   - Evaluasi Collaborative Filtering: Menggunakan metrik Root Mean Square Error (RMSE) untuk mengukur sejauh mana peringkat prediksi model mendekati peringkat yang sebenarnya.
+   - Evaluasi *Collaborative Filtering*: Menggunakan metrik Root Mean Square Error (RMSE) untuk mengukur sejauh mana peringkat prediksi model mendekati peringkat yang sebenarnya.
 
 5. Perbaikan dan Penyesuaian Model:
    - Menganalisis hasil evaluasi model dan melakukan perbaikan atau penyesuaian yang diperlukan untuk meningkatkan performa dan akurasi rekomendasi.
 
-Dengan pendekatan ini, kita dapat memanfaatkan fitur-fitur konten kursus (Content-Based Filtering) serta pola kolaboratif antara pengguna dan kursus (Collaborative Filtering) untuk memberikan rekomendasi kursus yang relevan kepada pengguna. 
+Dengan pendekatan ini, kita dapat memanfaatkan fitur-fitur konten kursus (Content-Based Filtering) serta pola kolaboratif antara pengguna dan kursus (*Collaborative Filtering*) untuk memberikan rekomendasi kursus yang relevan kepada pengguna. 
 
 Evaluasi menggunakan metrik Precission dan RMSE akan memberikan wawasan tentang sejauh mana performa model dalam memberikan rekomendasi yang tepat.
 
@@ -224,6 +224,26 @@ Kedua teknik perhitungan *similarity* tersebut digunakan untuk membandingkan kes
 
 Pilihan antara kedua metode ini tergantung pada konteks dan tujuan aplikasi yang lebih spesifik.
 
+*Collaborative Filtering* adalah pendekatan dalam sistem rekomendasi yang mengandalkan informasi dari pengguna-pengguna lain dalam menghasilkan rekomendasi. 
+
+Pendekatan ini mencoba untuk menemukan pola kolaboratif antara pengguna dan item yang direkomendasikan berdasarkan interaksi atau preferensi mereka.
+
+Ada dua jenis utama dalam *Collaborative Filtering*:
+1. *User-Based Collaborative Filtering*: Pendekatan ini mencari kesamaan antara pengguna berdasarkan riwayat preferensi atau interaksi mereka dengan item. Jika dua pengguna memiliki pola preferensi yang serupa, kemungkinan besar mereka akan memiliki preferensi yang sama pada item yang belum mereka eksplorasi. Rekomendasi diberikan berdasarkan preferensi pengguna yang serupa.
+
+2. *Item-Based Collaborative Filtering*: Pendekatan ini mencari kesamaan antara item berdasarkan riwayat preferensi atau interaksi pengguna dengan item tersebut. Jika dua item memiliki pola preferensi yang serupa dari pengguna yang sama, kemungkinan besar pengguna yang memiliki preferensi pada item pertama juga akan memiliki preferensi pada item kedua. Rekomendasi diberikan berdasarkan kesamaan antara item yang ada dengan item yang diminati oleh pengguna.
+
+Kelebihan *Collaborative Filtering*:
+1. *Discovery of Serendipity*: *Collaborative Filtering* dapat menghasilkan rekomendasi yang tidak terduga atau serendipitous. Pendekatan ini memungkinkan pengguna menemukan item baru yang mungkin tidak mereka eksplorasi sebelumnya.
+2. Tidak tergantung pada fitur konten: Pendekatan ini tidak memerlukan informasi tentang fitur konten dari item yang direkomendasikan. Ini membuatnya berguna dalam situasi di mana informasi fitur tidak tersedia atau sulit untuk dianalisis.
+
+Kekurangan *Collaborative Filtering*:
+1. *Cold Start Problem*: *Collaborative Filtering* memiliki tantangan saat menghadapi pengguna baru atau item baru. Jika tidak ada riwayat preferensi atau interaksi yang tersedia, sulit untuk memberikan rekomendasi yang relevan.
+2. *Scalability*: Pendekatan ini dapat mengalami kesulitan dalam skala yang besar. Semakin banyak pengguna dan item yang ada, semakin sulit untuk menghasilkan rekomendasi yang akurat secara efisien.
+
+Pendekatan *Collaborative Filtering* memanfaatkan informasi dari pengguna-pengguna lain untuk memberikan rekomendasi. 
+
+Dalam praktiknya, seringkali pendekatan ini dikombinasikan dengan *Content Based Filtering* untuk meningkatkan performa dan relevansi rekomendasi yang dihasilkan.
 
 
 ### Tahapan yang dilakukan
