@@ -336,7 +336,6 @@ Set pelatihan digunakan untuk melatih model, sedangkan set pengujian digunakan u
  
 ## 9. Evaluation
 
-
 Tabel 9.2 Hasil Rekomendasi dengan Cosine Similarity
 
 |    | courseName                                                          |   rating | skills                                                                                                                                                                                                                                                             |
@@ -368,6 +367,34 @@ Tabel 9.2 Hasil Rekomendasi dengan Euclidean Distance
 |  9 | Hardware Security                                                   |  1.09772 | graph coloring  Hardware Design  trusted platform module  vulnerability (computing)  security  modular exponentiation  System Security  Cryptography  Systems Design  side-channel attack computer-science computer-security-and-networks                          |
 
 ## 10. Kesimpulan 
+
+Proyek ini berhasil mengembangkan sebuah sistem rekomendasi yang dapat memberikan pengalaman pengguna yang lebih baik dalam mencari dan memilih kursus di Coursera. 
+
+Dengan menerapkan pendekatan *Content Based Filtering* dan *Collaborative Filtering*, sistem dapat memberikan rekomendasi kursus yang personal dan relevan berdasarkan preferensi pengguna.
+
+Melalui penggunaan metrik evaluasi yang relevan seperti *Precission* dan *Root Mean Square Error* (RMSE), kami dapat mengukur keberhasilan sistem dalam mencapai tujuan yang telah ditetapkan. 
+
+Evaluasi terhadap pendekatan *Content Based Filtering* menggunakan metrik Precission, sedangkan pendekatan *Collaborative Filtering* dievaluasi menggunakan metrik RMSE.
+
+Dengan memberikan rekomendasi kursus yang relevan dan menarik, proyek ini berpotensi meningkatkan retensi pengguna pada platform Coursera. 
+
+Rekomendasi yang disesuaikan dengan preferensi pengguna akan membantu pengguna dalam menemukan kursus-kursus yang paling sesuai dengan kebutuhan dan minat mereka.
+
+Selain itu, sistem rekomendasi ini juga dapat memberikan manfaat bagi Coursera dalam mengoptimalkan penyediaan kursus yang relevan. 
+
+Dengan menganalisis preferensi pengguna, keterampilan yang dibutuhkan dalam pasar, dan tren industri, Coursera dapat menyesuaikan penawaran kursus mereka untuk memenuhi kebutuhan pengguna dan mengikuti perkembangan industri.
+
+Dalam hal meningkatkan konversi pengguna menjadi peserta kursus berbayar, sistem rekomendasi dapat memainkan peran penting dengan menyediakan rekomendasi yang menarik dan memberikan nilai tambah kepada pengguna. 
+
+Dengan memperhitungkan preferensi pengguna, sistem dapat memberikan rekomendasi kursus berbayar yang relevan dengan minat dan kebutuhan mereka.
+
+Selain itu, proyek ini juga berhasil melakukan analisis data pengguna untuk memahami perilaku, preferensi, dan kebutuhan pengguna dalam konteks rekomendasi kursus. 
+
+Dengan menganalisis data secara efektif, kami dapat mendapatkan wawasan yang berharga tentang pengguna dan menggunakan informasi ini untuk meningkatkan kualitas rekomendasi kursus yang diberikan.
+
+Secara keseluruhan, proyek ini berhasil mengimplementasikan sistem rekomendasi yang dapat meningkatkan pengalaman pengguna, retensi pengguna, konversi pengguna, dan pemahaman tentang pengguna dalam konteks rekomendasi kursus di Coursera. 
+
+Dengan menggunakan metrik evaluasi yang relevan, kami dapat mengukur keberhasilan mencapai tujuan yang telah ditetapkan dan memberikan manfaat yang signifikan bagi pengguna dan Coursera.
 
 ## References
 
