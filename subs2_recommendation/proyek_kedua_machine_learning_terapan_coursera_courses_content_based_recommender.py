@@ -15,6 +15,10 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity, euclidean_distances
+from tensorflow.keras.layers import Input, Add, Activation, Lambda, Embedding, Reshape, Dot
+
 # %matplotlib inline
 
 !gdown --id "1FuRZhGKHEYLN4qoEzEKF2A7tuAG0fPyj"
@@ -128,6 +132,8 @@ pd.DataFrame(
     index=courses.skills
 ).sample(10, axis=1).sample(10, axis=0)
 
+"""Cosine Similarity"""
+
 from sklearn.metrics.pairwise import cosine_similarity
 
 # Menghitung cosine similarity pada matrix tf-idf
@@ -141,22 +147,19 @@ print('Shape:', cosine_sim_df.shape)
 # Melihat similarity matrix pada setiap course
 cosine_sim_df.sample(10, axis=1).sample(10, axis=0)
 
-def course_recommendations(title, similarity_data=cosine_sim_df, items=courses, k=7):
-    # Mengambil data dengan menggunakan argpartition untuk melakukan partisi secara tidak langsung sepanjang sumbu yang diberikan
-    # Dataframe diubah menjadi numpy
-    # Range(start, stop, step)
-    index = similarity_data.loc[:,title].to_numpy().argpartition(
-        range(-1, -k, -1))
+print(cosine_sim_df.sample(5, axis=1).sample(10, axis=0).to_markdown())
 
-    # Mengambil data dengan similarity terbesar dari index yang ada
-    closest = similarity_data.columns[index[-1:-(k+2):-1]]
+"""Euclidean Distance"""
 
-    # Drop title agar nama title yang dicari tidak muncul dalam daftar rekomendasi
-    closest = closest.drop(title, errors='ignore')
+# Menghitung euclidean distance pada matrix tf-idf
+euclidean_dist = euclidean_distances(tfidf_matrix)
 
-    return pd.DataFrame(closest).merge(items).head(k)
+# Membuat dataframe dari variabel euclidean_dist dengan baris dan kolom berupa nama course
+euclidean_dist_df = pd.DataFrame(euclidean_dist, index=courses.courseName, columns=courses.courseName)
 
-course_recommendations('Cloud Security Basics')
+euclidean_dist_df.sample(5, axis=1).sample(10, axis=0)
+
+print(euclidean_dist_df.sample(5, axis=1).sample(10, axis=0).to_markdown())
 
 """# Model Development dengan Collaborative Filtering"""
 
@@ -280,9 +283,8 @@ class RecommenderNet(tf.keras.Model):
 
     return tf.nn.sigmoid(x) # activation sigmoid
 
-model = RecommenderNet(num_courses, num_skills, 50) # inisialisasi model
+model = RecommenderNet(num_courses, num_skills, 50)
 
-# model compile
 model.compile(
     loss = tf.keras.losses.BinaryCrossentropy(),
     optimizer = keras.optimizers.Adam(learning_rate=0.001),
@@ -344,6 +346,65 @@ skills_courses_array
 # Prediksi model
 ratings = model.predict(skills_courses_array).flatten()
 
+"""# Model Evaluation
+
+Content Based Filtering
+"""
+
+# Membuat fungsi prediction
+course_columns = ['courseName','rating', 'skills']
+def get_recommendations(title, similarity_data=cosine_sim_df, similar_type='cosine', items=courses[course_columns], k=10):
+
+    # Mengambil data dengan similarity terbesar (cosine) dan terkecil (euclidean) dari index yang ada
+    if (similar_type == 'cosine'):
+        index = similarity_data.loc[:,title].to_numpy().argpartition(
+        range(-1, -k, -1))
+        closest = similarity_data.columns[index[-1:-(k+2):-1]]
+        score = similarity_data.iloc[index[-1:-(k+2):-1],
+                                     similarity_data.columns.get_loc(title)
+                                    ].reset_index(drop=True)
+    else:
+        index = similarity_data.loc[:,title].to_numpy().argpartition(
+        range(k+1))
+        closest = similarity_data.columns[index[:(k+2)]]
+        score = similarity_data.iloc[index[:(k+2)],
+                                     similarity_data.columns.get_loc(title)
+                                    ].reset_index(drop=True)
+
+    # Drop courseName agar course yang dicari tidak muncul dalam daftar rekomendasi
+    closest = closest.drop(title, errors='ignore')
+    result = pd.DataFrame(closest).merge(items).head(k)
+    result['rating'] = score
+    return result
+
+# Mengambil contoh course
+courses.loc[courses.courseName.isin([
+    'Software Security',
+]), course_columns]
+
+"""Cosine Similarity"""
+
+print(get_recommendations('Software Security').to_markdown())
+
+"""Euclidean Distance"""
+
+print(get_recommendations('Software Security', euclidean_dist_df, 'euclidean').to_markdown())
+
+"""Colaborative Filtering"""
+
+fig, ax = plt.subplots(2, figsize=(16, 8))
+
+mt = history.history['root_mean_squared_error']
+mv = history.history['val_root_mean_squared_error']
+
+ax[0].plot(mt)
+ax[0].plot(mv)
+
+for plot in ax.flat:
+    plot.set(xlabel='rmse', ylabel='val-rmse')
+
+plt.show()
+
 top_ratings_indices = ratings.argsort()[-10:][::-1]
 recommended_course_ids = [
     cn_encoded_to_cn.get(courses_not_enrolled[x][0]) for x in top_ratings_indices
@@ -374,38 +435,3 @@ print('----' * 8)
 recommended_courses = courses[courses['rating'].isin(recommended_course_ids)]
 for row in recommended_courses.itertuples():
     print(row.courseName)
-
-"""# Model Evaluation"""
-
-course_columns = ['courseName','rating', 'skills']
-def get_recommendations(title, similarity_data=cosine_sim_df, similar_type='cosine', items=courses[course_columns], k=10):
-
-    # Mengambil data dengan similarity terbesar (cosine) dan terkecil (euclidean) dari index yang ada
-    if (similar_type == 'cosine'):
-        index = similarity_data.loc[:,title].to_numpy().argpartition(
-        range(-1, -k, -1))
-        closest = similarity_data.columns[index[-1:-(k+2):-1]]
-        score = similarity_data.iloc[index[-1:-(k+2):-1],
-                                     similarity_data.columns.get_loc(title)
-                                    ].reset_index(drop=True)
-    else:
-        index = similarity_data.loc[:,title].to_numpy().argpartition(
-        range(k+1))
-        closest = similarity_data.columns[index[:(k+2)]]
-        score = similarity_data.iloc[index[:(k+2)],
-                                     similarity_data.columns.get_loc(title)
-                                    ].reset_index(drop=True)
-
-    # Drop courseName agar course yang dicari tidak muncul dalam daftar rekomendasi
-    closest = closest.drop(title, errors='ignore')
-    result = pd.DataFrame(closest).merge(items).head(k)
-    result['rating'] = score
-    return result
-
-courses.loc[courses.courseName.isin([
-    'Software Security',
-]), course_columns]
-
-get_recommendations('Software Security')
-
-get_recommendations('Web Design for Everybody Capstone')
