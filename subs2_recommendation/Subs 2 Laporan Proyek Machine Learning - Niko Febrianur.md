@@ -200,7 +200,8 @@ Berikut adalah tahapan-tahapan yang dilakukan:
 
 Pada proyek ini diterapkan 2 tipe model, yaitu *Content Based Filtering* dan *Collaborative Based Filtering*.
 
-**Content Based Filtering** adalah pendekatan dalam sistem rekomendasi yang mengandalkan analisis konten dari item yang direkomendasikan. 
+### *Content Based Filtering*
+*Content Based Filtering* adalah pendekatan dalam sistem rekomendasi yang mengandalkan analisis konten dari item yang direkomendasikan. 
 
 Dalam konteks sistem rekomendasi kursus Coursera, pendekatan ini akan menganalisis fitur-fitur konten dari kursus, seperti deskripsi kursus, topik, rating, atau keterampilan yang terkait, untuk memberikan rekomendasi yang relevan kepada pengguna.
 
@@ -216,13 +217,28 @@ Kekurangan *Content Based Filtering*:
 Teknik Perhitungan Similarity:
 1. *Cosine Similarity*: *Cosine Similarity* mengukur kesamaan antara dua vektor dengan menghitung kosinus sudut antara vektor-vektor tersebut. Dalam konteks *Content Based Filtering*, kita dapat menggunakan *Cosine Similarity* untuk mengukur kesamaan antara vektor representasi fitur kursus berdasarkan deskripsi, topik, atau keterampilan. Nilai *Cosine Similarity* berkisar antara -1 hingga 1, di mana nilai 1 menunjukkan kesamaan yang sempurna dan nilai -1 menunjukkan perbedaan yang sempurna.
 
-2. *Euclidean Distance*: *Euclidean Distance* mengukur jarak antara dua titik dalam ruang Euclidean. Dalam konteks *Content Based Filtering*, kita dapat menggunakan *Euclidean Distance* untuk mengukur jarak antara vektor representasi fitur kursus. Semakin kecil nilai *Euclidean Distance*, semakin mirip kedua kursus dalam hal fitur-fitur yang diamati.
+2. **Euclidean Distance**: **Euclidean Distance** mengukur jarak antara dua titik dalam ruang Euclidean. Dalam konteks *Content Based Filtering*, kita dapat menggunakan **Euclidean Distance** untuk mengukur jarak antara vektor representasi fitur kursus. Semakin kecil nilai **Euclidean Distance**, semakin mirip kedua kursus dalam hal fitur-fitur yang diamati.
 
 Kedua teknik perhitungan *similarity* tersebut digunakan untuk membandingkan kesamaan antara kursus-kursus dalam sistem rekomendasi. 
 
-*Cosine Similarity* mengukur kesamaan arah antara vektor fitur, sedangkan *Euclidean Distance* mengukur jarak antara vektor fitur. 
+### Tahapan yang dilakukan dengan pendekatan *Content Based Filtering*
+Selama pendekatan ini, proses modeling dilakukan berdasar urutan sebagai berikut ini:
+
+1. *TF-IDF Vectorizer*: Tahap ini melibatkan penggunaan TF-IDF (Term Frequency-Inverse Document Frequency) Vectorizer untuk mengubah teks pada deskripsi kursus menjadi representasi numerik. TF-IDF mengukur pentingnya suatu kata dalam dokumen berdasarkan frekuensi kemunculan kata tersebut dalam dokumen dan inversi frekuensi kemunculan kata tersebut dalam seluruh koleksi dokumen. *TF-IDF Vectorizer* menghasilkan vektor fitur yang merepresentasikan konten kursus.
+
+2. *Cosine Similarity*: Setelah mendapatkan vektor fitur menggunakan *TF-IDF Vectorizer*, tahap selanjutnya adalah menghitung kesamaan antara kursus menggunakan metode *Cosine Similarity*. *Cosine Similarity* mengukur kesamaan arah antara dua vektor dalam ruang vektor. Pada konteks Content Based Filtering, *Cosine Similarity* digunakan untuk mengukur kesamaan antara vektor fitur kursus berdasarkan deskripsi, topik, atau keterampilan yang terkait. Semakin tinggi nilai *Cosine Similarity*, semakin mirip kedua kursus dalam hal fitur-fitur yang diamati.
+
+3. *Euclidean Distance*: Selain *Cosine Similarity*, tahap Content Based Filtering juga dapat menggunakan *Euclidean Distance* untuk mengukur jarak antara vektor fitur kursus. *Euclidean Distance* menghitung jarak antara dua titik dalam ruang Euclidean. Dalam konteks *Content Based Filtering*, *Euclidean Distance* digunakan untuk mengukur jarak antara vektor fitur kursus. Semakin kecil nilai *Euclidean Distance*, semakin mirip kedua kursus dalam hal fitur-fitur yang diamati.
+
+Tahapan-tahapan di atas merupakan bagian dari proses *Content Based Filtering* yang bertujuan untuk menganalisis dan membandingkan konten kursus berdasarkan vektor fitur yang dihasilkan menggunakan *TF-IDF Vectorizer*. 
+
+Penggunaan metode *Cosine Similarity* dan *Euclidean Distance* memungkinkan untuk mengukur kesamaan atau perbedaan antara kursus-kursus dalam hal konten yang diamati.
+
+*Cosine Similarity* mengukur kesamaan arah antara vektor fitur, sedangkan **Euclidean Distance** mengukur jarak antara vektor fitur. 
 
 Pilihan antara kedua metode ini tergantung pada konteks dan tujuan aplikasi yang lebih spesifik.
+
+### *Collaborative Filtering*
 
 *Collaborative Filtering* adalah pendekatan dalam sistem rekomendasi yang mengandalkan informasi dari pengguna-pengguna lain dalam menghasilkan rekomendasi. 
 
@@ -246,7 +262,6 @@ Pendekatan *Collaborative Filtering* memanfaatkan informasi dari pengguna-penggu
 Dalam praktiknya, seringkali pendekatan ini dikombinasikan dengan *Content Based Filtering* untuk meningkatkan performa dan relevansi rekomendasi yang dihasilkan.
 
 
-### Tahapan yang dilakukan
 
 ### Kelebihan dan kekurangan
  
