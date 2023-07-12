@@ -163,6 +163,7 @@ Dataset dapat diunduh di: [Coursera courses dataset 2021](https://www.Kaggle.Com
 - Course Description: Deskripsi singkat tentang kursus.
 - Skills: Keterampilan atau topik yang terkait dengan kursus tersebut.
 
+```sh
 RangeIndex: 3522 entries, 0 to 3521
 Data columns (total 7 columns):
  #   Column              Non-Null Count  Dtype 
@@ -175,7 +176,7 @@ Data columns (total 7 columns):
  5   Course Description  3522 non-null   object
  6   Skills              3522 non-null   object
 dtypes: object(7)
-
+```
 
 ### Pendalaman Data Understanding
 
