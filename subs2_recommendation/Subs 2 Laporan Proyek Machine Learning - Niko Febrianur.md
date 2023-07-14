@@ -113,24 +113,24 @@ Tahapan untuk menyelesaikan tujuan dari proyek ini adalah sebagai berikut:
 
 2. Pendekatan Content-Based Filtering:
    - Pembangunan fitur: Menggunakan teknik pengolahan bahasa alami (NLP) untuk menganalisis deskripsi kursus dan menghasilkan vektor fitur yang merepresentasikan konten kursus.
-   - Membangun model: Menggunakan algoritma seperti TF-IDF atau Word Embeddings untuk membangun model yang dapat mengukur kesamaan antara kursus berdasarkan fitur-fitur kontennya.
+   - Membangun model: Menggunakan algoritma seperti *TF-IDF* atau *Word Embeddings* untuk membangun model yang dapat mengukur kesamaan antara kursus berdasarkan fitur-fitur kontennya.
    - Rekomendasi kursus: Menghitung kesamaan antara kursus yang ada dengan kursus yang diminati oleh pengguna berdasarkan kursus yang telah diambil dan atribut keahlian.
 
 3. Pendekatan *Collaborative Filtering*:
    - Matriks User-Item: Membangun matriks user-item yang merepresentasikan preferensi pengguna terhadap kursus-kursus yang ada.
-   - Membangun model: Menggunakan algoritma seperti Singular Value Decomposition (SVD) atau Matrix Factorization untuk membangun model yang dapat menemukan pola kolaboratif di antara kursus dan keahlian.
+   - Membangun model: Menggunakan algoritma seperti *Singular Value Decomposition* (SVD) atau *Matrix Factorization* untuk membangun model yang dapat menemukan pola kolaboratif di antara kursus dan keahlian.
    - Rekomendasi kursus: Membuat rekomendasi kursus berdasarkan peringkat prediksi yang diberikan oleh model.
 
 4. Evaluasi Model:
-   - Evaluasi Content-Based Filtering: Menggunakan metrik Precission untuk mengukur sejauh mana rekomendasi kursus yang diberikan relevan dengan preferensi pengguna.
-   - Evaluasi *Collaborative Filtering*: Menggunakan metrik Root Mean Square Error (RMSE) untuk mengukur sejauh mana peringkat prediksi model mendekati peringkat yang sebenarnya.
+   - Evaluasi *Content-Based Filtering*: Menggunakan metrik *Precission* untuk mengukur sejauh mana rekomendasi kursus yang diberikan relevan dengan preferensi pengguna.
+   - Evaluasi *Collaborative Filtering*: Menggunakan metrik *Root Mean Square Error* (RMSE) untuk mengukur sejauh mana peringkat prediksi model mendekati peringkat yang sebenarnya.
 
 5. Perbaikan dan Penyesuaian Model:
    - Menganalisis hasil evaluasi model dan melakukan perbaikan atau penyesuaian yang diperlukan untuk meningkatkan performa dan akurasi rekomendasi.
 
-Dengan pendekatan ini, kita dapat memanfaatkan fitur-fitur konten kursus (Content-Based Filtering) serta pola kolaboratif antara pengguna dan kursus (*Collaborative Filtering*) untuk memberikan rekomendasi kursus yang relevan kepada pengguna. 
+Dengan pendekatan ini, kita dapat memanfaatkan fitur-fitur konten kursus (Content-Based Filtering) serta pola kolaboratif antara pengguna dan kursus (Collaborative Filtering) untuk memberikan rekomendasi kursus yang relevan kepada pengguna. 
 
-Evaluasi menggunakan metrik Precission dan RMSE akan memberikan wawasan tentang sejauh mana performa model dalam memberikan rekomendasi yang tepat.
+Evaluasi menggunakan metrik *Precission* dan *RMSE* akan memberikan wawasan tentang sejauh mana performa model dalam memberikan rekomendasi yang tepat.
 
 ## 6. Data Understanding
 
@@ -362,6 +362,38 @@ Tabel 7. Hasil Rekomendasi Top 10 dengan Euclidean Distance
  
 ## 9. Evaluation
 
+## Evaluasi Model
+
+Dalam proyek ini, kami menggunakan dua metrik evaluasi yang berbeda berdasarkan metode pendekatan yang digunakan, yaitu *Precision* untuk pendekatan *Content Based Filtering* dan *Root Mean Square Error* (RMSE) untuk pendekatan *Collaborative Based Filtering*.
+
+### 1. *Precision* (Presisi)
+
+*Precision* adalah metrik evaluasi yang digunakan untuk mengukur keakuratan rekomendasi dalam pendekatan *Content Based Filtering*. 
+
+Presisi menghitung persentase rekomendasi yang relevan dari total rekomendasi yang diberikan kepada pengguna.
+
+Presisi dihitung dengan membagi jumlah rekomendasi yang relevan dengan jumlah total rekomendasi yang diberikan. 
+
+Semakin tinggi nilai presisi, semakin akurat sistem dalam memberikan rekomendasi yang relevan kepada pengguna.
+
+### 2. *Root Mean Square Error* (RMSE)
+
+RMSE adalah metrik evaluasi yang digunakan untuk mengukur sejauh mana model Collaborative Based Filtering dapat memprediksi preferensi pengguna dengan akurat. 
+
+*RMSE* mengukur selisih antara nilai rating yang diprediksi oleh model dan nilai rating sebenarnya dalam dataset.
+
+RMSE dihitung dengan mengambil akar kuadrat dari rata-rata dari selisih kuadrat antara nilai rating yang diprediksi dan nilai rating sebenarnya. 
+
+Semakin rendah nilai *RMSE*, semakin baik model dalam memprediksi preferensi pengguna dengan akurat.
+
+Penggunaan metrik evaluasi yang sesuai untuk masing-masing pendekatan memungkinkan kami untuk mengukur kualitas dan performa dari sistem rekomendasi yang dikembangkan. 
+
+*Precision* memberikan gambaran tentang sejauh mana rekomendasi yang diberikan sesuai dengan preferensi dan minat pengguna dalam pendekatan *Content Based Filtering*. 
+
+Sedangkan *RMSE* memberikan indikasi tentang tingkat akurasi prediksi preferensi pengguna dalam pendekatan *Collaborative Based Filtering*.
+
+Dengan menggunakan kedua metrik evaluasi ini, kami dapat memahami sejauh mana sistem rekomendasi dapat memenuhi tujuan yang telah ditetapkan dan mengidentifikasi area perbaikan yang diperlukan untuk meningkatkan kualitas rekomendasi yang diberikan.
+
 ![grafik model metrik](https://github.com/nikofebrianur/Machine-Learning-Terapan/assets/42314371/409c78b1-822a-487e-be01-ff6f8a1fa3b0)
 
 ###### Gambar 8.1 Grafik Visualisasi Metrik Model Training 
@@ -374,7 +406,7 @@ Dengan menerapkan pendekatan *Content Based Filtering* dan *Collaborative Filter
 
 Melalui penggunaan metrik evaluasi yang relevan seperti *Precission* dan *Root Mean Square Error* (RMSE), kami dapat mengukur keberhasilan sistem dalam mencapai tujuan yang telah ditetapkan. 
 
-Evaluasi terhadap pendekatan *Content Based Filtering* menggunakan metrik Precission, sedangkan pendekatan *Collaborative Filtering* dievaluasi menggunakan metrik RMSE.
+Evaluasi terhadap pendekatan *Content Based Filtering* menggunakan metrik Precission, sedangkan pendekatan *Collaborative Filtering* dievaluasi menggunakan metrik *RMSE*.
 
 Dengan memberikan rekomendasi kursus yang relevan dan menarik, proyek ini berpotensi meningkatkan retensi pengguna pada platform Coursera. 
 
