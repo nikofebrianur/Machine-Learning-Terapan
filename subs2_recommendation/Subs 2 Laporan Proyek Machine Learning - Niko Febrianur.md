@@ -329,14 +329,8 @@ Pada tahapan training model, proses yang dilakukan adalah sebagai berikut:
 Dalam tahapan ini, data dipisahkan menjadi set pelatihan dan set pengujian untuk memastikan evaluasi yang objektif terhadap performa model. 
 
 Set pelatihan digunakan untuk melatih model, sedangkan set pengujian digunakan untuk menguji performa model secara independen dan mengukur sejauh mana model dapat menggeneralisasi dengan baik ke data yang belum pernah dilihat sebelumnya.
- 
-## 9. Evaluation
 
-![grafik model metrik](https://github.com/nikofebrianur/Machine-Learning-Terapan/assets/42314371/409c78b1-822a-487e-be01-ff6f8a1fa3b0)
-
-####### Gambar 8.1 Grafik Visualisasi Metrik Model Training 
-
-Tabel 6. Hasil Rekomendasi dengan Cosine Similarity
+Tabel 6. Hasil Top 10 Rekomendasi dengan Cosine Similarity
 
 |    | courseName                                                          |   rating | skills                                                                                                                                                                                                                                                             |
 |---:|:--------------------------------------------------------------------|---------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -351,7 +345,7 @@ Tabel 6. Hasil Rekomendasi dengan Cosine Similarity
 |  8 | Software Product Management Capstone                                | 0.401497 | Product Management  Leadership and Management  project  scrum (software development)  Project Management  software  software product management  Software Engineering  software project management  Agile Software Development computer-science design-and-product |
 |  9 | Introduction to Software Product Management                         | 0.397504 | project  Software Engineering  Product Management  Leadership and Management  software  Agile Software Development  agile management  software product management  Planning  agile manifesto computer-science design-and-product                                   |
 
-Tabel 7. Hasil Rekomendasi dengan Euclidean Distance
+Tabel 7. Hasil Rekomendasi Top 10 dengan Euclidean Distance
 
 |    | courseName                                                          |   rating | skills                                                                                                                                                                                                                                                             |
 |---:|:--------------------------------------------------------------------|---------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -365,6 +359,12 @@ Tabel 7. Hasil Rekomendasi dengan Euclidean Distance
 |  7 | G Suite Security                                                    |  1.09218 | password  user (computing)  Software Security  security  relative change and difference  Cloud Computing  digital signature  multi-factor authentication  javascript syntax  single sign-on computer-science computer-security-and-networks                        |
 |  8 | Software Product Management Capstone                                |  1.09408 | Product Management  Leadership and Management  project  scrum (software development)  Project Management  software  software product management  Software Engineering  software project management  Agile Software Development computer-science design-and-product |
 |  9 | Hardware Security                                                   |  1.09772 | graph coloring  Hardware Design  trusted platform module  vulnerability (computing)  security  modular exponentiation  System Security  Cryptography  Systems Design  side-channel attack computer-science computer-security-and-networks                          |
+ 
+## 9. Evaluation
+
+![grafik model metrik](https://github.com/nikofebrianur/Machine-Learning-Terapan/assets/42314371/409c78b1-822a-487e-be01-ff6f8a1fa3b0)
+
+###### Gambar 8.1 Grafik Visualisasi Metrik Model Training 
 
 ## 10. Kesimpulan 
 
