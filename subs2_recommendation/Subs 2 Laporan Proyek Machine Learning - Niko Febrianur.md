@@ -200,35 +200,35 @@ Berikut adalah tahapan-tahapan yang dilakukan:
 
 ## 8. Modeling
 
-Pada proyek ini diterapkan 2 tipe model, yaitu *Content Based Filtering* dan *Collaborative Based Filtering*.
+Pada proyek ini diterapkan 2 tipe model, yaitu *Content-Based Filtering* dan *Collaborative-Based Filtering*.
 
-### *Content Based Filtering*
-*Content Based Filtering* adalah pendekatan dalam sistem rekomendasi yang mengandalkan analisis konten dari item yang direkomendasikan. 
+### *Content-Based Filtering*
+*Content-Based Filtering* adalah pendekatan dalam sistem rekomendasi yang mengandalkan analisis konten dari item yang direkomendasikan. 
 
 Dalam konteks sistem rekomendasi kursus Coursera, pendekatan ini akan menganalisis fitur-fitur konten dari kursus, seperti deskripsi kursus, topik, rating, atau keterampilan yang terkait, untuk memberikan rekomendasi yang relevan kepada pengguna.
 
-Kelebihan *Content Based Filtering*:
-1. Personalisasi: Pendekatan *Content Based Filtering* memungkinkan personalisasi yang tinggi, karena rekomendasi didasarkan pada preferensi pengguna yang diungkapkan melalui analisis konten kursus.
+Kelebihan *Content-Based Filtering*:
+1. Personalisasi: Pendekatan *Content-Based Filtering* memungkinkan personalisasi yang tinggi, karena rekomendasi didasarkan pada preferensi pengguna yang diungkapkan melalui analisis konten kursus.
 2. Tidak tergantung pada data pengguna lain: Pendekatan ini tidak memerlukan informasi tentang preferensi pengguna lain, sehingga tidak bergantung pada data kolaboratif atau historis dari pengguna lainnya.
 3. Memperhitungkan kepentingan unik pengguna: Pendekatan ini memperhitungkan preferensi pengguna yang spesifik dan tidak terpengaruh oleh tren atau preferensi umum.
 
-Kekurangan *Content Based Filtering*:
+Kekurangan *Content-Based Filtering*:
 1. Terbatas pada fitur yang diamati: Pendekatan ini terbatas pada fitur-fitur yang diamati dan dianalisis dalam konten kursus. Rekomendasi mungkin kurang beragam jika tidak ada fitur yang signifikan dalam analisis konten yang dapat membedakan kursus secara signifikan.
 2. Tidak memperhitungkan preferensi baru: Pendekatan ini tidak secara otomatis menyesuaikan dengan perubahan preferensi pengguna. Jika preferensi pengguna berubah atau berkembang, rekomendasi mungkin tetap berfokus pada preferensi yang lebih lama.
 
 Teknik Perhitungan Similarity:
-1. *Cosine Similarity*: *Cosine Similarity* mengukur kesamaan antara dua vektor dengan menghitung kosinus sudut antara vektor-vektor tersebut. Dalam konteks *Content Based Filtering*, *Cosine Similarity* digunakan untuk mengukur kesamaan antara vektor representasi fitur kursus berdasarkan deskripsi, topik, atau keterampilan. Nilai *Cosine Similarity* berkisar antara -1 hingga 1, di mana nilai 1 menunjukkan kesamaan yang sempurna dan nilai -1 menunjukkan perbedaan yang sempurna.
+1. *Cosine Similarity*: *Cosine Similarity* mengukur kesamaan antara dua vektor dengan menghitung kosinus sudut antara vektor-vektor tersebut. Dalam konteks *Content-Based Filtering*, *Cosine Similarity* digunakan untuk mengukur kesamaan antara vektor representasi fitur kursus berdasarkan deskripsi, topik, atau keterampilan. Nilai *Cosine Similarity* berkisar antara -1 hingga 1, di mana nilai 1 menunjukkan kesamaan yang sempurna dan nilai -1 menunjukkan perbedaan yang sempurna.
 
-2. **Euclidean Distance**: **Euclidean Distance** mengukur jarak antara dua titik dalam ruang Euclidean. Dalam konteks *Content Based Filtering*, **Euclidean Distance** digunakan untuk mengukur jarak antara vektor representasi fitur kursus. Semakin kecil nilai **Euclidean Distance**, semakin mirip kedua kursus dalam hal fitur-fitur yang diamati.
+2. **Euclidean Distance**: **Euclidean Distance** mengukur jarak antara dua titik dalam ruang Euclidean. Dalam konteks *Content-Based Filtering*, **Euclidean Distance** digunakan untuk mengukur jarak antara vektor representasi fitur kursus. Semakin kecil nilai **Euclidean Distance**, semakin mirip kedua kursus dalam hal fitur-fitur yang diamati.
 
 Kedua teknik perhitungan *similarity* tersebut digunakan untuk membandingkan kesamaan antara kursus-kursus dalam sistem rekomendasi. 
 
-### Tahapan yang dilakukan dengan pendekatan *Content Based Filtering*
+### Tahapan yang dilakukan dengan pendekatan *Content-Based Filtering*
 Selama pendekatan ini, proses modeling dilakukan berdasar urutan sebagai berikut ini:
 
 1. *TF-IDF Vectorizer*: Tahap ini melibatkan penggunaan TF-IDF (Term Frequency-Inverse Document Frequency) Vectorizer untuk mengubah teks pada deskripsi kursus menjadi representasi numerik. TF-IDF mengukur pentingnya suatu kata dalam dokumen berdasarkan frekuensi kemunculan kata tersebut dalam dokumen dan inversi frekuensi kemunculan kata tersebut dalam seluruh koleksi dokumen. *TF-IDF Vectorizer* menghasilkan vektor fitur yang merepresentasikan konten kursus.
 
-2. *Cosine Similarity*: Setelah mendapatkan vektor fitur menggunakan *TF-IDF Vectorizer*, tahap selanjutnya adalah menghitung kesamaan antara kursus menggunakan metode *Cosine Similarity*. *Cosine Similarity* mengukur kesamaan arah antara dua vektor dalam ruang vektor. Pada konteks Content Based Filtering, *Cosine Similarity* digunakan untuk mengukur kesamaan antara vektor fitur kursus berdasarkan deskripsi, topik, atau keterampilan yang terkait. Semakin tinggi nilai *Cosine Similarity*, semakin mirip kedua kursus dalam hal fitur-fitur yang diamati.
+2. *Cosine Similarity*: Setelah mendapatkan vektor fitur menggunakan *TF-IDF Vectorizer*, tahap selanjutnya adalah menghitung kesamaan antara kursus menggunakan metode *Cosine Similarity*. *Cosine Similarity* mengukur kesamaan arah antara dua vektor dalam ruang vektor. Pada konteks Content-Based Filtering, *Cosine Similarity* digunakan untuk mengukur kesamaan antara vektor fitur kursus berdasarkan deskripsi, topik, atau keterampilan yang terkait. Semakin tinggi nilai *Cosine Similarity*, semakin mirip kedua kursus dalam hal fitur-fitur yang diamati.
 
 Tabel 3. Hasil Perhitungan Cosine Similarity pada Matrix TF-IDF
 
@@ -264,7 +264,7 @@ Tabel 4. Hasil Similarity Matrix pada Setiap Course
 | Be a Leader, Develop a Leader                                                 |                       0 |          0        |                                                                               0 |                                                 0         |                             0         |
 
 
-3. *Euclidean Distance*: Selain *Cosine Similarity*, tahap Content Based Filtering juga dapat menggunakan *Euclidean Distance* untuk mengukur jarak antara vektor fitur kursus. *Euclidean Distance* menghitung jarak antara dua titik dalam ruang Euclidean. Dalam konteks *Content Based Filtering*, *Euclidean Distance* digunakan untuk mengukur jarak antara vektor fitur kursus. Semakin kecil nilai *Euclidean Distance*, semakin mirip kedua kursus dalam hal fitur-fitur yang diamati.
+3. *Euclidean Distance*: Selain *Cosine Similarity*, tahap Content-Based Filtering juga dapat menggunakan *Euclidean Distance* untuk mengukur jarak antara vektor fitur kursus. *Euclidean Distance* menghitung jarak antara dua titik dalam ruang Euclidean. Dalam konteks *Content-Based Filtering*, *Euclidean Distance* digunakan untuk mengukur jarak antara vektor fitur kursus. Semakin kecil nilai *Euclidean Distance*, semakin mirip kedua kursus dalam hal fitur-fitur yang diamati.
 
 Tabel 5. Hasil Perghitungan Euclidean Distance pada Matrix TF-IDF
 
@@ -281,7 +281,7 @@ Tabel 5. Hasil Perghitungan Euclidean Distance pada Matrix TF-IDF
 | Electrodynamics: An Introduction                                              |                                 1.41421 |                                             1.35176 |                                               1.41421 |         1.41421 |                                        1.41421 |
 | Law in the Time of COVID-19: A Northwestern Teach-Out                         |                                 1.41421 |                                             1.41421 |                                               1.41421 |         1.41421 |                                        1.41421 |
 
-Tahapan-tahapan di atas merupakan bagian dari proses *Content Based Filtering* yang bertujuan untuk menganalisis dan membandingkan konten kursus berdasarkan vektor fitur yang dihasilkan menggunakan *TF-IDF Vectorizer*. 
+Tahapan-tahapan di atas merupakan bagian dari proses *Content-Based Filtering* yang bertujuan untuk menganalisis dan membandingkan konten kursus berdasarkan vektor fitur yang dihasilkan menggunakan *TF-IDF Vectorizer*. 
 
 Penggunaan metode *Cosine Similarity* dan *Euclidean Distance* memungkinkan untuk mengukur kesamaan atau perbedaan antara kursus-kursus dalam hal konten yang diamati.
 
@@ -310,7 +310,7 @@ Kekurangan *Collaborative Filtering*:
 
 Pendekatan *Collaborative Filtering* memanfaatkan informasi dari pengguna-pengguna lain untuk memberikan rekomendasi. 
 
-Dalam praktiknya, seringkali pendekatan ini dikombinasikan dengan *Content Based Filtering* untuk meningkatkan performa dan relevansi rekomendasi yang dihasilkan.
+Dalam praktiknya, seringkali pendekatan ini dikombinasikan dengan *Content-Based Filtering* untuk meningkatkan performa dan relevansi rekomendasi yang dihasilkan.
 
 ### Training Model
 
@@ -362,11 +362,11 @@ Tabel 7. Hasil Rekomendasi Top 10 dengan Euclidean Distance dengan Course Enroll
  
 ## 9. Evaluation
 
-Dalam proyek ini, dua metrik evaluasi yang berbeda akan digunakan berdasarkan pada metode pendekatan yang digunakan, yaitu *Precision* untuk pendekatan *Content Based Filtering* dan *Root Mean Square Error* (RMSE) untuk pendekatan *Collaborative Based Filtering*.
+Dalam proyek ini, dua metrik evaluasi yang berbeda akan digunakan berdasarkan pada metode pendekatan yang digunakan, yaitu *Precision* untuk pendekatan *Content-Based Filtering* dan *Root Mean Square Error* (RMSE) untuk pendekatan *Collaborative-Based Filtering*.
 
 ### 1. *Precision* (Presisi)
 
-*Precision* adalah metrik evaluasi yang digunakan untuk mengukur keakuratan rekomendasi dalam pendekatan *Content Based Filtering*. 
+*Precision* adalah metrik evaluasi yang digunakan untuk mengukur keakuratan rekomendasi dalam pendekatan *Content-Based Filtering*. 
 
 Presisi menghitung persentase rekomendasi yang relevan dari total rekomendasi yang diberikan kepada pengguna.
 
@@ -374,15 +374,49 @@ Presisi dihitung dengan membagi jumlah rekomendasi yang relevan dengan jumlah to
 
 Semakin tinggi nilai presisi, semakin akurat sistem dalam memberikan rekomendasi yang relevan kepada pengguna.
 
-Berdasarkan tabel 6 dan 7, dapat dilihat bahwa *course* yang direkomendasi memiliki nama dan *skills* yang hampir semuanya mengandung kata "Software" dan "Security" yang dijadikan sebagai patokan pilihan *course*.
+Berikut adalah tabel yang berisi nilai *True Positives* (TP) dan *False Positives* (FP) untuk kedua pendekatan, berdasarkan kriteria "Software" dan "Security" pada kolom `courseName` dan `skills`:
 
-Selain itu, kemiripan rekomendasi *course* jika dilihat berdasarkan rating *course* yang juga tidak terlalu jauh berbeda. 
+Tabel 8. Evaluasi *Precision* dengan Pendekatan *Content-Based Filtering* (Cosine Similarity)
 
-Oleh sebab itu, maka dapat dikatakan bahwa hasil prediksi antara kedua tabel memiliki presisi 95%.
+| Pendekatan | True Positives (TP) | False Positives (FP) |
+|------------|---------------------|-----------------------|
+| Content-Based Filtering | 7 | 3 |
+
+Tabel 9. Evaluasi *Precision* dengan Pendekatan *Collaborative-Based Filtering* (Euclidean Distance)
+
+| Pendekatan | True Positives (TP) | False Positives (FP) |
+|------------|---------------------|-----------------------|
+| Collaborative-Based Filtering | 8 | 2 |
+
+Dalam kedua pendekatan, terlihat data kursus yang memiliki kata "Software" dan "Security" dalam `courseName` dan `skills`. 
+
+Jumlah True Positives (TP) mencerminkan kursus yang sesuai dengan kriteria ini, sementara jumlah *False Positives* (FP) mencerminkan kursus yang tidak relevan tetapi salah diklasifikasikan sebagai relevan.
+
+Dengan demikian, dalam pendekatan *Content-Based Filtering*, terdapat 7 *True Positives* (TP) dan 3 *False Positives* (FP), sedangkan dalam pendekatan *Collaborative-Based Filtering*, terdapat 8 *True Positives* (TP) dan 2 *False Positives* (FP).
+
+Dengan menggunakan nilai TP dan FP, Precision dapat dihitung dengan menggunakan rumus berikut:
+
+```
+Precision = TP / (TP + FP)
+```
+
+Untuk pendekatan *Content-Based Filtering* (Cosine Similarity):
+Precision = TP / (TP + FP) = 7 / (7 + 3) = 0.7 = 70%
+
+Untuk pendekatan *Collaborative-Based Filtering* (Euclidean Distance):
+Precision = TP / (TP + FP) = 8 / (8 + 2) = 0.8 = 80%
+
+Hasil *Precision* dari kedua pendekatan tersebut adalah 70% untuk pendekatan *Content-Based Filtering* (Cosine Similarity) dan 80% untuk pendekatan *Collaborative-Based Filtering* (Euclidean Distance). 
+
+Ini mengindikasikan bahwa pendekatan *Collaborative-Based Filtering* memberikan hasil *Precision* yang lebih tinggi dibandingkan dengan pendekatan *Content-Based Filtering* dalam konteks spesifik ini.
+
+Pada pendekatan *Collaborative-Based Filtering*, dari 10 rekomendasi yang diberikan, 8 di antaranya relevan dengan kriteria yang ditentukan ("Software" dan "Security"). 
+
+Sementara itu, pada pendekatan *Content-Based Filtering*, dari 10 rekomendasi yang diberikan, 7 di antaranya relevan dengan kriteria yang ditentukan.
 
 ### 2. *Root Mean Square Error* (RMSE)
 
-RMSE adalah metrik evaluasi yang digunakan untuk mengukur sejauh mana model Collaborative Based Filtering dapat memprediksi preferensi pengguna dengan akurat. 
+RMSE adalah metrik evaluasi yang digunakan untuk mengukur sejauh mana model Collaborative-Based Filtering dapat memprediksi preferensi pengguna dengan akurat. 
 
 *RMSE* mengukur selisih antara nilai rating yang diprediksi oleh model dan nilai rating sebenarnya dalam dataset.
 
@@ -392,9 +426,9 @@ Semakin rendah nilai *RMSE*, semakin baik model dalam memprediksi preferensi pen
 
 Penggunaan metrik evaluasi yang sesuai untuk masing-masing pendekatan memungkinkan untuk mengukur kualitas dan performa dari sistem rekomendasi yang dikembangkan. 
 
-*Precision* memberikan gambaran tentang sejauh mana rekomendasi yang diberikan sesuai dengan preferensi dan minat pengguna dalam pendekatan *Content Based Filtering*. 
+*Precision* memberikan gambaran tentang sejauh mana rekomendasi yang diberikan sesuai dengan preferensi dan minat pengguna dalam pendekatan *Content-Based Filtering*. 
 
-Sedangkan *RMSE* memberikan indikasi tentang tingkat akurasi prediksi preferensi pengguna dalam pendekatan *Collaborative Based Filtering*.
+Sedangkan *RMSE* memberikan indikasi tentang tingkat akurasi prediksi preferensi pengguna dalam pendekatan *Collaborative-Based Filtering*.
 
 Dengan menggunakan kedua metrik evaluasi ini, akan dapat dipahami sejauh mana sistem rekomendasi dapat memenuhi tujuan yang telah ditetapkan dan mengidentifikasi area perbaikan yang diperlukan untuk meningkatkan kualitas rekomendasi yang diberikan.
 
@@ -410,11 +444,11 @@ Berdasarkan hasil tersebut di atas, maka dapat dikatakan bahwa model ini menjadi
 
 Proyek ini berhasil mengembangkan sebuah sistem rekomendasi yang dapat memberikan pengalaman pengguna yang lebih baik dalam mencari dan memilih kursus di Coursera. 
 
-Dengan menerapkan pendekatan *Content Based Filtering* dan *Collaborative Filtering*, sistem dapat memberikan rekomendasi kursus yang personal dan relevan berdasarkan preferensi pengguna.
+Dengan menerapkan pendekatan *Content-Based Filtering* dan *Collaborative Filtering*, sistem dapat memberikan rekomendasi kursus yang personal dan relevan berdasarkan preferensi pengguna.
 
 Melalui penggunaan metrik evaluasi yang relevan seperti *Precission* dan *Root Mean Square Error* (RMSE), keberhasilan sistem akan dapat diukur dalam mencapai tujuan yang telah ditetapkan. 
 
-Evaluasi terhadap pendekatan *Content Based Filtering* menggunakan metrik Precission, sedangkan pendekatan *Collaborative Filtering* dievaluasi menggunakan metrik *RMSE*.
+Evaluasi terhadap pendekatan *Content-Based Filtering* menggunakan metrik Precission, sedangkan pendekatan *Collaborative Filtering* dievaluasi menggunakan metrik *RMSE*.
 
 Dengan memberikan rekomendasi kursus yang relevan dan menarik, proyek ini berpotensi meningkatkan retensi pengguna pada platform Coursera. 
 
