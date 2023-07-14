@@ -10,7 +10,7 @@ Proyek ini membangun model *machine learning* yang dapat memberikan rekomendasi 
 
 ### Latar belakang
 
-Domain proyek untuk sistem rekomendasi kursus Coursera ini adalah industri pembelajaran online. Di era digital saat ini, banyak individu mencari peluang untuk meningkatkan pengetahuan dan keterampilan mereka melalui platform pembelajaran online. 
+Domain proyek untuk sistem rekomendasi kursus Coursera ini adalah industri pembelajaran *online*. Di era digital saat ini, banyak individu mencari peluang untuk meningkatkan pengetahuan dan keterampilan mereka melalui platform pembelajaran *online*. 
 
 Coursera adalah salah satu platform populer yang menawarkan berbagai kursus dari universitas dan lembaga terkemuka di seluruh dunia.
 
@@ -26,7 +26,7 @@ Dengan menggunakan sistem rekomendasi ini, pengguna dapat menemukan kursus-kursu
 
 Sistem rekomendasi ini juga dapat membantu Coursera dalam meningkatkan pengalaman pengguna dan mempertahankan anggota dengan menyediakan rekomendasi yang akurat dan bermutu.
 
-Dengan membangun model *machine learning* untuk sistem rekomendasi kursus Coursera, diharapkan dapat memberikan manfaat bagi pengguna dan platform pembelajaran online dalam mempermudah proses pencarian kursus yang sesuai dengan minat dan kebutuhan individu.
+Dengan membangun model *machine learning* untuk sistem rekomendasi kursus Coursera, diharapkan dapat memberikan manfaat bagi pengguna dan platform pembelajaran *online* dalam mempermudah proses pencarian kursus yang sesuai dengan minat dan kebutuhan individu.
 
 ## 2. Business Understanding
 
@@ -140,7 +140,7 @@ Dataset dapat diunduh di: [Coursera courses dataset 2021](https://www.Kaggle.Com
 
 ### Sample data
 
-Tabel 6.1 Contoh Data pada Dataset
+Tabel 1. Contoh Data pada Dataset
 | Course Name                                               | University                               | Difficulty Level | Course Rating | Course URL                                          | Course Description                                 | Skills                                           |
 |-----------------------------------------------------------|------------------------------------------|------------------|---------------|-----------------------------------------------------|----------------------------------------------------|--------------------------------------------------|
 | Write A Feature Length Screenplay For Film Or ...          | Michigan State University                | Beginner         | 4.8           | [Course URL](https://www.coursera.org/learn/write-a-feature...)              | Write a Full Length Feature Film Script In th...   | Drama Comedy peering screenwriting film D...     |
@@ -164,7 +164,7 @@ Tabel 6.1 Contoh Data pada Dataset
 - Course Description: Deskripsi singkat tentang kursus.
 - Skills: Keterampilan atau topik yang terkait dengan kursus tersebut.
 
-Tabel 6.2 Tipe Data Tiap Kolom pada Dataset
+Tabel 2. Tipe Data Tiap Kolom pada Dataset
 ```sh
 RangeIndex: 3522 entries, 0 to 3521
 Data columns (total 7 columns):
@@ -230,7 +230,7 @@ Selama pendekatan ini, proses modeling dilakukan berdasar urutan sebagai berikut
 
 2. *Cosine Similarity*: Setelah mendapatkan vektor fitur menggunakan *TF-IDF Vectorizer*, tahap selanjutnya adalah menghitung kesamaan antara kursus menggunakan metode *Cosine Similarity*. *Cosine Similarity* mengukur kesamaan arah antara dua vektor dalam ruang vektor. Pada konteks Content Based Filtering, *Cosine Similarity* digunakan untuk mengukur kesamaan antara vektor fitur kursus berdasarkan deskripsi, topik, atau keterampilan yang terkait. Semakin tinggi nilai *Cosine Similarity*, semakin mirip kedua kursus dalam hal fitur-fitur yang diamati.
 
-Tabel 8.1 Hasil Perhitungan Cosine Similarity pada Matrix TF-IDF
+Tabel 3. Hasil Perhitungan Cosine Similarity pada Matrix TF-IDF
 
 ```sh
 array([[1.        , 0.        , 0.15356638, ..., 0.        , 0.        ,
@@ -248,7 +248,7 @@ array([[1.        , 0.        , 0.15356638, ..., 0.        , 0.        ,
         1.        ]])
 ```
 
-Tabel 8.2 Hasil Similarity Matrix pada Setiap Course
+Tabel 4. Hasil Similarity Matrix pada Setiap Course
 
 | courseName                                                                    |   Statistical Inference |   Agile Analytics |   Planning a Patient Safety or Quality Improvement Project (Patient Safety III) |   Data Structures and Design Patterns for Game Developers |   Getting Started with Linux Terminal |
 |:------------------------------------------------------------------------------|------------------------:|------------------:|--------------------------------------------------------------------------------:|----------------------------------------------------------:|--------------------------------------:|
@@ -266,7 +266,7 @@ Tabel 8.2 Hasil Similarity Matrix pada Setiap Course
 
 3. *Euclidean Distance*: Selain *Cosine Similarity*, tahap Content Based Filtering juga dapat menggunakan *Euclidean Distance* untuk mengukur jarak antara vektor fitur kursus. *Euclidean Distance* menghitung jarak antara dua titik dalam ruang Euclidean. Dalam konteks *Content Based Filtering*, *Euclidean Distance* digunakan untuk mengukur jarak antara vektor fitur kursus. Semakin kecil nilai *Euclidean Distance*, semakin mirip kedua kursus dalam hal fitur-fitur yang diamati.
 
-Tabel 8.3 Hasil Perghitungan Euclidean Distance pada Matrix TF-IDF
+Tabel 5. Hasil Perghitungan Euclidean Distance pada Matrix TF-IDF
 
 | courseName                                                                    |   Teach English Now! Capstone Project 2 |   Introduction to Particle Accelerators (NPAP MOOC) |   Engineering Practices for Building Quality Software |   Anti-Racism I |   Best Practices for iOS User Interface Design |
 |:------------------------------------------------------------------------------|----------------------------------------:|----------------------------------------------------:|------------------------------------------------------:|----------------:|-----------------------------------------------:|
@@ -336,7 +336,7 @@ Set pelatihan digunakan untuk melatih model, sedangkan set pengujian digunakan u
  
 ## 9. Evaluation
 
-Tabel 9.2 Hasil Rekomendasi dengan Cosine Similarity
+Tabel 6. Hasil Rekomendasi dengan Cosine Similarity
 
 |    | courseName                                                          |   rating | skills                                                                                                                                                                                                                                                             |
 |---:|:--------------------------------------------------------------------|---------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -351,7 +351,7 @@ Tabel 9.2 Hasil Rekomendasi dengan Cosine Similarity
 |  8 | Software Product Management Capstone                                | 0.401497 | Product Management  Leadership and Management  project  scrum (software development)  Project Management  software  software product management  Software Engineering  software project management  Agile Software Development computer-science design-and-product |
 |  9 | Introduction to Software Product Management                         | 0.397504 | project  Software Engineering  Product Management  Leadership and Management  software  Agile Software Development  agile management  software product management  Planning  agile manifesto computer-science design-and-product                                   |
 
-Tabel 9.2 Hasil Rekomendasi dengan Euclidean Distance
+Tabel 7. Hasil Rekomendasi dengan Euclidean Distance
 
 |    | courseName                                                          |   rating | skills                                                                                                                                                                                                                                                             |
 |---:|:--------------------------------------------------------------------|---------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -398,12 +398,12 @@ Dengan menggunakan metrik evaluasi yang relevan, kami dapat mengukur keberhasila
 
 ## References
 
-Chen M, Wang X, Wang J, et al., "Factors Affecting College Students’ Continuous Intention to Use Online Course Platform," *SN Computer Science*, 2021.
+Chen M, Wang X, Wang J, et al., "Factors Affecting College Students’ Continuous Intention to Use *online* Course Platform," *SN Computer Science*, 2021.
 
-S. Inder, "Factors Influencing Student Engagement for Online Courses: A Confirmatory Factor Analysis," *Contemporary Educational Technology*, 2022.
+S. Inder, "Factors Influencing Student Engagement for *online* Courses: A Confirmatory Factor Analysis," *Contemporary Educational Technology*, 2022.
 
-P. Bawa, "Retention in Online Courses: Exploring Issues and Solutions—A Literature Review," *SAGE Open*, 2016.
+P. Bawa, "Retention in *online* Courses: Exploring Issues and Solutions—A Literature Review," *SAGE Open*, 2016.
 
-M. G. Gómez-Zermeño, "Massive open online courses as a digital learning strategy of education for sustainable development," *Journal of Sustainable Development of Energy, Water and Environment Systems*, 8, 577–589, 2020.
+M. G. Gómez-Zermeño, "Massive open *online* courses as a digital learning strategy of education for sustainable development," *Journal of Sustainable Development of Energy, Water and Environment Systems*, 8, 577–589, 2020.
 
-T. Soffer, A. Cohen, "Students’ engagement characteristics predict success and completion of online courses," *Journal of Computer Assisted Learning*, 35, 378–389, 2019.
+T. Soffer, A. Cohen, "Students’ engagement characteristics predict success and completion of *online* courses," *Journal of Computer Assisted Learning*, 35, 378–389, 2019.
