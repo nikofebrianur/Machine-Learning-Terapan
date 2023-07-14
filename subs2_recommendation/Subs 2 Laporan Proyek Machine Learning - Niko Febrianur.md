@@ -396,15 +396,19 @@ Dengan demikian, dalam pendekatan *Content-Based Filtering*, terdapat 7 *True Po
 
 Dengan menggunakan nilai TP dan FP, Precision dapat dihitung dengan menggunakan rumus berikut:
 
-```
+```sh
 Precision = TP / (TP + FP)
 ```
 
 Untuk pendekatan Content-Based Filtering (Cosine Similarity):
+```sh
 Precision = TP / (TP + FP) = 7 / (7 + 3) = 0.7 = 70%
+```
 
 Untuk pendekatan Collaborative-Based Filtering (Euclidean Distance):
+```sh
 Precision = TP / (TP + FP) = 8 / (8 + 2) = 0.8 = 80%
+```
 
 Hasil *Precision* dari kedua pendekatan tersebut adalah 70% untuk pendekatan *Content-Based Filtering* (Cosine Similarity) dan 80% untuk pendekatan *Collaborative-Based Filtering* (Euclidean Distance). 
 
