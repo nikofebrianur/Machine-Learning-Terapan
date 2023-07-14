@@ -362,8 +362,6 @@ Tabel 7. Hasil Rekomendasi Top 10 dengan Euclidean Distance
  
 ## 9. Evaluation
 
-## Evaluasi Model
-
 Dalam proyek ini, kami menggunakan dua metrik evaluasi yang berbeda berdasarkan metode pendekatan yang digunakan, yaitu *Precision* untuk pendekatan *Content Based Filtering* dan *Root Mean Square Error* (RMSE) untuk pendekatan *Collaborative Based Filtering*.
 
 ### 1. *Precision* (Presisi)
