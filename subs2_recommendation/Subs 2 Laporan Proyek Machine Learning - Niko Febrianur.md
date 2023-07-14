@@ -66,7 +66,7 @@ Dengan memfokuskan diri pada pertanyaan-pertanyaan di atas, tujuan proyek ini ak
 
 ## 4. Goals
 
-Dalam proyek ini, kami memiliki beberapa tujuan yang ingin dicapai dalam pengembangan sistem rekomendasi kursus Coursera yakni sebagai berikut:
+Proyek ini memiliki beberapa tujuan yang ingin dicapai dalam pengembangan sistem rekomendasi kursus Coursera yakni sebagai berikut:
 
 1. Meningkatkan pengalaman pengguna: tujuan utama adalah meningkatkan pengalaman pengguna dengan menyediakan rekomendasi kursus yang personal dan relevan. Hal ini akan membantu pengguna dalam menemukan kursus yang sesuai dengan minat, tujuan belajar, dan tingkat keahlian mereka. Pencapaian tujuan ini akan memberikan manfaat berupa kepuasan pengguna yang lebih tinggi, peningkatan keterlibatan, dan kemungkinan lebih tinggi bagi pengguna untuk menyelesaikan kursus yang mereka ikuti.
 
@@ -128,7 +128,7 @@ Tahapan untuk menyelesaikan tujuan dari proyek ini adalah sebagai berikut:
 5. Perbaikan dan Penyesuaian Model:
    - Menganalisis hasil evaluasi model dan melakukan perbaikan atau penyesuaian yang diperlukan untuk meningkatkan performa dan akurasi rekomendasi.
 
-Dengan pendekatan ini, kita dapat memanfaatkan fitur-fitur konten kursus (Content-Based Filtering) serta pola kolaboratif antara pengguna dan kursus (Collaborative Filtering) untuk memberikan rekomendasi kursus yang relevan kepada pengguna. 
+Dengan pendekatan ini, fitur-fitur konten kursus (Content-Based Filtering) akan dimanfaatkan serta pola kolaboratif antara pengguna dan kursus (Collaborative Filtering) untuk memberikan rekomendasi kursus yang relevan kepada pengguna. 
 
 Evaluasi menggunakan metrik *Precission* dan *RMSE* akan memberikan wawasan tentang sejauh mana performa model dalam memberikan rekomendasi yang tepat.
 
@@ -217,9 +217,9 @@ Kekurangan *Content Based Filtering*:
 2. Tidak memperhitungkan preferensi baru: Pendekatan ini tidak secara otomatis menyesuaikan dengan perubahan preferensi pengguna. Jika preferensi pengguna berubah atau berkembang, rekomendasi mungkin tetap berfokus pada preferensi yang lebih lama.
 
 Teknik Perhitungan Similarity:
-1. *Cosine Similarity*: *Cosine Similarity* mengukur kesamaan antara dua vektor dengan menghitung kosinus sudut antara vektor-vektor tersebut. Dalam konteks *Content Based Filtering*, kita dapat menggunakan *Cosine Similarity* untuk mengukur kesamaan antara vektor representasi fitur kursus berdasarkan deskripsi, topik, atau keterampilan. Nilai *Cosine Similarity* berkisar antara -1 hingga 1, di mana nilai 1 menunjukkan kesamaan yang sempurna dan nilai -1 menunjukkan perbedaan yang sempurna.
+1. *Cosine Similarity*: *Cosine Similarity* mengukur kesamaan antara dua vektor dengan menghitung kosinus sudut antara vektor-vektor tersebut. Dalam konteks *Content Based Filtering*, *Cosine Similarity* digunakan untuk mengukur kesamaan antara vektor representasi fitur kursus berdasarkan deskripsi, topik, atau keterampilan. Nilai *Cosine Similarity* berkisar antara -1 hingga 1, di mana nilai 1 menunjukkan kesamaan yang sempurna dan nilai -1 menunjukkan perbedaan yang sempurna.
 
-2. **Euclidean Distance**: **Euclidean Distance** mengukur jarak antara dua titik dalam ruang Euclidean. Dalam konteks *Content Based Filtering*, kita dapat menggunakan **Euclidean Distance** untuk mengukur jarak antara vektor representasi fitur kursus. Semakin kecil nilai **Euclidean Distance**, semakin mirip kedua kursus dalam hal fitur-fitur yang diamati.
+2. **Euclidean Distance**: **Euclidean Distance** mengukur jarak antara dua titik dalam ruang Euclidean. Dalam konteks *Content Based Filtering*, **Euclidean Distance** digunakan untuk mengukur jarak antara vektor representasi fitur kursus. Semakin kecil nilai **Euclidean Distance**, semakin mirip kedua kursus dalam hal fitur-fitur yang diamati.
 
 Kedua teknik perhitungan *similarity* tersebut digunakan untuk membandingkan kesamaan antara kursus-kursus dalam sistem rekomendasi. 
 
@@ -362,7 +362,7 @@ Tabel 7. Hasil Rekomendasi Top 10 dengan Euclidean Distance
  
 ## 9. Evaluation
 
-Dalam proyek ini, kami menggunakan dua metrik evaluasi yang berbeda berdasarkan metode pendekatan yang digunakan, yaitu *Precision* untuk pendekatan *Content Based Filtering* dan *Root Mean Square Error* (RMSE) untuk pendekatan *Collaborative Based Filtering*.
+Dalam proyek ini, dua metrik evaluasi yang berbeda akan digunakan berdasarkan pada metode pendekatan yang digunakan, yaitu *Precision* untuk pendekatan *Content Based Filtering* dan *Root Mean Square Error* (RMSE) untuk pendekatan *Collaborative Based Filtering*.
 
 ### 1. *Precision* (Presisi)
 
@@ -384,13 +384,13 @@ RMSE dihitung dengan mengambil akar kuadrat dari rata-rata dari selisih kuadrat 
 
 Semakin rendah nilai *RMSE*, semakin baik model dalam memprediksi preferensi pengguna dengan akurat.
 
-Penggunaan metrik evaluasi yang sesuai untuk masing-masing pendekatan memungkinkan kami untuk mengukur kualitas dan performa dari sistem rekomendasi yang dikembangkan. 
+Penggunaan metrik evaluasi yang sesuai untuk masing-masing pendekatan memungkinkan untuk mengukur kualitas dan performa dari sistem rekomendasi yang dikembangkan. 
 
 *Precision* memberikan gambaran tentang sejauh mana rekomendasi yang diberikan sesuai dengan preferensi dan minat pengguna dalam pendekatan *Content Based Filtering*. 
 
 Sedangkan *RMSE* memberikan indikasi tentang tingkat akurasi prediksi preferensi pengguna dalam pendekatan *Collaborative Based Filtering*.
 
-Dengan menggunakan kedua metrik evaluasi ini, kami dapat memahami sejauh mana sistem rekomendasi dapat memenuhi tujuan yang telah ditetapkan dan mengidentifikasi area perbaikan yang diperlukan untuk meningkatkan kualitas rekomendasi yang diberikan.
+Dengan menggunakan kedua metrik evaluasi ini, akan dapat dipahami sejauh mana sistem rekomendasi dapat memenuhi tujuan yang telah ditetapkan dan mengidentifikasi area perbaikan yang diperlukan untuk meningkatkan kualitas rekomendasi yang diberikan.
 
 ![grafik model metrik](https://github.com/nikofebrianur/Machine-Learning-Terapan/assets/42314371/409c78b1-822a-487e-be01-ff6f8a1fa3b0)
 
@@ -402,7 +402,7 @@ Proyek ini berhasil mengembangkan sebuah sistem rekomendasi yang dapat memberika
 
 Dengan menerapkan pendekatan *Content Based Filtering* dan *Collaborative Filtering*, sistem dapat memberikan rekomendasi kursus yang personal dan relevan berdasarkan preferensi pengguna.
 
-Melalui penggunaan metrik evaluasi yang relevan seperti *Precission* dan *Root Mean Square Error* (RMSE), kami dapat mengukur keberhasilan sistem dalam mencapai tujuan yang telah ditetapkan. 
+Melalui penggunaan metrik evaluasi yang relevan seperti *Precission* dan *Root Mean Square Error* (RMSE), keberhasilan sistem akan dapat diukur dalam mencapai tujuan yang telah ditetapkan. 
 
 Evaluasi terhadap pendekatan *Content Based Filtering* menggunakan metrik Precission, sedangkan pendekatan *Collaborative Filtering* dievaluasi menggunakan metrik *RMSE*.
 
@@ -420,11 +420,11 @@ Dengan memperhitungkan preferensi pengguna, sistem dapat memberikan rekomendasi 
 
 Selain itu, proyek ini juga berhasil melakukan analisis data pengguna untuk memahami perilaku, preferensi, dan kebutuhan pengguna dalam konteks rekomendasi kursus. 
 
-Dengan menganalisis data secara efektif, kami dapat mendapatkan wawasan yang berharga tentang pengguna dan menggunakan informasi ini untuk meningkatkan kualitas rekomendasi kursus yang diberikan.
+Dengan menganalisis data secara efektif, akan didapatkan pelajaran berharga tentang pengguna dan menggunakan informasi ini untuk meningkatkan kualitas rekomendasi kursus yang diberikan.
 
 Secara keseluruhan, proyek ini berhasil mengimplementasikan sistem rekomendasi yang dapat meningkatkan pengalaman pengguna, retensi pengguna, konversi pengguna, dan pemahaman tentang pengguna dalam konteks rekomendasi kursus di Coursera. 
 
-Dengan menggunakan metrik evaluasi yang relevan, kami dapat mengukur keberhasilan mencapai tujuan yang telah ditetapkan dan memberikan manfaat yang signifikan bagi pengguna dan Coursera.
+Dengan menggunakan metrik evaluasi yang relevan, keberhasilan mencapai tujuan yang telah ditetapkan dan memberikan manfaat yang signifikan bagi pengguna dan Coursera dapat diukur.
 
 ## References
 
