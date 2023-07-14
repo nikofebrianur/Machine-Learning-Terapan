@@ -376,13 +376,13 @@ Semakin tinggi nilai presisi, semakin akurat sistem dalam memberikan rekomendasi
 
 Berikut adalah tabel yang berisi nilai *True Positives* (TP) dan *False Positives* (FP) untuk kedua pendekatan, berdasarkan kriteria "Software" dan "Security" pada kolom `courseName` dan `skills`:
 
-Tabel 8. Evaluasi *Precision* dengan Pendekatan *Content-Based Filtering* (Cosine Similarity)
+Tabel 8. Evaluasi Precision dengan Pendekatan Content-Based Filtering (Cosine Similarity)
 
 | Pendekatan | True Positives (TP) | False Positives (FP) |
 |------------|---------------------|-----------------------|
 | Content-Based Filtering | 7 | 3 |
 
-Tabel 9. Evaluasi *Precision* dengan Pendekatan *Collaborative-Based Filtering* (Euclidean Distance)
+Tabel 9. Evaluasi Precision dengan Pendekatan Collaborative-Based Filtering (Euclidean Distance)
 
 | Pendekatan | True Positives (TP) | False Positives (FP) |
 |------------|---------------------|-----------------------|
@@ -400,10 +400,10 @@ Dengan menggunakan nilai TP dan FP, Precision dapat dihitung dengan menggunakan 
 Precision = TP / (TP + FP)
 ```
 
-Untuk pendekatan *Content-Based Filtering* (Cosine Similarity):
+Untuk pendekatan Content-Based Filtering (Cosine Similarity):
 Precision = TP / (TP + FP) = 7 / (7 + 3) = 0.7 = 70%
 
-Untuk pendekatan *Collaborative-Based Filtering* (Euclidean Distance):
+Untuk pendekatan Collaborative-Based Filtering (Euclidean Distance):
 Precision = TP / (TP + FP) = 8 / (8 + 2) = 0.8 = 80%
 
 Hasil *Precision* dari kedua pendekatan tersebut adalah 70% untuk pendekatan *Content-Based Filtering* (Cosine Similarity) dan 80% untuk pendekatan *Collaborative-Based Filtering* (Euclidean Distance). 
