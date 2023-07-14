@@ -396,6 +396,8 @@ Dengan menggunakan kedua metrik evaluasi ini, akan dapat dipahami sejauh mana si
 
 ###### Gambar 8.1 Grafik Visualisasi Metrik Model Training 
 
+Pada gambar diatas, model nilai RMSE terus bergerak turun dari 0.3641 untuk latih dan 0.3044 untuk validasi hingga hingga mendapatkan hasil akhir yaitu 0.0872 untuk latih dan 0.2364 untuk validasi. Berdasarkan hasil tersebut maka dapat dikatakan bahwa model ini menjadi model yang optimal.
+
 ## 10. Kesimpulan 
 
 Proyek ini berhasil mengembangkan sebuah sistem rekomendasi yang dapat memberikan pengalaman pengguna yang lebih baik dalam mencari dan memilih kursus di Coursera. 
