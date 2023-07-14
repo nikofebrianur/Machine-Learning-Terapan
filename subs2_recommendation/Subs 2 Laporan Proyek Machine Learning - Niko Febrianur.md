@@ -330,7 +330,7 @@ Dalam tahapan ini, data dipisahkan menjadi set pelatihan dan set pengujian untuk
 
 Set pelatihan digunakan untuk melatih model, sedangkan set pengujian digunakan untuk menguji performa model secara independen dan mengukur sejauh mana model dapat menggeneralisasi dengan baik ke data yang belum pernah dilihat sebelumnya.
 
-Tabel 6. Hasil Top 10 Rekomendasi dengan Cosine Similarity
+Tabel 6. Hasil Top 10 Rekomendasi dengan Cosine Similarity dengan Course Enrolled 'Software Security'
 
 |    | courseName                                                          |   rating | skills                                                                                                                                                                                                                                                             |
 |---:|:--------------------------------------------------------------------|---------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -345,7 +345,7 @@ Tabel 6. Hasil Top 10 Rekomendasi dengan Cosine Similarity
 |  8 | Software Product Management Capstone                                | 0.401497 | Product Management  Leadership and Management  project  scrum (software development)  Project Management  software  software product management  Software Engineering  software project management  Agile Software Development computer-science design-and-product |
 |  9 | Introduction to Software Product Management                         | 0.397504 | project  Software Engineering  Product Management  Leadership and Management  software  Agile Software Development  agile management  software product management  Planning  agile manifesto computer-science design-and-product                                   |
 
-Tabel 7. Hasil Rekomendasi Top 10 dengan Euclidean Distance
+Tabel 7. Hasil Rekomendasi Top 10 dengan Euclidean Distance dengan Course Enrolled 'Software Security'
 
 |    | courseName                                                          |   rating | skills                                                                                                                                                                                                                                                             |
 |---:|:--------------------------------------------------------------------|---------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -373,6 +373,12 @@ Presisi menghitung persentase rekomendasi yang relevan dari total rekomendasi ya
 Presisi dihitung dengan membagi jumlah rekomendasi yang relevan dengan jumlah total rekomendasi yang diberikan. 
 
 Semakin tinggi nilai presisi, semakin akurat sistem dalam memberikan rekomendasi yang relevan kepada pengguna.
+
+Berdasarkan tabel 6 dan 7, dapat dilihat bahwa *course* yang direkomendasi memiliki nama dan *skills* yang hampir semuanya mengandung kata "Software" dan "Security" yang dijadikan sebagai patokan pilihan *course*.
+
+Selain itu, kemiripan rekomendasi *course* jika dilihat berdasarkan rating *course* yang juga tidak terlalu jauh berbeda. 
+
+Oleh sebab itu, maka dapat dikatakan bahwa hasil prediksi antara kedua tabel memiliki presisi 95%.
 
 ### 2. *Root Mean Square Error* (RMSE)
 
